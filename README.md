@@ -10,6 +10,8 @@ Télécharger le fichier html et l'ouvrir dans le navigateur.
 
 ## Content warnings
 
-L'histoire contient de manière plus ou moins explicite certains thèmes pouvant être sensibles : violence, meurtre, suicide, détresse psychologique, et un narrateur parfois méprisant.
+L'histoire contient de manière plus ou moins explicite certains thèmes pouvant être sensibles : violence, meurtre, suicide, détresse psychologique, et un narrateur parfois trop autoritaire.
+
+
 
 Ce projet a été développé dans le cadre du cours "Fiction Interactive" dispensé par Isaac Pante (SLI, Lettres, UNIL)).
