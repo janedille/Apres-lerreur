@@ -8,7 +8,7 @@ Après l'erreur est une fiction interactive entièrement réalisée sur Twine. L
 
 Télécharger le fichier html et l'ouvrir dans le navigateur.
 
-## TWs
+## Content warnings
 
 L'histoire contient de manière plus ou moins explicite certains thèmes pouvant être sensibles : violence, meurtre, suicide, détresse psychologique, et un narrateur parfois méprisant.
 
