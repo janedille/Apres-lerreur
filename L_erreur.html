@@ -232,7 +232,7 @@ Tu considères la dernière phrase quelques instants, avant de l&#39;effacer à 
 
 (if: $tel &lt; 1) [Attends, attends, attends.
 
-Son retour te réveille à moitié. Dans la conscience encore embrumée par le soleil auquel on l&#39;a arrachée, un début de rêve se confond avec un souvenir. Ici, c&#39;est l&#39;image du chien de ton enfance qui attend dans la voiture quand ta mère vous traînait tous deux au supermarché, et d&#39;une poignée de mégots flottants dans la gamelle d&#39;eau que vous lui laissiez, les jours de canicule. Il les renifle mais n&#39;y touche pas, malgré la chaleur, malgré l&#39;attente, malgré son regard triste et tiède qu&#39;il fixe sur toi et que tu sens sur ta nuqe même derrière les murs des grands magasins.  Sous l&#39;air climatisé ou sous la nuit froide et sombre, toujours, toujours ce regard triste et tiède. ]
+Son retour te réveille à moitié. Dans la conscience encore embrumée par le soleil auquel on l&#39;a arrachée, un début de rêve se confond avec un souvenir. Ici, c&#39;est l&#39;image du chien de ton enfance qui attend dans la voiture quand ta mère vous traînait tous deux au supermarché, et d&#39;une poignée de mégots flottants dans la gamelle d&#39;eau que vous lui laissiez, les jours de canicule. Il les renifle mais n&#39;y touche pas, malgré la chaleur, malgré l&#39;attente, malgré son regard triste et tiède qu&#39;il fixe sur toi et que tu sens sur ta nuque même derrière les murs des grands magasins.  Sous l&#39;air climatisé ou sous la nuit froide et sombre, toujours, toujours ce regard triste et tiède. ]
 
 Même des années après.
 
@@ -560,9 +560,7 @@ Toi, c&#39;est Emma. Juste ça. Tout le reste a été perdu, il n&#39;y a plus q
 
 Tu dois sortir d&#39;ici. 
 
-(if: $f1 &gt; 0)[Tu dois //vraiment// sortir d&#39;ici.
-
-](if: $f2 &gt; 0)[Tu dois aider Noah.
+(if: $f2 &gt; 0)[Tu dois aider Noah.
 
 ](if: $f3 &gt; 0)[Tu dois sauver ta peau.
 
@@ -576,7 +574,7 @@ Tu dois sortir d&#39;ici.
 
 ](if: $f8 &gt; 0)[Tu dois comprendre pourquoi elle a fait tout ça.
 
-](if: $f9 &gt; 0)[Tu dois sortir d&#39;ici.
+](if: $f9 &gt; 0)[Tu dois //vraiment// sortir d&#39;ici.
 
 ](if: $f10 &gt; 0)[TU DOIS SORTIR D&#39;ICI.]
 (pour t&#39;aider, une dernière certitude, et c&#39;est tout ce qui compte, alors écoute bien, retiens-la, c&#39;est la seule chose encore importante, c&#39;est le seul moyen de gagner :
@@ -1486,16 +1484,6 @@ Quelque chose que tu ne préfères pas voir.
 
 [[Tu fermes juste les yeux.]]</tw-passagedata><tw-passagedata pid="152" name="Cours vers elle." tags="" position="3275,1050" size="100,100">Cours vers Noah qui se tient au milieu du chemin, devant le mur de feuillages que tu hésitais à traverser un instant plus tôt, les bras croisés, l&#39;air indescriptible. En colère. Épuisée. Si, si triste. Juste soulagée de te voir.
 
-&lt;style&gt; img {
-max-width:100%;
-max-height:100%;
-}
-
-&lt;/style&gt;
-&lt;img
-src=&gt;
-&lt;/div&gt;
-
 Tu ne réfléchis pas plus.
 
 [[Jette-toi dans ses bras.]] </tw-passagedata><tw-passagedata pid="153" name="Jette-toi dans ses bras." tags="" position="3150,1050" size="100,100">Elle se raidit un instant, mais ne recule pas, et te serre bientôt contre elle, elle aussi.
@@ -1628,7 +1616,7 @@ Heureusement que Noah s&#39;est faite de silence. Peut-être pour toujours.
 
 [[Lorsque tu t&#39;endors, tu rêves à une vie où tu parles enfin la même langue que tout le monde.]]</tw-passagedata><tw-passagedata pid="169" name="Vas-y." tags="" position="3550,3525" size="100,100">Tu obéis et va t&#39;asseoir à la table, sur un des bancs inconfortables qui semble presque plier sous ton poids. À quelques mètres derrière toi, il y a un cabanon qui accueille probablement une cabine de toilettes, seul édifice de toute la place, qui ne mérite peut-être même plus d&#39;être nommée aire d&#39;autoroute. Un seul néon clignote sur une de ses faces et t&#39;éclaire d&#39;une lumière blanche et froide, désagréable.
 
-Tu mets les mains dans tes poches en frissonnant. Sursautes d&#39;un coup lorsque tu y trouves une (text-colour: #c0c195)[cigarette](if: $briquet &gt; 0)[et un (text-colour: #ab7875)[briquet]]. Tu fronces les sourcils. Comment est-ce arrivé là ? Ce n&#39;est pas toi qui fumes. Ce n&#39;est pas toi qui gardes toujours paquet, (text-colour: #ab7875)[briquet] dans la poche intérieure de ta veste (près du cœur). Est-ce que c&#39;est ça que Noah cherche ? Mais la (text-colour: #c0c195)[cigarette] est déjà à moitié entamée. Elle ne fumait pas pendant le trajet, non ?
+Tu mets les mains dans tes poches en frissonnant. Sursautes d&#39;un coup lorsque tu y trouves une (text-colour: #c0c195)[cigarette](if: $briquet &gt; 0)[ et un (text-colour: #ab7875)[briquet]]. Tu fronces les sourcils. Comment est-ce arrivé là ? Ce n&#39;est pas toi qui fumes. Ce n&#39;est pas toi qui gardes toujours paquet, (text-colour: #ab7875)[briquet] dans la poche intérieure de ta veste (près du cœur). Est-ce que c&#39;est ça que Noah cherche ? Mais la (text-colour: #c0c195)[cigarette] est déjà à moitié entamée. Elle ne fumait pas pendant le trajet, non ?
 Ou peut-être que tu as juste oublié. Tu as sommeil. Tu as tellement sommeil, et ta mémoire fait des choses étranges depuis, depuis la chose d&#39;avant. Tu as sûrement oublié.
 
 Tu t&#39;étires vers la voiture, essaie d&#39;apercevoir une ombre, une silhouette, n&#39;importe quoi qui troublerait un peu la lumière des phares. Mais rien. 
@@ -1849,25 +1837,26 @@ Reste avec (text-style:&quot;blur&quot;)[moi].
 [[(mais tu veux juste être tranquille.)]]
 ]</tw-passagedata><tw-passagedata pid="203" name="(mais tu veux juste être tranquille.)" tags="" position="2450,1925" size="100,100">(enchant: ?page, (background: white))[(text-style:&quot;blur&quot;)[Je] sais. (text-style:&quot;blur&quot;)[Je] suis désolée.
 
-[[(qu&#39;est-ce qu&#39;on fait, alors ?)]]
-]</tw-passagedata><tw-passagedata pid="204" name="(qu&#39;est-ce qu&#39;on fait, alors ?)" tags="" position="2575,2000" size="100,100">(enchant: ?page, (background: white))[(text-style:&quot;blur&quot;)[Je] ne suis pas sûre. Attendre ?
+[[(et tu as oublié pourquoi tu es là, aussi.)]]
+]</tw-passagedata><tw-passagedata pid="204" name="(qu&#39;est-ce qu&#39;on fait maintenant, alors ?)" tags="" position="2575,2125" size="100,100">(enchant: ?page, (background: white))[(text-style:&quot;blur&quot;)[Je] ne suis pas sûre. Attendre ?
+
 
 
 
 
 [[(raconte-moi une histoire.)]]
-]</tw-passagedata><tw-passagedata pid="205" name="(raconte-moi une histoire.)" tags="" position="2450,2050" size="100,100">(enchant: ?page, (background: white))[(text-style:&quot;blur&quot;)[Je] ne suis pas sûre. (text-style:&quot;blur&quot;)[J&#39;]en connais une seule, et ce n&#39;est pas une belle histoire. C&#39;est quelque chose sur la solitdue et la peur. Et des mauvais choix qu&#39;on fait pour essayer d&#39;y échapper. Et des cauchemars qu&#39;on finit par préférer à la réalité parce qu&#39;ils sont plus faciles à comprendre.
+]</tw-passagedata><tw-passagedata pid="205" name="(raconte-moi une histoire.)" tags="" position="2450,2175" size="100,100">(enchant: ?page, (background: white))[(text-style:&quot;blur&quot;)[Je] ne suis pas sûre. (text-style:&quot;blur&quot;)[J&#39;]en connais une seule, et ce n&#39;est pas une belle histoire. C&#39;est quelque chose sur la solitdue et la peur. Et des mauvais choix qu&#39;on fait pour essayer d&#39;y échapper. Et des cauchemars qu&#39;on finit par préférer à la réalité parce qu&#39;ils sont plus faciles à comprendre.
 
 [[(tu connais déjà cette histoire.)]]
-]</tw-passagedata><tw-passagedata pid="206" name="(tu connais déjà cette histoire.)" tags="" position="2575,2150" size="100,100">(enchant: ?page, (background: white))[(text-style:&quot;blur&quot;)[Je] sais. (text-style:&quot;blur&quot;)[Je] te la raconte depuis le début du voyage.
+]</tw-passagedata><tw-passagedata pid="206" name="(tu connais déjà cette histoire.)" tags="" position="2575,2250" size="100,100">(enchant: ?page, (background: white))[(text-style:&quot;blur&quot;)[Je] sais. (text-style:&quot;blur&quot;)[Je] te la raconte depuis le début du voyage.
 
 Tu as compris, n&#39;est-ce pas ? Que c&#39;est là-dedans que tu es. Que tu ne sais plus quoi faire de toi et de tes pensées et de tes mains alors tu t&#39;es enchaînée à quelque chose qui n&#39;implique rien de tout ça. Une pause le long de la grande autoroute. Une sorte de rêve. Une cage en château de sable. 
 
 [[(la marée arrive bientôt.)]]
-]</tw-passagedata><tw-passagedata pid="207" name="(la marée arrive bientôt.)" tags="" position="2450,2200" size="100,100">(enchant: ?page, (background: white))[Oui. Tu es prête à te remettre à nager ?
+]</tw-passagedata><tw-passagedata pid="207" name="(la marée arrive bientôt.)" tags="" position="2450,2300" size="100,100">(enchant: ?page, (background: white))[Oui. Tu es prête à te remettre à nager ?
 
 [[(cette question est pour la forme. personne n&#39;a vraiment le choix.)]]
-]</tw-passagedata><tw-passagedata pid="208" name="(cette question est pour la forme. personne n&#39;a vraiment le choix.)" tags="" position="2575,2300" size="100,100">(enchant: ?page, (background: white))[(text-style:&quot;blur&quot;)[Je] peux t&#39;en proposer un autre, par contre.
+]</tw-passagedata><tw-passagedata pid="208" name="(cette question est pour la forme. personne n&#39;a vraiment le choix.)" tags="" position="2575,2375" size="100,100">(enchant: ?page, (background: white))[(text-style:&quot;blur&quot;)[Je] peux t&#39;en proposer un autre, par contre.
 
 Oui, même depuis ici. Pour de vrai. On ne peut pas faire grand-chose, encore une fois ta cage est en sable et le monde est de terre et de béton, mais (text-style:&quot;blur&quot;)[je] crois que tu ne l&#39;as pas construite pour rien. Même s&#39;il faudra sortir tôt ou tard.
 
@@ -1878,6 +1867,7 @@ Oui, même depuis ici. Pour de vrai. On ne peut pas faire grand-chose, encore un
 (text-style:&quot;blur&quot;)[Je] te demande quand même, donc. Un petit choix qui ne change rien, ou oh, si peu, mais un choix quand même. 
 
 Alors, qu&#39;est-ce que tu veux, Emma ? Qu&#39;est-ce que tu veux plus que tout ?
+
 
 
 
@@ -2029,7 +2019,17 @@ Parce que tout est derrière vous, à présent. Parce que tu n&#39;as rien pu em
 
 (text-colour:red) [Il ne te reste plus que Noah. 
 
-[[Ne la quitte pas des yeux.]] )]</tw-passagedata></tw-storydata>
+[[Ne la quitte pas des yeux.]] )]</tw-passagedata><tw-passagedata pid="226" name="(et tu as oublié pourquoi tu es là, aussi.)" tags="" position="2575,2000" size="100,100">(enchant: ?page, (background: white))[(text-style:&quot;blur&quot;)[Moi], tu veux dire ?
+
+[[(tu ne sais plus dire ce mot. mais oui.)]]
+]</tw-passagedata><tw-passagedata pid="227" name="(tu ne sais plus dire ce mot. mais oui.)" tags="" position="2450,2050" size="100,100">(enchant: ?page, (background: white))[Dison que toi toute seule, ce n&#39;était plus suffisant. Après ce qui s&#39;est passé.
+
+Ou bien tu étais trop fatiguée. Et tu as préféré laisser quelqu&#39;un d&#39;autre te dire quoi faire, au moins pour un moment. 
+
+Tu n&#39;avais juste pas prévu que ce quelqu&#39;un d&#39;autre... bloque un peu les choses. C&#39;est (text-style:&quot;blur&quot;)[ma] faute, ça, (text-style:&quot;blur&quot;)[je] suis mauvaise avec le temps. Désolée encore.
+
+[[(qu&#39;est-ce qu&#39;on fait maintenant, alors ?)]]
+]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
