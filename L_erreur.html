@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play L&#39;erreur.</tw-noscript></noscript></tw-story>
-<tw-storydata name="L&#39;erreur" startnode="1" creator="Twine" creator-version="2.9.2" format="Harlowe" format-version="3.3.9" ifid="06C577F0-0738-40D0-BBC9-C89DB4F4C76E" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+<tw-storydata name="L&#39;erreur" startnode="1" creator="Twine" creator-version="2.9.2" format="Harlowe" format-version="3.3.9" ifid="06C577F0-0738-40D0-BBC9-C89DB4F4C76E" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
   background-color: #131721;
 }
 
@@ -45,10 +45,10 @@ tw-passage[tags~="finFIN"]
 {
   color: #131721;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="fin" color="blue"></tw-tag><tw-tag name="obja" color="yellow"></tw-tag><tw-tag name="objr" color="red"></tw-tag><tw-tag name="finfinalejsp" color="purple"></tw-tag><tw-tag name="avant" color="orange"></tw-tag><tw-tag name="déblocerreur" color="green"></tw-tag><tw-tag name="wip" color="purple"></tw-tag><tw-tag name="varfin" color="orange"></tw-tag><tw-tag name="finFIN" color="none"></tw-tag><tw-passagedata pid="1" name="(après l&#39;erreur.)" tags="pagedetitre" position="2350,3600" size="100,100">(if:$erreur &lt; 1)[
-[[commencer]]
+[[Commencer.]]
 ]
 
-(if:$erreur &gt; 0)[ [[recommencer]] ]
+(if:$erreur &gt; 0)[ [[Recommencer.]] ]
 
 (if: $res &gt; 0)[ [[finir]] ]
 
@@ -68,8 +68,15 @@ tw-passage[tags~="finFIN"]
 </tw-passagedata><tw-passagedata pid="2" name="Ne la quitte pas des yeux." tags="" position="3125,3575" size="100,200">Noah s&#39;arrête un peu avant quatre heures du matin.
 
 Tu ne t&#39;étais pas rendue compte que tu somnolais mais le silence qui remplace brutalement le ronronnement du moteur t&#39;arrache du lent enfoncement dans ton siège, et tes yeux papillonnent quelques secondes. Par la fenêtre constellée de crasse, la lumière des néons. Tu t&#39;étires et tu vois : une aire d&#39;autoroute, le clignotement d&#39;un insigne publicitaire coloré, deux rangées de tables et de bancs pourrissants que tu scrutes avec inquiétude, à la recherche d&#39;une silhouette, avant que la honte ne te prenne (bien sûr qu&#39;il n&#39;y a personne, tu as vu l&#39;heure, c&#39;était stupide de même se poser la question). 
+	(if: $erreur &lt; 5) [
+[[Sursaute lorsqu&#39;elle fait claquer la portière derrière elle.]] ]
+	(else:)[
+Tu sursautes lorsqu&#39;elle fait claquer la portière derrière elle.
 
-[[Sursaute lorsqu&#39;elle fait claquer la portière derrière elle.]]</tw-passagedata><tw-passagedata pid="3" name="Sursaute lorsqu&#39;elle fait claquer la portière derrière elle." tags="" position="3750,3575" size="100,200">— Noah ? Noah, tu es sûre que...
+[[&quot;Noah !&quot;]]
+
+[[Inspire. Observe-la partir.]]
+]</tw-passagedata><tw-passagedata pid="3" name="Sursaute lorsqu&#39;elle fait claquer la portière derrière elle." tags="" position="3750,3575" size="100,200">— Noah ? Noah, tu es sûre que...
 
 Les mots restent bloqués un instant dans ta gorge. La honte grandit. Le temps que tu penses à trouver quelque chose à dire, elle s&#39;est déjà éloignée à grands pas, forme poussérieuse qui rétrécit derrière les vitres.
 
@@ -160,7 +167,8 @@ Mais il est trop tard. Il est trop tard pour changer quoi que ce soit, après...
 [[(après l&#39;erreur.)]]
 
 (set: $erreur to $erreur +1)
-]</tw-passagedata><tw-passagedata pid="10" name="Écris : &quot;On est en route vers la frontière.&quot;" tags="" position="3775,4125" size="100,100">Tu effaces.
+
+(set: $f1 to 1)]</tw-passagedata><tw-passagedata pid="10" name="Écris : &quot;On est en route vers la frontière.&quot;" tags="" position="3775,4125" size="100,100">Tu effaces.
 
 [[Écris : &quot;Elle est en route vers la frontière.&quot;]]</tw-passagedata><tw-passagedata pid="11" name="Écris : &quot;Elle est en route vers la frontière.&quot;" tags="" position="3900,4150" size="100,100">&quot;Elle est en route vers la frontière. Elle veut traverser pour rejoindre l&#39;Italie, mais si vous vous dépêchez, vous arriverez encore à la rattraper.&quot;
 
@@ -218,22 +226,13 @@ Tu considères la dernière phrase quelques instants, avant de l&#39;effacer à 
 
 (set: $message to $message + 1)
 </tw-passagedata><tw-passagedata pid="15" name="Attends qu&#39;elle revienne." tags="fin" position="3725,4550" size="100,100">(enchant: ?page, (background: (gradient:180, 0,#1e2433, 0.5,#1e2433, 1,#ffffff)))[(if: $tel &gt; 0) [Quand Noah revient, tu fais semblant de dormir. Elle redémarre vite, et dans les heures qui suivent le hurlement de l&#39;autoroute ne suffit pas à faire taire les pensées qui mordent à ta poitrine. Qu&#39;est-ce que tu as fait, Emma. Qu&#39;est-ce que tu as fait. Mais c&#39;est trop tard. On ne sort pas les balles du torse d&#39;un corps, et on n&#39;efface pas des mots après les avoir prononcés, écrits, transmis. C&#39;est trop tard, et ça fait probablement un bon moment que c&#39;est trop tard. Si seulement...
+
+(set: $f3 to 1)
 ]
 
 (if: $tel &lt; 1) [Attends, attends, attends.
 
-Son retour te réveille à moitié. Dans la conscience encore embrumée par le soleil auquel on l&#39;a arrachée, un début de rêve se confond avec un souvenir. Ici, c&#39;est l&#39;image du chien de ton enfance qui attend dans la voiture quand ta mère vous traînait tous deux au supermarché, et d&#39;une poignée de mégots flottants dans la gamelle d&#39;eau que vous lui laissiez, les jours de canicule. Il les renifle mais n&#39;y touche pas, malgré la chaleur, malgré l&#39;attente, malgré son regard triste et tiède qu&#39;il fixe sur toi et que tu sens sur ta nuqe même derrière les murs des grands magasins.  Sous l&#39;air climatisé ou sous la nuit froide et sombre, toujours, toujours ce regard triste et tiède. 
-
-&lt;style&gt; img {
-max-width:100%;
-max-height:100%;
-}
-
-&lt;/style&gt;
-&lt;img
-src=https://static.wixstatic.com/media/559f19_ac734e5cc9074b1db9e871333293dd9e~mv2.jpg&gt;
-&lt;/div&gt;
-]
+Son retour te réveille à moitié. Dans la conscience encore embrumée par le soleil auquel on l&#39;a arrachée, un début de rêve se confond avec un souvenir. Ici, c&#39;est l&#39;image du chien de ton enfance qui attend dans la voiture quand ta mère vous traînait tous deux au supermarché, et d&#39;une poignée de mégots flottants dans la gamelle d&#39;eau que vous lui laissiez, les jours de canicule. Il les renifle mais n&#39;y touche pas, malgré la chaleur, malgré l&#39;attente, malgré son regard triste et tiède qu&#39;il fixe sur toi et que tu sens sur ta nuqe même derrière les murs des grands magasins.  Sous l&#39;air climatisé ou sous la nuit froide et sombre, toujours, toujours ce regard triste et tiède. ]
 
 Même des années après.
 
@@ -244,52 +243,13 @@ Même des années après.
 (set: $nbriquet to 0)
 
 (set: $tel to 0)
-]</tw-passagedata><tw-passagedata pid="16" name="commencer" tags="" position="2650,3575" size="100,100">Nuit. Trois heures après l&#39;erreur : vous avez assez roulé pour que tes mains arrêtent de trembler, la terreur et l&#39;adrénaline comme semées sur la route. Ce qui veut dire qu&#39;il y a toujours cette trace de goudron qui te relie à la chose, dans la ville, et quand tu fermes les yeux tu peux sentir le souvenir se rapprocher pas à pas ; mais pour l&#39;instant, ce n&#39;est plus là. Vous avez encore du temps et tu te sens terriblement légère. 
 
-Parce que tout est derrière vous, à présent. Parce que tu n&#39;as rien pu emporter. Rien, rien que cette certitude (et c&#39;est tout ce qui compte, alors écoute bien, et retiens-la, c&#39;est la seule chose encore importante, c&#39;est la seule chose que tu peux encore faire) :
+(set: $f4 to 1)
+]</tw-passagedata><tw-passagedata pid="16" name="Essaie." tags="" position="4800,4325" size="100,100">Tu essaies.
 
-(text-colour:red) [Il ne te reste plus que Noah. 
+[[tu commets une autre erreur]]</tw-passagedata><tw-passagedata pid="17" name="Retiens-toi." tags="" position="4950,4225" size="100,100">Elle te regarde toujours sans rien dire, toujours en souriant, toujours cette nouvelle lueur du bout de mégot dans ses yeux. 
 
-[[Ne la quitte pas des yeux.]] ]</tw-passagedata><tw-passagedata pid="17" name="&quot;C&#39;est pas une bonne idée, Noah.&quot;" tags="" position="2600,4550" size="100,100">Tu crois la voir plisser des yeux. Elle demande, lentement, en posant les mots avec soin :
-
-— Qu&#39;est-ce que tu racontes ? 
-
-Tu regrettes déjà. 
-
-[[&quot;Sortir, maintenant, ce n&#39;est peut-être pas... le plus intelligent. C&#39;est tout.&quot;]]
-
-[[&quot;Rien. Rien, oublie, Noah, je voulais juste...]]
-</tw-passagedata><tw-passagedata pid="18" name="&quot;Ne me laisse pas ici.&quot;" tags="" position="2725,4550" size="100,100">Elle répète : 
-
-- Je vais revenir. Je ne pars nulle part. Enfin, pas loin.
-
-Mais elle ne se lève pas. 
-
-Ta main est toujours posée - juste posée, ta prise s&#39;est déjà désserrée - dans le creux de son coude.
-
-[[Insiste.]]</tw-passagedata><tw-passagedata pid="19" name="&quot;...&quot;" tags="" position="2425,4675" size="100,100">Tu ne sais pas quoi dire. Peut-être la peur, peut-être le sommeil, tu héstes, balbuties à mi-voix : 
-
-- Il pourrait... des gens... Je sais pas, juste - ce ne serait pas mieux de juste rester ?
-
-- Tu vois bien qu&#39;il n&#39;y a personne. 
-
-Elle s&#39;est faite impatiente, a déjà sorti le paquet de cigarettes, à présent dans sa main.</tw-passagedata><tw-passagedata pid="20" name="&quot;Rien. Rien, oublie, Noah, je voulais juste..." tags="" position="2625,4725" size="100,100">—Si tu as un problème, autant le dire tout de suite.
-
-— Il n&#39;y a pas de –
-
-— Vraiment ? se moque-t-elle. Elle dégage presque avec violence son bras que tu tenais toujours, se tortille sur son siège pour mieux te faire face. «Tu m&#39;as aidée à cacher un corps et maintenant tu me fais la morale pour des cigarettes ? Non, moi je pense que tu as un sérieux problème, Emma.»
-
-— Ce ne sont pas juste les... 
-
-— Bien sûr que c&#39;est pas juste ça. C&#39;est jamais juste ça avec toi, parce que t&#39;as pas le courage de dire clairement ce que tu penses et que le moindre truc est noyé par un million de phrases pas finies. Et j&#39;en ai marre, j&#39;en ai marre de devoir décoder ça ou essayer de lire dans tes pensées, et si juste une fois tu pouvais me faire le plaisir de me répondre ça me ferait au moins une réussite dans cette journée de merde. Alors, par pitié, parle-moi, Em&#39; : c&#39;est quoi ton putain de problème ?
-
-Silence. 
-
-[[Tu sais très bien que tu ne pourras jamais lui dire.</tw-passagedata><tw-passagedata pid="21" name="&quot;Sortir, maintenant, ce n&#39;est peut-être pas... le plus intelligent. C&#39;est tout.&quot;" tags="" position="2500,4825" size="100,100"></tw-passagedata><tw-passagedata pid="22" name="Insiste." tags="" position="2875,4750" size="100,100"></tw-passagedata><tw-passagedata pid="23" name="Essaie." tags="" position="4800,4325" size="100,100">Tu essaies.
-
-[[tu commets une autre erreur]]</tw-passagedata><tw-passagedata pid="24" name="Retiens-toi." tags="" position="4950,4225" size="100,100">Elle te regarde toujours sans rien dire, toujours en souriant, toujours cette nouvelle lueur du bout de mégot dans ses yeux. 
-
-[[Retiens-toi retiens-toi retiens-toi]]</tw-passagedata><tw-passagedata pid="25" name="tu commets une autre erreur" tags="fin obja" position="4900,4500" size="100,100">(enchant: ?page, (background: (gradient:180, 0,#1e2433, 0.8,#1e2433, 1,#ffffff)))[(pas la première de cette nuit. Ça t&#39;amuse, on dirait, est-ce que tu les collectionnes ?)
+[[Retiens-toi retiens-toi retiens-toi]]</tw-passagedata><tw-passagedata pid="18" name="tu commets une autre erreur" tags="fin obja" position="4900,4500" size="100,100">(enchant: ?page, (background: (gradient:180, 0,#1e2433, 0.8,#1e2433, 1,#ffffff)))[(pas la première de cette nuit. Ça t&#39;amuse, on dirait, est-ce que tu les collectionnes ?)
 
 Noah se recule plus brutalement que ce à quoi tu t&#39;attendais et toi, penchée en avant, dois te rattraper à la table pour ne pas tomber. La cigarette que tu as cueillie de ses lèvres chauffe déjà le bout de tes doigts mais tu le remarques à peine parce que l&#39;effleurement, le contact manqué de la peau de Noah brûle chaque parcelle de ton corps. Tu ne lèves pas les yeux. Si tu voyais comment elle te regarde en ce moment précis, tu mourrais probablement sur le coup, tu le sais. 
 
@@ -306,9 +266,20 @@ Lorsque tu refermes la portière sur toi, tu te demandes si tu auras le courage 
 (set: $erreur to $erreur + 1)
 
 (set: $cigarette to 1)
-]</tw-passagedata><tw-passagedata pid="26" name="Retiens-toi retiens-toi retiens-toi" tags="" position="5025,4375" size="100,100">Et pourtant,
 
-[[tu commets une autre erreur]]</tw-passagedata><tw-passagedata pid="27" name="Envoie le message." tags="varfin" position="3825,4425" size="100,100">Tu te sens très fatiguée, soudain. Pas soulagée du tout, alors que tu as fait ce qu&#39;il fallait faire, non ? Tu as été raisonnable ? Tu as peut-être fait le seul choix qui pouvait encore t&#39;assurer une fin pas complètement malheureuse ?
+(set: $f2 to 1)]</tw-passagedata><tw-passagedata pid="19" name="Retiens-toi retiens-toi retiens-toi" tags="" position="5025,4375" size="100,100">Et pourtant,
+
+[[tu commets une autre erreur]]</tw-passagedata><tw-passagedata pid="20" name="Envoie le message." tags="varfin" position="3825,4425" size="100,100">Tu te sens très fatiguée, soudain. Pas soulagée du tout, alors que tu as fait ce qu&#39;il fallait faire, non ? Tu as été raisonnable ? Tu as peut-être fait le seul choix qui pouvait encore t&#39;assurer une fin pas complètement malheureuse ?
+
+&lt;style&gt; img {
+max-width:100%;
+max-height:100%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://static.wixstatic.com/media/559f19_945cee4ef57e44d28de2372f261ab42d~mv2.png/v1/fill/w_489,h_390,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/true1.png&gt;
+&lt;/div&gt;
 
 Mais non. Tu te sens aussi misérable que lorsque tu étais en train de traîner un cadavre par les pieds. Tu crois que tu comprends pourquoi : malgré ce que tu viens de faire, malgré ce sursaut de, quoi, tentative de survie ?, tu sais bien que c&#39;est foutu. Que tu ne retourneras pas à quoi que ce soit qui en vaut la peine avant très, très longtemps. Peut-être jamais.
 
@@ -316,7 +287,7 @@ Tu t&#39;enfonces dans ton siège, soupire. Et qu&#39;est-ce qu&#39;elle fait, N
 
 [[Sors toi aussi.]]
 
-À quoi bon ?
+(à quoi bon ?)
 
 [[Attends qu&#39;elle revienne.]]
 
@@ -326,13 +297,13 @@ Tu t&#39;enfonces dans ton siège, soupire. Et qu&#39;est-ce qu&#39;elle fait, N
 
 (set:$nbriquet to 1)
 
-(set: $fintrue to $fintrue + 1)</tw-passagedata><tw-passagedata pid="28" name="Cours pour retrouver Noah plus vite." tags="" position="3875,2900" size="100,100">Malgré l&#39;obscurité, tu trottines sur le gravier, sans regarder où tu poses les pieds, trop occupée à scruter les alentours à la recherche de Noah. Tu l&#39;aperçois rapidement, ou en tout cas une forme sombre et isolée qui doit bien être elle.
+(set: $fintrue to $fintrue + 1)</tw-passagedata><tw-passagedata pid="21" name="Cours pour retrouver Noah plus vite." tags="" position="3875,2900" size="100,100">Malgré l&#39;obscurité, tu trottines sur le gravier, sans regarder où tu poses les pieds, trop occupée à scruter les alentours à la recherche de Noah. Tu l&#39;aperçois rapidement, ou en tout cas une forme sombre et isolée qui doit bien être elle.
 
 C&#39;est bien elle, non ?
 
 (if: $gun &lt; 1)[ [[Appelle-la.]]]
 
-(if: $gun &gt; 0)[ [[Rejoins-la en silence.]]]</tw-passagedata><tw-passagedata pid="29" name="Il fait nuit ; avance lentement." tags="" position="4325,2825" size="100,100">L&#39;air se déroule en ruban de vapeur derrière toi. Tes pas crissent bruyamment sur le gravier.
+(if: $gun &gt; 0)[ [[Rejoins-la en silence.]]]</tw-passagedata><tw-passagedata pid="22" name="Il fait nuit ; avance lentement." tags="" position="4325,2825" size="100,100">L&#39;air se déroule en ruban de vapeur derrière toi. Tes pas crissent bruyamment sur le gravier.
 
 Tout est silencieux, obscur, et Noah n&#39;est visible nulle part. Tu sens l&#39;inquiétude monter alors que tu avances, parcours la place constellée de tables de pique-nique, scrute la ligne des arbres qui marque la fin de l&#39;aire de repos. 
 
@@ -344,22 +315,7 @@ Tout est silencieux, obscur, et Noah n&#39;est visible nulle part. Tu sens l&#39
 (if: $message &gt; 0)[Tu n&#39;aurais pas dû traîner autant. Tu n&#39;aurais pas dû prendre tout ce temps pour... Tu n&#39;aurais pas dû. Mais c&#39;est fait. C&#39;est trop tard.
 
 [[Pars à sa recherche.]]
-]</tw-passagedata><tw-passagedata pid="30" name="imagess" tags="" position="975,2775" size="100,100">&lt;style&gt; img {
-max-width:100%;
-max-height:100%;
-}
-
-&lt;/style&gt;
-&lt;img
-src=&gt;
-&lt;/div&gt;
-
-
-tw-story[tags~=&quot;pagedetitre&quot;]
-{
- background-image:url(&quot;https://static.wixstatic.com/media/559f19_01ca89e0678e4e929fe9871b66fd6add~mv2.png/v1/fill/w_1277,h_751,al_c,q_90,enc_auto/559f19_01ca89e0678e4e929fe9871b66fd6add~mv2.png&quot;);
- background-size:cover;
-}</tw-passagedata><tw-passagedata pid="31" name="Inspire. Observe-la partir." tags="objr déblocerreur" position="3875,3375" size="100,100">jusqu&#39;à ce qu&#39;elle ait complètement disparu dans l&#39;obscurité, et puis tu baisses les yeux, rapidement. Quelque chose a attiré ton attention.
+]</tw-passagedata><tw-passagedata pid="23" name="Inspire. Observe-la partir." tags="objr déblocerreur" position="3875,3375" size="100,100">jusqu&#39;à ce qu&#39;elle ait complètement disparu dans l&#39;obscurité, et puis tu baisses les yeux, rapidement. Quelque chose a attiré ton attention.
 Entre tes doigts pâlis par le froid, tu tiens une (text-colour: #c0c195)[cigarette].
 
 Tu fronces les sourcils. Comment est-elle arrivée là ? Ce n&#39;est pas toi qui fumes. Ce n&#39;est pas toi qui gardes toujours paquet, briquet dans la poche intérieure de ta veste (près du cœur). 
@@ -379,7 +335,7 @@ Soupir.
 
 (if:$erreur &gt; 2)[
 [[Reste assise un moment.]]
-]</tw-passagedata><tw-passagedata pid="32" name="&quot;Noah, est-ce que... Est-ce que je peux te dire quelque chose ?&quot;" tags="finFIN" position="1600,3800" size="100,100">La boule est dans ta gorge. Ta voix tremble déjà. 
+]</tw-passagedata><tw-passagedata pid="24" name="&quot;Noah, est-ce que... Est-ce que je peux te dire quelque chose ?&quot;" tags="finFIN" position="1600,3800" size="100,100">La boule est dans ta gorge. Ta voix tremble déjà. 
 
 Noah se tourne à moitié vers toi, garde un œil sur la route. 
 
@@ -393,7 +349,7 @@ Tu te souviens encore avoir vu l&#39;aire d&#39;autoroute disparaître derrière
 
 Et même si la fin vous attends dès le prochain lever du soleil, elle n&#39;est pas encore là. Mais toi tu l&#39;es, tu es là, et Noah aussi, alors, alors, reste ici encore un peu, pour voir, ou juste pour quelques secondes de plus passées ensemble. Juste ça. Parce qu&#39;il vous reste encore tellement, tant que l&#39;autre est là. 
 
-[[Alors tu ne te soucies plus du reste.]]</tw-passagedata><tw-passagedata pid="33" name="Après, l&#39;erreur." tags="pagedetitre" position="700,3200" size="100,100">[[commencer]]</tw-passagedata><tw-passagedata pid="34" name="Sors toi aussi." tags="" position="3950,3075" size="100,100">Tu restes quelques instants debout, dans l&#39;air froid et sombre. La (text-colour: #c0c195)[cigarette] dans ta main semble étrangement lourde.
+[[Alors tu ne te soucies plus du reste.]]</tw-passagedata><tw-passagedata pid="25" name="Sors toi aussi." tags="" position="3950,3075" size="100,100">Tu restes quelques instants debout, dans l&#39;air froid et sombre. La (text-colour: #c0c195)[cigarette] dans ta main semble étrangement lourde.
 
 Tu traverses le terrain de l&#39;aire d&#39;autoroute en croisant les bras pour te tenir chaud. (if:$nbriquet &gt; 0)[Après quelques pas, tu te rends compte que tu as oublié le briquet dans la voiture. Tu marmonnes un juron, mais tu ne fais pas demi-tour. Tant pis. Vous ne devriez pas trop traîner ici, de toute façon.] (if:$briquet &gt; 0)[Après quelques pas, tu enfonces tes mains dans les poches de ta veste.
 
@@ -407,16 +363,21 @@ Parce que quelque chose en toi te dis que tu préférerais ne pas savoir. C&#39;
 
 [[Cours pour retrouver Noah plus vite.]]
 
-[[Il fait nuit ; avance lentement.]]</tw-passagedata><tw-passagedata pid="35" name="avant l&#39;erreur" tags="avant" position="450,3275" size="100,100">Jsp séquence flash-back (option de faire des choses différentes dans le passé ? Mais aucune est concluante)
-
-Tu prends une décision, à ce moment-là, et ce sera la seule chose qui comptera pour un bon moment (plusieurs années, peut-être toujours). Une résolution, imprimée dans ton esprit comme l&#39;instruction à une machine dont c&#39;est la seule raison d&#39;être, une promesse qui ne se brisera que dans le sang, un ordre, enfin :
-
-(text-colour:yellow)[
-[[Ne la quitte jamais, jamais des yeux.]]]</tw-passagedata><tw-passagedata pid="36" name="Ne la quitte jamais, jamais des yeux." tags="avant" position="575,3225" size="100,100">[[Après, l&#39;erreur.]]</tw-passagedata><tw-passagedata pid="37" name="Garde les yeux fixés sur la lum- sur elle." tags="varfin" position="2525,3300" size="100,100">- Qu&#39;est-ce qu&#39;il y a, Emma ? 
+[[Il fait nuit ; avance lentement.]]</tw-passagedata><tw-passagedata pid="26" name="Garde les yeux fixés sur la lum- sur elle." tags="varfin" position="2525,3300" size="100,100">- Qu&#39;est-ce qu&#39;il y a, Emma ? 
 
 Sa voix vient de très loin. Sa voix vient de la lumière blanche. Tu essaies de n&#39;avoir l&#39;air de rien. Tu essaies de te laisser illuminer aussi.
 
 Parce que tu ne sais plus quoi faire, tu supposes. Parce que Noah t&#39;a embrassée et que tu sens encore l&#39;impression de ses lèvres un peu abîmées et que tu as encore l&#39;odeur de nicotine dans le nez et que tu devrais heureuse, tu devrais avoir envie de rester là pour toujours, mais
+
+&lt;style&gt; img {
+max-width:100%;
+max-height:100%;
+}
+
+&lt;/style&gt;
+&lt;img
+src= https://static.wixstatic.com/media/559f19_195160cbcf0b4d07af488de6300830c6~mv2.png/v1/fill/w_313,h_419,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/559f19_195160cbcf0b4d07af488de6300830c6~mv2.png&gt;
+&lt;/div&gt;
 
 quelque chose ne va pas
 
@@ -424,7 +385,7 @@ et tu as soudain la nausée. Et la (text-colour: #c0c195)[cigarette] est de nouv
 
 [[concentre-toi]]
 
-(set: $finbb to $finbb + 1)</tw-passagedata><tw-passagedata pid="38" name="Détourne le regard." tags="" position="2350,3125" size="100,100">Tu ne peux plus la regarder en face.
+(set: $finbb to $finbb + 1)</tw-passagedata><tw-passagedata pid="27" name="Détourne le regard." tags="" position="2350,3125" size="100,100">Tu ne peux plus la regarder en face.
 
 - Qu&#39;est-ce que tu //as fait// ?
 
@@ -434,7 +395,7 @@ Il y a quelque chose de ça. Elle recule et la lumière la suit. Elle te regarde
 
 oh, ça suffit.
 
-[[Il est trop tard.]]</tw-passagedata><tw-passagedata pid="39" name="Survis." tags="" position="3125,3725" size="100,100">Noah s&#39;arrête un peu avant quatre heures du matin.
+[[Il est trop tard.]]</tw-passagedata><tw-passagedata pid="28" name="Survis." tags="" position="3125,3800" size="100,100">Noah s&#39;arrête un peu avant quatre heures du matin.
 
 Tu ne t&#39;étais pas rendue compte que tu somnolais mais le silence qui remplace brutalement le ronronnement du moteur t&#39;arrache du lent enfoncement dans ton siège, et tes yeux papillonnent quelques secondes. Par la fenêtre constellée de crasse, la lumière des néons. Tu t&#39;étires et tu vois : une aire d&#39;autoroute, le clignotement d&#39;un insigne publicitaire coloré, deux rangées de tables et de bancs pourrissants que tu scrutes avec inquiétude, à la recherche d&#39;une silhouette, avant que la honte ne te prenne (bien sûr qu&#39;il n&#39;y a personne, tu as vu l&#39;heure, c&#39;était stupide de même se poser la question). 
 	(if: $erreur &lt; 5) [
@@ -445,7 +406,7 @@ Tu sursautes lorsqu&#39;elle fait claquer la portière derrière elle.
 [[&quot;Noah !&quot;]]
 
 [[Inspire. Observe-la partir.]]
-]</tw-passagedata><tw-passagedata pid="40" name="Tu fermes juste les yeux." tags="fin" position="2275,1700" size="100,100">(enchant: ?page, (background: (gradient:180, 0,#1e2433, 0.5,#ffffff, 1,#ffffff)))[Ça prend plus de temps que ce que tu pensais.
+]</tw-passagedata><tw-passagedata pid="29" name="Tu fermes juste les yeux." tags="fin" position="2275,1700" size="100,100">(enchant: ?page, (background: (gradient:180, 0,#1e2433, 0.5,#ffffff, 1,#ffffff)))[Ça prend plus de temps que ce que tu pensais.
 
 
 
@@ -461,11 +422,11 @@ Assez pour te dire que tu aurais dû faire les choses différemment ?
 
 
 
-Assez pour te dire que tu aurais dû mieux te battre ? Te battre tout court ? Parce que c&#39;est de ça dont il s&#39;agit. Ne proteste pas, je l&#39;ai bien vu, Emma, tu n&#39;as fait aucun effort. Tu t&#39;es juste laissée emporter.
+Assez pour te dire que tu aurais dû mieux te battre ? Te battre tout court ? Parce que c&#39;est de ça dont il s&#39;agit. Ne proteste pas, (text-style:&quot;blur&quot;)[je] l&#39;ai bien vu, Emma, tu n&#39;as fait aucun effort. Tu t&#39;es juste laissée emporter.
 
 
 
-Et tant que tu reviens ici, tant que tu te retrouves face à (text-style:&quot;blur&quot;)[moi] de cette manière, je saurai qu&#39;(text-style:&quot;blur&quot;)[encore une fois], tu n&#39;as rien fait correctement. Et je te dirai qu&#39;il te reste encore tellement à apprendre.
+Et tant que tu reviens ici, tant que tu te retrouves face à (text-style:&quot;blur&quot;)[moi] de cette manière, (text-style:&quot;blur&quot;)[je] saurai qu&#39;(text-style:&quot;blur&quot;)[encore une fois], tu n&#39;as rien fait correctement. Et (text-style:&quot;blur&quot;)[je] te dirai qu&#39;il te reste encore tellement à apprendre.
 
 
 
@@ -481,7 +442,7 @@ Alors, est-ce que c&#39;est assez de temps, maintenant ? Assez pour te dire que 
 
 
 
-(parce que (text-style:&quot;blur&quot;)[je] suis là pour ça.)
+Parce que (text-style:&quot;blur&quot;)[je] suis là pour ça.
 
 
 
@@ -496,22 +457,20 @@ Aller. Voyons ce qu&#39;il y a après.
 [[(après l&#39;erreur.)]]
 
 (set: $erreur to $erreur +1)
-
-(set: $survie to 1)
-]</tw-passagedata><tw-passagedata pid="41" name="Tu fermes les yeux." tags="fin" position="2575,1700" size="100,100">(enchant: ?page, (background: (gradient:180, 0,#1e2433, 0.5,#1e2433, 1,#ffffff)))[Ça prend plus de temps que ce que tu pensais.
+]</tw-passagedata><tw-passagedata pid="30" name="Tu fermes les yeux." tags="fin" position="2575,1700" size="100,100">(enchant: ?page, (background: (gradient:180, 0,#1e2433, 1,#ffffff)))[Ça prend plus de temps que ce que tu pensais.
 
 Bien plus.
 
 Tu rouvres les yeux. Toujours rien. Toujours le monde disparu. C&#39;est juste toi, juste toi, toi et toi toute seule. 
 
 [[(referme-les.)]]
-]</tw-passagedata><tw-passagedata pid="42" name="Pars à sa recherche." tags="" position="4375,2450" size="100,100">Tu as vite fait le tour de la place de gravier. 
+]</tw-passagedata><tw-passagedata pid="31" name="Pars à sa recherche." tags="" position="4375,2450" size="100,100">Tu as vite fait le tour de la place de gravier. 
 
 Derrière toi, les phares sont restés allumés, et découpent la nuit entre la route et l&#39;aire. Tu arrives à distinguer, un peu sur la gauche, entre les ombres qui s&#39;interrompent, une sorte de construction en (if:$briquet &lt; 1)[béton](else:)[planches], un cabanon peut-être, ou un poste de surveillance de... quelque chose.
 
 [[Va jusqu&#39;au fond, la ligne des arbres.]]
 
-[[Dirige-toi vers le cabanon.]]</tw-passagedata><tw-passagedata pid="43" name="Dirige-toi vers le cabanon." tags="" position="4125,2475" size="100,100">(if: $gun &lt; 1)[C&#39;est à peine plus qu&#39;un cube de (if:$briquet &lt; 1)[béton] (else:)[bois] avec un toit de tôle incliné, dont la porte est presque invisible dans l&#39;obscurité. Il y a peut-être une petite fenêtre dans un des quatre murs, mais pour l&#39;instant tu ne la vois pas.
+[[Dirige-toi vers le cabanon.]]</tw-passagedata><tw-passagedata pid="32" name="Dirige-toi vers le cabanon." tags="" position="4125,2475" size="100,100">(if: $gun &lt; 1)[C&#39;est à peine plus qu&#39;un cube de (if:$briquet &lt; 1)[béton] (else:)[bois] avec un toit de tôle incliné, dont la porte est presque invisible dans l&#39;obscurité. Il y a peut-être une petite fenêtre dans un des quatre murs, mais pour l&#39;instant tu ne la vois pas.
 
 Pour la première fois depuis votre arrivée, tu remarques qu&#39;en-dehors de cet édifice et des quelques tables que tu as laissées derrière toi, il n&#39;y a vraiment rien ici. Pas de station-service, pas de petit magasin à l&#39;enseigne en néon, et tu doutes que le cabanon serve même de toilettes. 
 
@@ -529,29 +488,29 @@ Et le bruit de l&#39;autoroute qui semble avoir disparu. Ou peut-être que c&#39
 [[Ouvre doucement la porte.]]
 ]
 
-(set: $cab to 1)</tw-passagedata><tw-passagedata pid="44" name="Va jusqu&#39;au fond, la ligne des arbres." tags="" position="4275,1975" size="100,100">C&#39;est une sorte de brume feuillue, à peine illuminée par les phares, à cette distance - tu distingues principalement ton ombre qui découpe le sol devant toi, avance, avance, se fond enfin dans l&#39;obscurité dense. 
+(set: $cab to 1)</tw-passagedata><tw-passagedata pid="33" name="Va jusqu&#39;au fond, la ligne des arbres." tags="" position="4275,1975" size="100,100">C&#39;est une sorte de brume feuillue, à peine illuminée par les phares, à cette distance - tu distingues principalement ton ombre qui découpe le sol devant toi, avance, avance, se fond enfin dans l&#39;obscurité dense. 
 
 Tu t&#39;arrêtes juste devant la barrière qui sépare l&#39;aire de la forêt. Un grillage distordu qui t&#39;arrive à peine à la hanche. Tu passes une main distraite entre les carreaux de fer. Pas loin sur ta droite, tu penses que le grillage est déchiré, ou assez écrasé pour que tu puisses probablement passer par-dessus.
 
 [[Enjambe le grillage.]]
 
-(set: $foret to 1)</tw-passagedata><tw-passagedata pid="45" name="Enjambe le grillage." tags="" position="4125,1600" size="100,100">Tu t&#39;enfonces dans la forêt.
+(set: $foret to 1)</tw-passagedata><tw-passagedata pid="34" name="Enjambe le grillage." tags="" position="4125,1600" size="100,100">Tu t&#39;enfonces dans la forêt.
 
 Très vite, la nuit te dévores, couvre tes yeux d&#39;un voile d&#39;obscurité et de formes indéfinissables, fuyantes. Tu n&#39;es pas sûre si les craquements qui résonnent proviennent de tes propres pas ou d&#39;autre chose. Tu essaies de ne pas trop te poser la question.
 
 (if: $briquet &lt; 1)[ [[Avance à tâtons.]] ]
 
-(else:)[ [[Allume le briquet.]] ]</tw-passagedata><tw-passagedata pid="46" name="Reste assise un moment." tags="déblocerreur" position="3875,3800" size="100,100">Tu sais que tu devrais la suivre, que c&#39;est stupide de la laisser s&#39;éloigner, mais tu es si fatiguée. Tes jambes sont si lourdes. Rien que quelques minutes, ça ne peut pas faire de mal, si ?
+(else:)[ [[Allume le briquet.]] ]</tw-passagedata><tw-passagedata pid="35" name="Reste assise un moment." tags="déblocerreur" position="3875,3800" size="100,100">Tu sais que tu devrais la suivre, que c&#39;est stupide de la laisser s&#39;éloigner, mais tu es si fatiguée. Tes jambes sont si lourdes. Rien que quelques minutes, ça ne peut pas faire de mal, si ?
 
 Et puis tu penses à la nuit, dehors. Peut-être que tu devrais prendre quelque chose pour vous éclairer un peu.
 
-[[Ouvre la boîte à gants devant toi.]]</tw-passagedata><tw-passagedata pid="47" name="Ouvre la boîte à gants devant toi." tags="" position="4000,3925" size="100,100">Quelques objets tombent sur tes genoux - tu reconnais vaguement lunettes de soleil, paquet de mouchoirs, et tout un tas d&#39;indéfinissables -, les autres restent dans l&#39;ombre. Tu étends une main et tu essaies, à tâtons, de trouver quelque chose d&#39;utile. 
+[[Ouvre la boîte à gants devant toi.]]</tw-passagedata><tw-passagedata pid="36" name="Ouvre la boîte à gants devant toi." tags="" position="4000,3925" size="100,100">Quelques objets tombent sur tes genoux - tu reconnais vaguement lunettes de soleil, paquet de mouchoirs, et tout un tas d&#39;indéfinissables -, les autres restent dans l&#39;ombre. Tu étends une main et tu essaies, à tâtons, de trouver quelque chose d&#39;utile. 
 
 Tu finis par ressortir un briquet et ton portable. Tu contemples ce dernier quelques instants, comme désorientée. C&#39;est vrai que vous les aviez déposés là toutes les deux (ils pourront encore être utiles, mais il faudra s&#39;en débarrasser le plus vite possible, avait dit Noah. En attendant, ils restent éteints. Tu lui avais demandé si elle était sûre que ça suffirait, &quot;pour la géolocalisation et tout&quot; - elle avait haussé les épaules. &quot;Tu peux le jeter maintenant si ça t&#39;inquiète&quot;.) 
 
 [[Allume-le.]]
 
-[[Repose-le.]]</tw-passagedata><tw-passagedata pid="48" name="Vous vous installez à une des tables." tags="" position="4525,3900" size="100,100">C&#39;est la plus éloignée du bâtiment aux néons criards, même si en ce moment, l&#39;idée d&#39;un fast-food d&#39;autoroute t&#39;es étonnamment appétissante. Noah a fini par allumer sa cigarette («Pour faire de la lumière») et détourne la tête quand elle exhale la fumée. 
+[[Repose-le.]]</tw-passagedata><tw-passagedata pid="37" name="Vous vous installez à une des tables." tags="" position="4525,3900" size="100,100">C&#39;est la plus éloignée du bâtiment aux néons criards, même si en ce moment, l&#39;idée d&#39;un fast-food d&#39;autoroute t&#39;es étonnamment appétissante. Noah a fini par allumer sa cigarette («Pour faire de la lumière») et détourne la tête quand elle exhale la fumée. 
 
 — Oh mon dieu, j&#39;avais tellement besoin de me dégourdir les jambes, dit-elle. Elle fait traîner les mots, s&#39;étire.
 
@@ -559,13 +518,13 @@ Tu hoches la tête. Le silence n&#39;est pas désagréable, pour une fois, mais 
 
 [[&quot;Qu&#39;est-ce qu&#39;on va faire maintenant ?&quot;]]
 
-[[&quot;Je n&#39;ai pas envie de retourner à la voiture.&quot;]]</tw-passagedata><tw-passagedata pid="49" name="&quot;Qu&#39;est-ce qu&#39;on va faire maintenant ?&quot;" tags="" position="4700,4000" size="100,100">Noah ne répond pas tout de suite. Tu vois à la manière dont elle promène ses yeux sur l&#39;horizon, retire, remet en place, retire encore la cigarette sans plus tirer, qu&#39;elle réfléchit.
+[[&quot;Je n&#39;ai pas envie de retourner à la voiture.&quot;]]</tw-passagedata><tw-passagedata pid="38" name="&quot;Qu&#39;est-ce qu&#39;on va faire maintenant ?&quot;" tags="" position="4700,4000" size="100,100">Noah ne répond pas tout de suite. Tu vois à la manière dont elle promène ses yeux sur l&#39;horizon, retire, remet en place, retire encore la cigarette sans plus tirer, qu&#39;elle réfléchit.
 
 — J&#39;en ai aucune idée, répond-elle enfin.
 
 Ailleurs, à un autre moment, ces mots t&#39;auraient glacée de terreur. Là, rien.
 
-[[&quot;L&#39;Italie... Tu n&#39;avais pas un plan ? Quelqu&#39;un, quelque part...&quot;]]</tw-passagedata><tw-passagedata pid="50" name="&quot;Je n&#39;ai pas envie de retourner à la voiture.&quot;" tags="" position="4550,4050" size="100,100">- Est-ce qu&#39;on est obligées ? tu ajoutes.
+[[&quot;L&#39;Italie... Tu n&#39;avais pas un plan ? Quelqu&#39;un, quelque part...&quot;]]</tw-passagedata><tw-passagedata pid="39" name="&quot;Je n&#39;ai pas envie de retourner à la voiture.&quot;" tags="" position="4550,4050" size="100,100">- Est-ce qu&#39;on est obligées ? tu ajoutes.
 
 Noah ne répond pas tout de suite. Tu vois à la manière dont elle promène ses yeux sur l&#39;horizon, retire, remet en place, retire encore la cigarette sans plus tirer, qu&#39;elle réfléchit.
 
@@ -575,7 +534,7 @@ Ailleurs, à un autre moment, ces mots t&#39;auraient remplie de soulagement. L�
 
 Tu testes si elle plaisante ou est vraiment sérieuse.
 
-[[&quot;Et l&#39;Italie, alors ?&quot;]]</tw-passagedata><tw-passagedata pid="51" name="&quot;Et l&#39;Italie, alors ?&quot;" tags="" position="4675,4175" size="100,100">- Oublie l&#39;Italie, tu as raison. Il y a une forêt juste à côté, on peut s&#39;installer là. Vivre de chasse et de cueillette.
+[[&quot;Et l&#39;Italie, alors ?&quot;]]</tw-passagedata><tw-passagedata pid="40" name="&quot;Et l&#39;Italie, alors ?&quot;" tags="" position="4675,4175" size="100,100">- Oublie l&#39;Italie, tu as raison. Il y a une forêt juste à côté, on peut s&#39;installer là. Vivre de chasse et de cueillette.
 
 - Construire une cabane... Voler les vacanciers qui s&#39;arrêtent aussi...
 
@@ -587,7 +546,7 @@ Sa voix est fatiguée mais sincère, et la cigarette allume une étincelle au fo
 
 [[Essaie.]]
 
-[[Retiens-toi.]]</tw-passagedata><tw-passagedata pid="52" name="&quot;L&#39;Italie... Tu n&#39;avais pas un plan ? Quelqu&#39;un, quelque part...&quot;" tags="" position="4825,4100" size="100,100">Tu trébuches encore une fois sur tes mots, et encore une fois, elle rit. Il n&#39;y a rien de drôle mais elle rit, longtemps (oh, la résurrection de l&#39;idée qu&#39;elle pouvait encore le faire !), et puis :
+[[Retiens-toi.]]</tw-passagedata><tw-passagedata pid="41" name="&quot;L&#39;Italie... Tu n&#39;avais pas un plan ? Quelqu&#39;un, quelque part...&quot;" tags="" position="4825,4100" size="100,100">Tu trébuches encore une fois sur tes mots, et encore une fois, elle rit. Il n&#39;y a rien de drôle mais elle rit, longtemps (oh, la résurrection de l&#39;idée qu&#39;elle pouvait encore le faire !), et puis :
 
 — On va s&#39;en sortir, Em&#39;. Promis.
 
@@ -595,35 +554,52 @@ Sa voix est fatiguée mais sincère, et la cigarette allume une étincelle au fo
 
 [[Essaie.]]
 
-[[Retiens-toi.]]</tw-passagedata><tw-passagedata pid="53" name="recommencer" tags="" position="2650,3650" size="100,100">Nuit. Trois heures après l&#39;erreur : vous avez assez roulé pour que tes mains arrêtent de trembler, la terreur et l&#39;adrénaline comme semées sur la route. Ce qui veut dire qu&#39;il y a toujours cette trace de goudron qui te relie à la chose, dans la ville, et quand tu fermes les yeux tu peux sentir le souvenir se rapprocher pas à pas ; mais pour l&#39;instant, ce n&#39;est plus là. Vous avez encore du temps et tu te sens terriblement légère. 
+[[Retiens-toi.]]</tw-passagedata><tw-passagedata pid="42" name="Recommencer." tags="" position="2650,3650" size="100,100">Nuit. Trois heures après l&#39;erreur : vous avez assez roulé pour que tes mains arrêtent de trembler, la terreur et l&#39;adrénaline comme semées sur la route. Ce qui veut dire qu&#39;il y a toujours cette trace de goudron qui te relie à la chose, dans la ville, et quand tu fermes les yeux tu peux sentir le souvenir se rapprocher pas à pas ; mais pour l&#39;instant, ce n&#39;est plus là. Vous avez encore du temps et tu te sens terriblement légère. 
 
-Parce que tout est derrière vous, à présent. Parce que tu n&#39;as rien pu emporter. Rien, rien que cette certitude (et c&#39;est tout ce qui compte, alors écoute bien, et retiens-la, c&#39;est la seule chose encore importante) :
-(if: $survie &lt; 1) [
-(text-colour:red) [Il ne te reste plus que Noah. 
+Toi, c&#39;est Emma. Juste ça. Tout le reste a été perdu, il n&#39;y a plus que toi, dans la voiture de ton amie, toi et cette angoisse diffuse. La terrible légereté. Et puis quelques volontés. Quelques dernières choses à faire. Quelques promesses à toi-même. Par exemple :
 
-[[Ne la quitte pas des yeux.]] ]
+Tu dois sortir d&#39;ici. 
+
+(if: $f1 &gt; 0)[Tu dois //vraiment// sortir d&#39;ici.
+
+](if: $f2 &gt; 0)[Tu dois aider Noah.
+
+](if: $f3 &gt; 0)[Tu dois sauver ta peau.
+
+](if: $f4 &gt; 0)[Tu dois juste attendre un peu plus longtemps.
+
+](if: $f5 &gt; 0)[Tu dois- tu dois faire quelque chose.
+
+](if: $f6 &gt; 0)[Tu dois fuir plus vite.
+
+](if: $f7 &gt; 0)[Tu dois lui faire confiance.
+
+](if: $f8 &gt; 0)[Tu dois comprendre pourquoi elle a fait tout ça.
+
+](if: $f9 &gt; 0)[Tu dois sortir d&#39;ici.
+
+](if: $f10 &gt; 0)[TU DOIS SORTIR D&#39;ICI.]
+(pour t&#39;aider, une dernière certitude, et c&#39;est tout ce qui compte, alors écoute bien, retiens-la, c&#39;est la seule chose encore importante, c&#39;est le seul moyen de gagner :
+
+(if: $gun &lt; 1) [(text-colour:red) [Il ne te reste plus que Noah. 
+
+[[Ne la quitte pas des yeux.]] )]
 ]
-(if: $survie &gt; 0)[
-(if: $gun &lt; 1)[ Il ne te reste plus que tes propres mains, tes propres yeux, toi-même.
-
-[[Survis.]]
-]
-
 (else:)[ Il ne te reste plus que tes propres mains, tes propres yeux, toi-même.
+
 Et ton (text-colour: #9d9db0)[arme]. Ou (text-colour: #9d9db0)[l&#39;arme] de Noah. Celle que tu as prise dans son dos sans qu&#39;elle le sache, avant que vous partiez. 
 
-[[Survis, Emma.]] ]
-]</tw-passagedata><tw-passagedata pid="54" name="Appelle-la." tags="" position="3650,2900" size="100,100">Le doute qui te serre soudain la gorge te pousse à appeler d&#39;une voix que tu espères claire, sans tremblements, &quot;Noah ?&quot;. 
+[[Survis, Emma.]] ]</tw-passagedata><tw-passagedata pid="43" name="Appelle-la." tags="" position="3650,2900" size="100,100">Le doute qui te serre soudain la gorge te pousse à appeler d&#39;une voix que tu espères claire, sans tremblements, &quot;Noah ?&quot;. 
 
 La forme semble se retourner, avance d&#39;un pas jusqu&#39;à sortir des ombres, et oui, c&#39;est bien elle, sa grande silhouette aux membres qui ont parfois l&#39;air un peu trop longs, ses cheveux partagés entre les pointes et les racines par la décoloration qui commence à s&#39;effacer. La veste trop grande qu&#39;elle a enfilée en catastrophe juste avant de sauter dans la voiture toujours sur ses épaules (un court instant, tu te demandes, oh mais pourquoi, pourquoi celle-là, puis tu t&#39;arrêtes, ne pas y penser, ne plus jamais y penser). Elle a l&#39;air peut-être un peu fatiguée, peut-être un peu confuse ? À cette distance, à cette luminosité, tu as du mal à interpréter son regard.
 
 On verra bien. Tu t&#39;avances, essaies d&#39;avoir un sourir vaguement rassurant. Elle te regarde arriver en silence. Les mains dans les poches. Pas de (text-colour: #c0c195)[cigarette]. (elle n&#39;était pas sortie pour ça ?). 
 
-[[Rejoins-la à la table de pique-nique où elle s&#39;est arrêtée.]]</tw-passagedata><tw-passagedata pid="55" name="Rejoins-la en silence." tags="" position="4000,2750" size="100,100">Tu ralentis, effectue tes prochains pas plus prudemment. Bien sûr que c&#39;est elle, que c&#39;est sa grande silhouette aux membres qui ont parfois l&#39;air un peu trop longs, ses cheveux partagés entre les pointes et les racines par la décoloration qui commence à s&#39;effacer. La veste trop grande qu&#39;elle a enfilée en catastrophe juste avant de sauter dans la voiture toujours sur ses épaules (un court instant, tu te demandes, oh mais pourquoi, pourquoi celle-là, puis tu t&#39;arrêtes, ne pas y penser, ne plus jamais y penser). Bien sûr que c&#39;est elle. Qui d&#39;autre ? Qui d&#39;autre, à cette heure-ci, à cet endroit-là ?
+[[Rejoins-la à la table de pique-nique où elle s&#39;est arrêtée.]]</tw-passagedata><tw-passagedata pid="44" name="Rejoins-la en silence." tags="" position="4000,2750" size="100,100">Tu ralentis, effectue tes prochains pas plus prudemment. Bien sûr que c&#39;est elle, que c&#39;est sa grande silhouette aux membres qui ont parfois l&#39;air un peu trop longs, ses cheveux partagés entre les pointes et les racines par la décoloration qui commence à s&#39;effacer. La veste trop grande qu&#39;elle a enfilée en catastrophe juste avant de sauter dans la voiture toujours sur ses épaules (un court instant, tu te demandes, oh mais pourquoi, pourquoi celle-là, puis tu t&#39;arrêtes, ne pas y penser, ne plus jamais y penser). Bien sûr que c&#39;est elle. Qui d&#39;autre ? Qui d&#39;autre, à cette heure-ci, à cet endroit-là ?
 
 Mais le temps que tu arrives à la ligne des arbres, elle a disparu, comme fondue dans les ombres.
 
-[[Pars à sa recherche.]]</tw-passagedata><tw-passagedata pid="56" name="Rejoins-la à la table de pique-nique où elle s&#39;est arrêtée." tags="" position="3500,2925" size="100,100">(if: $gun &lt; 1)[Tu t&#39;asseois sur le banc pourrissant, à côté d&#39;elle, toujours sans un mot. À quelques mètres derrière toi, il y a un cabanon qui accueille probablement une cabine de toilettes, seul édifice de toute la place, qui ne mérite peut-être même plus d&#39;être nommée aire d&#39;autoroute. Un seul néon clignote sur une de ses faces, et éclaire Noah d&#39;une lumière blanche, glaciale.
+[[Pars à sa recherche.]]</tw-passagedata><tw-passagedata pid="45" name="Rejoins-la à la table de pique-nique où elle s&#39;est arrêtée." tags="" position="3500,2925" size="100,100">(if: $gun &lt; 1)[Tu t&#39;asseois sur le banc pourrissant, à côté d&#39;elle, toujours sans un mot. À quelques mètres derrière toi, il y a un cabanon qui accueille probablement une cabine de toilettes, seul édifice de toute la place, qui ne mérite peut-être même plus d&#39;être nommée aire d&#39;autoroute. Un seul néon clignote sur une de ses faces, et éclaire Noah d&#39;une lumière blanche, glaciale.
 
 Ses mains vides s&#39;agitent nerveusement sur le bord de la table, et elle évite ton regard. La surface du bois est abîmée, marquée par le temps et, devant toi, une petite brûlure circulaire. Entre tes doigts, sous la table, la (text-colour: #c0c195)[cigarette] pèse un poids étrange.
 
@@ -638,23 +614,33 @@ Ses mains vides s&#39;agitent nerveusement sur le bord de la table, et elle évi
 
 ]
 
-(set: $pn to 1)</tw-passagedata><tw-passagedata pid="57" name="Toujours la même erreur, Emma." tags="varfin" position="2475,2975" size="100,100">Noah réagit un peu trop lentement, et (text-style:&quot;blur&quot;)[cette fois-ci], tu as le temps d&#39;effleurer ses lèvres juste avant qu&#39;elle ne te repousse. Violemment, des deux mains contre ta cage thoracique, tu tombes presque du banc, te rattrape à la table de justesse.
+(set: $pn to 1)</tw-passagedata><tw-passagedata pid="46" name="Toujours la même erreur, Emma." tags="varfin" position="2475,2975" size="100,100">Noah réagit un peu trop lentement, et (text-style:&quot;blur&quot;)[cette fois-ci], tu as le temps d&#39;effleurer ses lèvres juste avant qu&#39;elle ne te repousse. Violemment, des deux mains contre ta cage thoracique, tu tombes presque du banc, te rattrape à la table de justesse.
 
 - Qu&#39;est-ce que tu fais, Emma ? 
 
 Et enfin, enfin c&#39;est indéniable, elle sonne en colère. Et elle est debout d&#39;un seul coup, les pieds qui crissent sur le gravier, et elle te fixe depuis - tu as l&#39;impression que c&#39;est si haut - et la lumière est sur son visage. La lumière blanche et terrible est sur son visage, et elle te brûlera les rétines avec, tu le sais.
 
+&lt;style&gt; img {
+max-width:100%;
+max-height:100%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://static.wixstatic.com/media/559f19_362dc144950d4386878ca51cb6e5b22c~mv2.png/v1/fill/w_397,h_366,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/obs1.png&gt;
+&lt;/div&gt;
+
 Tu doutes. Doutes de tout ton être.
 
 [[Détourne le regard.]]
 
-(set: $finobs to $finobs +1)</tw-passagedata><tw-passagedata pid="58" name="Essaie de faire la conversation." tags="" position="3125,2650" size="100,100">La (text-colour: #c0c195)[cigarette] toujours en main, sous la table (vague impression de lui cacher quelque chose ; pourquoi ?)
+(set: $finobs to $finobs +1)</tw-passagedata><tw-passagedata pid="47" name="Essaie de faire la conversation." tags="" position="3125,2650" size="100,100">La (text-colour: #c0c195)[cigarette] toujours en main, sous la table (vague impression de lui cacher quelque chose ; pourquoi ?)
 
 Un silence. Quelque chose comme une odeur de plomb dans l&#39;air, ou bien c&#39;est l&#39;angoisse seule qui serre tes poumons à ce point. Après une hésitation d&#39;un moment, tu prends la parole, à voix basse :
 
 [[&quot;Qu&#39;est-ce qu&#39;on va faire ? Maintenant que... Je ne sais pas. Qu&#39;est-ce qu&#39;on va faire.&quot;]]
 
-[[&quot;Est-ce qu&#39;on doit vraiment retourner à la voiture ?&quot;]]</tw-passagedata><tw-passagedata pid="59" name="Tends-lui la cigarette." tags="" position="3300,2800" size="100,100">Noah l&#39;accpte, puis hausse un sourcil, dit d&#39;une voix basse &quot;Mais je n&#39;ai pas mon briquet.&quot; Rien de plus. 
+[[&quot;Est-ce qu&#39;on doit vraiment retourner à la voiture ?&quot;]]</tw-passagedata><tw-passagedata pid="48" name="Tends-lui la cigarette." tags="" position="3300,2800" size="100,100">Noah l&#39;accpte, puis hausse un sourcil, dit d&#39;une voix basse &quot;Mais je n&#39;ai pas mon briquet.&quot; Rien de plus. 
 
 (if: $briquet &lt; 1)[Tu te sens stupide. (if: $nbriquet &lt;1)[Si tu as la (text-colour: #c0c195)[cigarette] avec toi parce qu&#39;elle l&#39;a oubliée, probablement que le briquet était aussi là-bas. Tu aurais dû chercher. Tu aurais dû ignorer l&#39;impression que la (text-colour: #c0c195)[cigarette] avait simplement... commencé à exister dans ta main. 
 
@@ -669,7 +655,7 @@ Tu aurais dû réfléchir, Emma.]
 [[Donne-lui le briquet.]]
 
 [[Allume le briquet pour elle.]]
-]</tw-passagedata><tw-passagedata pid="60" name="&quot;Je suis désolée.&quot;" tags="" position="3125,2800" size="100,100">Elle grimace, hausse les épaules.
+]</tw-passagedata><tw-passagedata pid="49" name="&quot;Je suis désolée.&quot;" tags="" position="3125,2800" size="100,100">Elle grimace, hausse les épaules.
 
 - Ce n&#39;est pas grave, je suppose. On devrait se remettre en route, de toute façon.
 
@@ -677,17 +663,19 @@ Un silence. Quelque chose comme une odeur de plomb dans l&#39;air, ou bien c&#39
 
 [[&quot;Qu&#39;est-ce qu&#39;on va faire. Qu&#39;est-ce qu&#39;on va faire maintenant.&quot;]]
 
-[[&quot;Je ne peux vraiment pas retourner à la voiture, Noah.&quot;]]</tw-passagedata><tw-passagedata pid="61" name="&quot;Je vais retourner le chercher.&quot;" tags="wip" position="2900,2325" size="100,100">Noah ne répond pas mais tu te lèves tout de même, t&#39;éloignes de quelques pas, attends peut-être une réponse - toujours rien.
+[[&quot;Je ne peux vraiment pas retourner à la voiture, Noah.&quot;]]</tw-passagedata><tw-passagedata pid="50" name="&quot;Je vais retourner le chercher.&quot;" tags="wip" position="2900,2325" size="100,100">Noah ne répond pas mais tu te lèves tout de même, t&#39;éloignes de quelques pas, attends peut-être une réponse - toujours rien.
 
 Tu n&#39;as pas parcouru la moitié du chemin jusqu&#39;à la voiture lorsque le premier coup de feu retentit. 
 
 Il t&#39;a manqué de peu, mais tu ne te retournes pas. Tu ne veux pas voir Noah. Tu ne veux pas affronter son visage découpé par la lumière, transformé en lame lui aussi, alors tu attends qu&#39;elle tire une deuxième fois.
 
-[[Tu fermes juste les yeux.]]</tw-passagedata><tw-passagedata pid="62" name="&quot;Qu&#39;est-ce qu&#39;on va faire. Qu&#39;est-ce qu&#39;on va faire maintenant.&quot;" tags="" position="2950,2825" size="100,100">Noah a un rire affreux, amer et bref, comme un aboiement. Et puis qui se répète. Qui s&#39;allonge. Qui ne se termine pas. Et juste quand tu commences à vraiment t&#39;inquiéter qu&#39;elle se mette à manquer de souffle, quand tu commences à te dire que ce n&#39;est pas normal, qu&#39;elle ne devrait pas être capable de rire (se moquer) aussi longtemps, elle s&#39;arrête. Se reprend un peu.
+[[Tu fermes juste les yeux.]]
+
+(set: $f6 to 1)</tw-passagedata><tw-passagedata pid="51" name="&quot;Qu&#39;est-ce qu&#39;on va faire. Qu&#39;est-ce qu&#39;on va faire maintenant.&quot;" tags="" position="2950,2825" size="100,100">Noah a un rire affreux, amer et bref, comme un aboiement. Et puis qui se répète. Qui s&#39;allonge. Qui ne se termine pas. Et juste quand tu commences à vraiment t&#39;inquiéter qu&#39;elle se mette à manquer de souffle, quand tu commences à te dire que ce n&#39;est pas normal, qu&#39;elle ne devrait pas être capable de rire (se moquer) aussi longtemps, elle s&#39;arrête. Se reprend un peu.
 
 - Qu&#39;est-ce que tu crois ? La même chose que tout le monde. Ne pas mourir aussi longtemps que possible, et quand ça arrivera... Gratter encore quelques secondes.
 
-[[&quot;C&#39;est ce qu&#39;il a fait aussi, tu penses ? David. Gratter.&quot;]]</tw-passagedata><tw-passagedata pid="63" name="&quot;Je ne peux vraiment pas retourner à la voiture, Noah.&quot;" tags="" position="2900,2525" size="100,100">Noah a un rire affreux, amer et bref, comme un aboiement.
+[[&quot;C&#39;est ce qu&#39;il a fait aussi, tu penses ? David. Gratter.&quot;]]</tw-passagedata><tw-passagedata pid="52" name="&quot;Je ne peux vraiment pas retourner à la voiture, Noah.&quot;" tags="" position="2900,2525" size="100,100">Noah a un rire affreux, amer et bref, comme un aboiement.
 
 - Reste ici, alors. Peut-être que ça vaut mieux. Je me débrouille aussi longtemps que je peux pendant que tu... 
 
@@ -713,7 +701,7 @@ Et elle te regarde droit dans les yeux.
 
 [[&quot;Je vais retourner le chercher.&quot;]]
 
-</tw-passagedata><tw-passagedata pid="64" name="&quot;Qu&#39;est-ce qu&#39;on va faire ? Maintenant que... Je ne sais pas. Qu&#39;est-ce qu&#39;on va faire.&quot;" tags="varfin" position="2950,2675" size="100,100">Noah se tourne vers toi, toujours illuminée en blanc et froid, un air un peu étrangement lointain sur sa figure.
+</tw-passagedata><tw-passagedata pid="53" name="&quot;Qu&#39;est-ce qu&#39;on va faire ? Maintenant que... Je ne sais pas. Qu&#39;est-ce qu&#39;on va faire.&quot;" tags="" position="2950,2675" size="100,100">Noah se tourne vers toi, toujours illuminée en blanc et froid, un air un peu étrangement lointain sur sa figure.
 
 - Maintenant qu&#39;on a tué quelqu&#39;un ?
 
@@ -721,9 +709,7 @@ Elle ne sonne pas en colère. C&#39;est presque pire.
 
 (quelqu&#39;un devrait l&#39;être, non ?)
  
-[[&quot;Oui, maintenant qu&#39;on a tué ton copain de merde, Noah.&quot;]]
-
-(set: $finav to $finav + 1)</tw-passagedata><tw-passagedata pid="65" name="&quot;Est-ce qu&#39;on doit vraiment retourner à la voiture ?&quot;" tags="" position="3025,2500" size="100,100">Noah a un rire affreux, amer et bref, comme un aboiement.
+[[&quot;Oui, maintenant qu&#39;on a tué ton copain de merde, Noah.&quot;]]</tw-passagedata><tw-passagedata pid="54" name="&quot;Est-ce qu&#39;on doit vraiment retourner à la voiture ?&quot;" tags="" position="3025,2500" size="100,100">Noah a un rire affreux, amer et bref, comme un aboiement.
 
 - Non, restons ici, quelle bonne idée. Peut-être que ça vaut mieux. Je me débrouille aussi longtemps que je peux pendant que tu... 
 
@@ -747,7 +733,7 @@ Et elle te regarde droit dans les yeux.
 
 [[Reste silencieuse.]]
 
-[[&quot;Je vais retourner le chercher.&quot;]]</tw-passagedata><tw-passagedata pid="66" name="Donne-lui le briquet." tags="objr" position="3300,2950" size="100,100">Noah s&#39;en saisit, fait fonctionner le mécanisme trois ou quatre fois, sans succès. Pas de flamme, juste l&#39;étincelle qui disparaît aussi vite qu&#39;elle est apparue. Une cinqième. Une sixième. Elle soupire de frustration. 
+[[&quot;Je vais retourner le chercher.&quot;]]</tw-passagedata><tw-passagedata pid="55" name="Donne-lui le briquet." tags="objr" position="3300,2950" size="100,100">Noah s&#39;en saisit, fait fonctionner le mécanisme trois ou quatre fois, sans succès. Pas de flamme, juste l&#39;étincelle qui disparaît aussi vite qu&#39;elle est apparue. Une cinqième. Une sixième. Elle soupire de frustration. 
 
 Tu l&#39;observes faire sans rien dire, jusqu&#39;à ce qu&#39;elle jette un regard vers toi. La lumière blanche et froide donne un air étrange à son visage, quelque chose d&#39;un peu dur, comme un soupçon de mépris dans le coin de ses sourcils et de sa bouche.
 
@@ -755,11 +741,11 @@ Tu l&#39;observes faire sans rien dire, jusqu&#39;à ce qu&#39;elle jette un reg
 
 - Tu peux m&#39;aider ? dit-elle enfin. 
 
-[[Rapproche-toi.]]</tw-passagedata><tw-passagedata pid="67" name="Allume le briquet pour elle." tags="objr" position="3100,2975" size="100,100">Il te faut trois essais pour y arriver, et Noah semble déjà s&#39;apprêter à te le prendre pour s&#39;en charger elle-même lorsqu&#39;une petite flamme apparaît enfin. La lumière du néon blanche et froide sur son visage est remplacée par le halo chaleureux que vous connaissez si bien, et tu te penches, t&#39;appuies d&#39;un coude sur la table pour l&#39;amener à sa bouche où elle a placé la (text-colour: #c0c195)[cigarette].
+[[Rapproche-toi.]]</tw-passagedata><tw-passagedata pid="56" name="Allume le briquet pour elle." tags="objr" position="3100,2975" size="100,100">Il te faut trois essais pour y arriver, et Noah semble déjà s&#39;apprêter à te le prendre pour s&#39;en charger elle-même lorsqu&#39;une petite flamme apparaît enfin. La lumière du néon blanche et froide sur son visage est remplacée par le halo chaleureux que vous connaissez si bien, et tu te penches, t&#39;appuies d&#39;un coude sur la table pour l&#39;amener à sa bouche où elle a placé la (text-colour: #c0c195)[cigarette].
 
 [[(concentre-toi.)]]
 
-</tw-passagedata><tw-passagedata pid="68" name="(concentre-toi.)" tags="" position="2950,3050" size="100,100">[[(ne pense à rien d&#39;autre qu&#39;au geste.)]]</tw-passagedata><tw-passagedata pid="69" name="(ne pense à rien d&#39;autre qu&#39;au geste.)" tags="" position="2875,3075" size="100,100">[[(ne pense à rien d&#39;autre qu&#39;à le réussir.)]]</tw-passagedata><tw-passagedata pid="70" name="(ne pense à rien d&#39;autre qu&#39;à le réussir.)" tags="" position="2825,3125" size="100,100">[[(ne pense pas à son souffle ne pense pas à la proximité ne pense pas à ses mains une sur la cigarette l&#39;autre qui protège la flamme du vent si proches la tienne les effleure presque ne pense pas]]</tw-passagedata><tw-passagedata pid="71" name="(ne pense pas à son souffle ne pense pas à la proximité ne pense pas à ses mains une sur la cigarette l&#39;autre qui protège la flamme du vent si proches la tienne les effleure presque ne pense pas" tags="" position="2750,3175" size="100,100">(text-style:&quot;blur&quot;)[Cette fois-ci], c&#39;est elle qui bouge la première.
+</tw-passagedata><tw-passagedata pid="57" name="(concentre-toi.)" tags="" position="2950,3050" size="100,100">[[(ne pense à rien d&#39;autre qu&#39;au geste.)]]</tw-passagedata><tw-passagedata pid="58" name="(ne pense à rien d&#39;autre qu&#39;au geste.)" tags="" position="2875,3075" size="100,100">[[(ne pense à rien d&#39;autre qu&#39;à le réussir.)]]</tw-passagedata><tw-passagedata pid="59" name="(ne pense à rien d&#39;autre qu&#39;à le réussir.)" tags="" position="2825,3125" size="100,100">[[(ne pense pas à son souffle ne pense pas à la proximité ne pense pas à ses mains une sur la cigarette l&#39;autre qui protège la flamme du vent si proches la tienne les effleure presque ne pense pas]]</tw-passagedata><tw-passagedata pid="60" name="(ne pense pas à son souffle ne pense pas à la proximité ne pense pas à ses mains une sur la cigarette l&#39;autre qui protège la flamme du vent si proches la tienne les effleure presque ne pense pas" tags="" position="2750,3175" size="100,100">(text-style:&quot;blur&quot;)[Cette fois-ci], c&#39;est elle qui bouge la première.
 
 Parce que d&#39;un coup c&#39;est sa main qui s&#39;appuie contre la tienne, délicate, qui prend la place du (text-colour: #ab7875)[briquet], doucement (lui tombe sur la table, creuse un trou noirâtre dans la table avant de s&#39;éteindre(set: $troutable to 1)), qui déplie tes doigts, tout en lenteur, qui les enlace. 
 
@@ -769,11 +755,11 @@ Et Noah t&#39;embrasse.
 
 [[Recule.]]
 
-[[Ne recule pas.]]</tw-passagedata><tw-passagedata pid="72" name="&quot;Je me demande où il est tombé, est-ce que tu veux que-&quot;" tags="" position="2850,3325" size="100,100">Noah ne te laisse pas finir. Noah lâche ta main, Noah attrape ton visage à la place, et Noah t&#39;embrasse.
+[[Ne recule pas.]]</tw-passagedata><tw-passagedata pid="61" name="&quot;Je me demande où il est tombé, est-ce que tu veux que-&quot;" tags="" position="2850,3325" size="100,100">Noah ne te laisse pas finir. Noah lâche ta main, Noah attrape ton visage à la place, et Noah t&#39;embrasse.
 
 [[Recule.]]
 
-[[Ne recule pas.]]</tw-passagedata><tw-passagedata pid="73" name="Allume le briquet." tags="objr" position="4200,1475" size="100,100">Les arbres se définissent face à toi comme si tu y avais déjà mis le feu. Larges tranches de lumière orange qui lèchent les troncs, branches follement secouées par le vent et par les vacillations de la flamme, ombres acérées et tremblantes. 
+[[Ne recule pas.]]</tw-passagedata><tw-passagedata pid="62" name="Allume le briquet." tags="objr" position="4200,1475" size="100,100">Les arbres se définissent face à toi comme si tu y avais déjà mis le feu. Larges tranches de lumière orange qui lèchent les troncs, branches follement secouées par le vent et par les vacillations de la flamme, ombres acérées et tremblantes. 
 
 Tu fais quelques pas hésitants, protégeant la flamme de la petite brise qui s&#39;est levée du mieux que tu peux. Derrière toi, le bruit de l&#39;autoroute retentit toujours, mais déjà moins fort. 
 
@@ -781,13 +767,13 @@ Le chemin devant tes pieds est imprécis et escarpé. Après la pente raide suiv
 
 [[Prend à droite.]]
 
-[[Prend à gauche.]]</tw-passagedata><tw-passagedata pid="74" name="Avance à tâtons." tags="" position="3975,1600" size="100,100">Sous une main, l&#39;écorce d&#39;un arbre qui te guide pour trois pas, puis disparaît pour être remplacé par un autre. Sous l&#39;autre, buissons, branches basses, aiguilles d&#39;un pin, les feuilles hautes d&#39;une plante de sous-bois - tout d&#39;un coup la toile d&#39;araignée tendue entre deux tiges. Tu retires ton bras d&#39;un geste sec, essaies d&#39;ignorer la panique qui monte au rythme de ton cœur qui bat la chamade. 
+[[Prend à gauche.]]</tw-passagedata><tw-passagedata pid="63" name="Avance à tâtons." tags="" position="3975,1600" size="100,100">Sous une main, l&#39;écorce d&#39;un arbre qui te guide pour trois pas, puis disparaît pour être remplacé par un autre. Sous l&#39;autre, buissons, branches basses, aiguilles d&#39;un pin, les feuilles hautes d&#39;une plante de sous-bois - tout d&#39;un coup la toile d&#39;araignée tendue entre deux tiges. Tu retires ton bras d&#39;un geste sec, essaies d&#39;ignorer la panique qui monte au rythme de ton cœur qui bat la chamade. 
 
 Tu regrettes vite de ne pas avoir amené de source de lumière. Tu pourrais retourner en arrière. Tu pourrais attendre Noah à la voiture, ou peut-être la rejoindre, peut-être qu&#39;elle y est déjà. Tu pourrais tout laisser tomber, qu&#39;est-ce que tu fais là, c&#39;est stupide de toute façon-
 
 Mais il est trop tard. Tu sais très bien, quelque part au fond de toi, qu&#39;il est trop tard depuis longtemps.
 
-[[Avance.]]</tw-passagedata><tw-passagedata pid="75" name="Avance." tags="" position="3925,1525" size="100,100">La forêt est sombre et l&#39;autoroute est oubliée.
+[[Avance.]]</tw-passagedata><tw-passagedata pid="64" name="Avance." tags="" position="3925,1525" size="100,100">La forêt est sombre et l&#39;autoroute est oubliée.
 
 Tu avances. 
 
@@ -797,9 +783,9 @@ Tu avances.
 
 Tu pourrais retourner en arrière. Tu devrais retourner en arrière.
 
-[[Avance !]]</tw-passagedata><tw-passagedata pid="76" name="Avance !" tags="" position="3875,1475" size="100,100">Tu t&#39;asseois au pied d&#39;un tronc d&#39;arbre quelques instants. Le sol semble grouiller sous ta main, une masse étrangement mouvante de mousse et de bestioles (n&#39;y pense pas.) Il y a eu une petite pente sur quelques mètres, qui a tout de même réussi à t&#39;essouffler - il est tard, il fait nuit, tu as dû t&#39;accrocher à des racines et enjamber des ronces et tu n&#39;as jamais été très athlétique mais oh tu en as assez et si on allongeait cette pause et si on restait ici pour toujours de toute façon qu&#39;est-ce qu&#39;il reste-
+[[Avance !]]</tw-passagedata><tw-passagedata pid="65" name="Avance !" tags="" position="3875,1475" size="100,100">Tu t&#39;asseois au pied d&#39;un tronc d&#39;arbre quelques instants. Le sol semble grouiller sous ta main, une masse étrangement mouvante de mousse et de bestioles (n&#39;y pense pas.) Il y a eu une petite pente sur quelques mètres, qui a tout de même réussi à t&#39;essouffler - il est tard, il fait nuit, tu as dû t&#39;accrocher à des racines et enjamber des ronces et tu n&#39;as jamais été très athlétique mais oh tu en as assez et si on allongeait cette pause et si on restait ici pour toujours de toute façon qu&#39;est-ce qu&#39;il reste-
 
-[[Avance, Emma.]]</tw-passagedata><tw-passagedata pid="77" name="Avance, Emma." tags="" position="3825,1425" size="100,100">Et juste lorsque tu penses que la forêt ne se terminera jamais, que la nuit ne se terminera jamais, que ça fait des des années que tu marches et que tu es perdue pour toujours, tu arrives à la fin. 
+[[Avance, Emma.]]</tw-passagedata><tw-passagedata pid="66" name="Avance, Emma." tags="" position="3825,1425" size="100,100">Et juste lorsque tu penses que la forêt ne se terminera jamais, que la nuit ne se terminera jamais, que ça fait des des années que tu marches et que tu es perdue pour toujours, tu arrives à la fin. 
 
 La forêt s&#39;arrête brusquement à la limite d&#39;un champ, et en quelques pas tu es face à des herbes hautes qui t&#39;arrivent presque à la taille. Il fait encore sombre mais tout au bout de l&#39;horizon, de l&#39;autre côté, le bas du ciel s&#39;éclaire juste un peu, juste un peu de gris. 
 
@@ -807,11 +793,21 @@ Tu n&#39;as toujours pas retrouvé Noah.
 
 [[Retourne dans la forêt.]]
 
-[[Rentre chez toi.]]</tw-passagedata><tw-passagedata pid="78" name="Rentre chez toi." tags="varfin" position="3650,1500" size="100,100">Quelle idée bizarre !
+[[Rentre chez toi.]]</tw-passagedata><tw-passagedata pid="67" name="Rentre chez toi." tags="varfin" position="3650,1500" size="100,100">Quelle idée bizarre !
+
+&lt;style&gt; img {
+max-width:100%;
+max-height:100%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://static.wixstatic.com/media/559f19_4ad8a59fbd9b4775bdd58098ab50e0d3~mv2.png/v1/fill/w_458,h_355,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/559f19_4ad8a59fbd9b4775bdd58098ab50e0d3~mv2.png&gt;
+&lt;/div&gt;
 
 [[Retourne dans la forêt.]]
 
-(set: $finav to $finav + 1)</tw-passagedata><tw-passagedata pid="79" name="Retourne dans la forêt." tags="" position="3475,1450" size="100,100">C&#39;est tout ce qu&#39;il reste à faire, n&#39;est-ce pas ? Retrouver Noah. Retrouver Noah avant que le jour se lève, retrouver Noah et le jour ne se lèvera jamais et vous pourrez encore rouler et fuir et partir loin, loin de tout ça le long d&#39;une autoroute éternelle et dans une nuit éternelle et-
+(set: $finav to $finav + 1)</tw-passagedata><tw-passagedata pid="68" name="Retourne dans la forêt." tags="" position="3475,1450" size="100,100">C&#39;est tout ce qu&#39;il reste à faire, n&#39;est-ce pas ? Retrouver Noah. Retrouver Noah avant que le jour se lève, retrouver Noah et le jour ne se lèvera jamais et vous pourrez encore rouler et fuir et partir loin, loin de tout ça le long d&#39;une autoroute éternelle et dans une nuit éternelle et-
 
 Et tout d&#39;un coup tu l&#39;entends.
 
@@ -819,11 +815,11 @@ Et tout d&#39;un coup tu l&#39;entends.
 
 C&#39;est elle. Ça vient de loin, ça vient de tout près, elle est encore dans l&#39;obscurité, pas loin - et elle te cherche aussi. Noah te cherche aussi.
 
-[[Enjambe ce grillage une deuxième fois.]]</tw-passagedata><tw-passagedata pid="80" name="Enjambe ce grillage une deuxième fois." tags="" position="3225,1475" size="100,100">Elle t&#39;appelle encore, quelque part, toujours au loin - mais tu te rapproches. Tu ne l&#39;entends pas, mais tu le sens.
+[[Enjambe ce grillage une deuxième fois.]]</tw-passagedata><tw-passagedata pid="69" name="Enjambe ce grillage une deuxième fois." tags="" position="3225,1475" size="100,100">Elle t&#39;appelle encore, quelque part, toujours au loin - mais tu te rapproches. Tu ne l&#39;entends pas, mais tu le sens.
 
 Les racines semblent s&#39;écarter de ton chemin. Les toiles d&#39;araignée te tirent par la main. Tu avances, et tu souris presque, parce que tu vas retrouver Noah et au moins ça, au moins ça restera vrai même après la nuit de sang et de mensonges. Que c&#39;est vous deux. Que c&#39;est Noah et Emma.
 
-[[Retrouve Noah.]]</tw-passagedata><tw-passagedata pid="81" name="Retrouve Noah." tags="" position="3075,1475" size="100,100">Elle est assise au pied d&#39;un arbre just à côté du petit sentier d&#39;où tu arrives. Genoux remontés contre la poitrine, visage enfoncé dans ses bras croisés.
+[[Retrouve Noah.]]</tw-passagedata><tw-passagedata pid="70" name="Retrouve Noah." tags="" position="3075,1475" size="100,100">Elle est assise au pied d&#39;un arbre just à côté du petit sentier d&#39;où tu arrives. Genoux remontés contre la poitrine, visage enfoncé dans ses bras croisés.
 
 L&#39;inquiétude se coince dans ta gorge un court instant, mais Noah lève immédiatement la tête en t&#39;entendant arriver, puis te fait un signe de la main, sans se lever.
 
@@ -833,9 +829,9 @@ Tu t&#39;approches en te retenant de courir. Souris. Même si elle ne le voit pr
 
 [[&quot;Rentrons.&quot;]]
 
-</tw-passagedata><tw-passagedata pid="82" name="Recule." tags="" position="2575,3125" size="100,100">Tu doutes. Doutes de tout ton être.
+</tw-passagedata><tw-passagedata pid="71" name="Recule." tags="" position="2575,3125" size="100,100">Tu doutes. Doutes de tout ton être.
 
-[[Détourne le regard.]] </tw-passagedata><tw-passagedata pid="83" name="Ne recule pas." tags="" position="2675,3300" size="100,100">Tu fermes les yeux, oublies la lumière dure et froide et blanche et comme des coups de couteau sur le visage de Noah.
+[[Détourne le regard.]] </tw-passagedata><tw-passagedata pid="72" name="Ne recule pas." tags="" position="2675,3300" size="100,100">Tu fermes les yeux, oublies la lumière dure et froide et blanche et comme des coups de couteau sur le visage de Noah.
 
 Et puis quand vous vous détachez un peu, juste un peu, ce n&#39;est plus là. Ou bien il n&#39;y a plus que ça. Tellement de lumière blanche qu&#39;on ne distingue plus aucune ombre, plus aucune vraie forme ou expression sur son visage, même - sauf peut-être son sourire. Lèvres serrées, étirées, sans les dents - tu n&#39;es pas sûre de l&#39;avoir jamais vu sourir comme ça.
 
@@ -843,7 +839,7 @@ Tu hésites. Tu hésites juste un peu.
 
 [[Détourne le regard.]]
 
-[[Garde les yeux fixés sur la lum- sur elle.]]</tw-passagedata><tw-passagedata pid="84" name="&quot;Oui, maintenant qu&#39;on a tué ton copain de merde, Noah.&quot;" tags="" position="2775,2650" size="100,100">Elle n&#39;est pas en colère ? Très bien. Parce que peut-être que malgré tout, malgré le fait que ce soit Noah, toi tu l&#39;es. Juste un peu.
+[[Garde les yeux fixés sur la lum- sur elle.]]</tw-passagedata><tw-passagedata pid="73" name="&quot;Oui, maintenant qu&#39;on a tué ton copain de merde, Noah.&quot;" tags="" position="2775,2650" size="100,100">Elle n&#39;est pas en colère ? Très bien. Parce que peut-être que malgré tout, malgré le fait que ce soit Noah, toi tu l&#39;es. Juste un peu.
 
 Tu continues.
 
@@ -857,7 +853,7 @@ Noah a détourné le regard, fixe à présent le gravier - toujours l&#39;air lo
 
 [[Excuse-toi.]]
 
-[[&quot;Et regarde où ça nous a menées.&quot;]]</tw-passagedata><tw-passagedata pid="85" name="Excuse-toi." tags="" position="2600,2575" size="100,100">- Pardon, Noah, c&#39;était... Je n&#39;aurais pas dû dire ça. 
+[[&quot;Et regarde où ça nous a menées.&quot;]]</tw-passagedata><tw-passagedata pid="74" name="Excuse-toi." tags="" position="2600,2575" size="100,100">- Pardon, Noah, c&#39;était... Je n&#39;aurais pas dû dire ça. 
 
 Elle lève la tête, te regarde à nouveau (est-ce que ses yeux brillent à cause des néons ou à cause de larmes ?) 
 
@@ -869,9 +865,9 @@ Tu hésites. Regardes autour de toi.
 
 [[&quot;Je ne sais plus quoi faire, je suppose.&quot;]]
 
-</tw-passagedata><tw-passagedata pid="86" name="&quot;Et regarde où ça nous a menées.&quot;" tags="" position="2650,2725" size="100,100">Tu désignes vaguement, dédaigneusement l&#39;espace autour de toi. Noah ne suit pas ton geste. Noah ne te regarde plus. 
+</tw-passagedata><tw-passagedata pid="75" name="&quot;Et regarde où ça nous a menées.&quot;" tags="" position="2650,2725" size="100,100">Tu désignes vaguement, dédaigneusement l&#39;espace autour de toi. Noah ne suit pas ton geste. Noah ne te regarde plus. 
 
-[[Excuse-toi, Emma.]]</tw-passagedata><tw-passagedata pid="87" name="Excuse-toi, Emma." tags="" position="2575,2775" size="100,100">- Je suis désolée. C&#39;était... c&#39;était gratuit. Ce n&#39;est pas ta faute.
+[[Excuse-toi, Emma.]]</tw-passagedata><tw-passagedata pid="76" name="Excuse-toi, Emma." tags="" position="2575,2775" size="100,100">- Je suis désolée. C&#39;était... c&#39;était gratuit. Ce n&#39;est pas ta faute.
 
 Peut-être que tu le penses même un peu.
 
@@ -879,13 +875,13 @@ Elle hausse les épaules.
 
 - Non, je comprends. Tu n&#39;avais rien demandé. Et maintenant tu es coincée ici. Et maintenant... 
 
-Et maintenant sa voix se brise. Juste un peu, juste un tremblotement de la lumière au coin de la bouche, mais oh tu connais Noah, tu sais quand elle a atteint la limite qu&#39;elle prétend si bien être inexistante. Alors quand elle craque pour de bon, quand elle éclate en sanglots qui la secouent si fort qu&#39;elle semble en perdre le souffle, [[n&#39;hésite pas.]] </tw-passagedata><tw-passagedata pid="88" name="&quot;C&#39;est ce qu&#39;il a fait aussi, tu penses ? David. Gratter.&quot;" tags="" position="2850,2900" size="100,100">Un silence.
+Et maintenant sa voix se brise. Juste un peu, juste un tremblotement de la lumière au coin de la bouche, mais oh tu connais Noah, tu sais quand elle a atteint la limite qu&#39;elle prétend si bien être inexistante. Alors quand elle craque pour de bon, quand elle éclate en sanglots qui la secouent si fort qu&#39;elle semble en perdre le souffle, [[n&#39;hésite pas.]] </tw-passagedata><tw-passagedata pid="77" name="&quot;C&#39;est ce qu&#39;il a fait aussi, tu penses ? David. Gratter.&quot;" tags="" position="2850,2900" size="100,100">Un silence.
 
 - Je ne sais pas. Je n&#39;ai pas fait plus attention que ça. Le connaissant, probablement qu&#39;il n&#39;a pas essayé très longtemps.
 
 Noah a détourné le regard, fixe à présent la route - l&#39;air étrange, lointain, un peu rêveur. La lumière blanche semble clignoter sur son visage, mais quand tu te concentres sur le néon du coin de l&#39;œil, il brille tout à fait régulièrement. 
 
-[[&quot;Mais peut-être que s&#39;il avait...&quot;]] </tw-passagedata><tw-passagedata pid="89" name="concentre-toi" tags="" position="2425,3325" size="100,100">- Je te l&#39;ai passée, Emma. Pour avoir les mains libres. Tu ne te souviens pas ?
+[[&quot;Mais peut-être que s&#39;il avait...&quot;]] </tw-passagedata><tw-passagedata pid="78" name="concentre-toi" tags="" position="2425,3325" size="100,100">- Je te l&#39;ai passée, Emma. Pour avoir les mains libres. Tu ne te souviens pas ?
 
 Elle sourit si fort.
 
@@ -895,7 +891,7 @@ Tu devrais te dire que tu veux rester là pour toujours.
 
 Elle sonne si triste.
 
-[[CONCENTRE-TOI]]</tw-passagedata><tw-passagedata pid="90" name="CONCENTRE-TOI" tags="" position="2300,3375" size="100,100">Partir. Tu arrives à penser, malgré la nausée, malgrée le poids affreux insurmontable de la (text-colour: #c0c195)[cigarette] dans ta main, que tu veux partir. Que tu devrais partir.
+[[CONCENTRE-TOI]]</tw-passagedata><tw-passagedata pid="79" name="CONCENTRE-TOI" tags="" position="2300,3375" size="100,100">Partir. Tu arrives à penser, malgré la nausée, malgrée le poids affreux insurmontable de la (text-colour: #c0c195)[cigarette] dans ta main, que tu veux partir. Que tu devrais partir.
 
 Mais il est trop tard. Ça ne changera rien.
 
@@ -903,9 +899,9 @@ Mais il est trop tard. Ça ne changera rien.
 
 La lumière blanche hurle, quelque part, au loin, si proche que ça sort de son sourire.
 
-[[Il est trop tard.]]</tw-passagedata><tw-passagedata pid="91" name="&quot;Je ne sais plus quoi faire, je suppose.&quot;" tags="" position="2475,2625" size="100,100">- Et maintenant tu es coincée ici. Coincée avec...
+[[Il est trop tard.]]</tw-passagedata><tw-passagedata pid="80" name="&quot;Je ne sais plus quoi faire, je suppose.&quot;" tags="" position="2475,2625" size="100,100">- Et maintenant tu es coincée ici. Coincée avec...
 
-Et maintenant sa voix se brise. Juste un peu, juste un tremblotement de la lumière au coin de la bouche, mais oh tu connais Noah, tu sais quand elle a atteint la limite qu&#39;elle prétend si bien être inexistante. Alors quand elle craque pour de bon, quand elle éclate en sanglots qui la secouent si fort qu&#39;elle semble en perdre le souffle, [[n&#39;hésite pas.]] </tw-passagedata><tw-passagedata pid="92" name="n&#39;hésite pas." tags="" position="2425,2750" size="100,100">Tu la prends dans tes bras avec ce geste que tu as déjà répété assez de fois pour qu&#39;ils prennent leur place immédiatement. Et Noah pleure et pleure et pleure, et tu n&#39;as rien à dire, rien à faire d&#39;autre que la tenir, fort, et attendre avec elle. 
+Et maintenant sa voix se brise. Juste un peu, juste un tremblotement de la lumière au coin de la bouche, mais oh tu connais Noah, tu sais quand elle a atteint la limite qu&#39;elle prétend si bien être inexistante. Alors quand elle craque pour de bon, quand elle éclate en sanglots qui la secouent si fort qu&#39;elle semble en perdre le souffle, [[n&#39;hésite pas.]] </tw-passagedata><tw-passagedata pid="81" name="n&#39;hésite pas." tags="" position="2425,2750" size="100,100">Tu la prends dans tes bras avec ce geste que tu as déjà répété assez de fois pour qu&#39;ils prennent leur place immédiatement. Et Noah pleure et pleure et pleure, et tu n&#39;as rien à dire, rien à faire d&#39;autre que la tenir, fort, et attendre avec elle. 
 
 Et puis lorsqu&#39;elle se calme un peu, qu&#39;elle reprend une ou deux inspirations plus longues, enfin ininterrompues, tu te détends avec elle, la laisse s&#39;écarter quand elle le fait. Noah soupire. S&#39;essuie les yeux. Puis te regarde avec le demi-sourir habituel, un peu contrit, une main toujours accrochée à ton bras. 
 
@@ -915,27 +911,29 @@ La lumière blanche n&#39;éclaire plus son visage.
 
 [[Essaie encore une fois.]]
 
-[[Retiens-toi encore une fois.]]</tw-passagedata><tw-passagedata pid="93" name="Essaie encore une fois." tags="" position="2350,2900" size="100,100">[[Toujours la même erreur, Emma.]]</tw-passagedata><tw-passagedata pid="94" name="Retiens-toi encore une fois." tags="" position="2300,2800" size="100,100">Tu crois vraiment en être capable ?
+[[Retiens-toi encore une fois.]]</tw-passagedata><tw-passagedata pid="82" name="Essaie encore une fois." tags="" position="2350,2900" size="100,100">[[Toujours la même erreur, Emma.]]</tw-passagedata><tw-passagedata pid="83" name="Retiens-toi encore une fois." tags="" position="2300,2800" size="100,100">Tu crois vraiment en être capable ?
 
-[[Toujours la même erreur, Emma.]]</tw-passagedata><tw-passagedata pid="95" name="Il est trop tard." tags="" position="2250,3275" size="100,100">Tu l&#39;as déjà compris, ça. Mais tu as peut-être fini par oublier ?
+[[Toujours la même erreur, Emma.]]</tw-passagedata><tw-passagedata pid="84" name="Il est trop tard." tags="" position="2225,3250" size="100,100">Tu l&#39;as déjà compris, ça. Mais tu as peut-être fini par oublier ?
 
 Enfin, (text-style:&quot;blur&quot;)[encore une fois], ça n&#39;aurait rien changé. Maintenant, avec la lumière, tu ne peux plus voir grand-chose, ce qui veut dire que (text-style:&quot;blur&quot;)[c&#39;est foutu pour cette fois-ci]. 
 
 Peut-être qu&#39;il faut que tu apprennes autre chose, alors. Aller, réessaie. Aller, affronte-la du regard, ton amie qui déborde et explose de lumière, n&#39;as-tu pas compris que c&#39;est ainsi qu&#39;elle va te faire disparaître, si tu ne fais rien ? Frappe-la, mords-la, brûle-la, mais fais quelque chose, fais quelque chose, Emma !
 
-[[Tu fermes juste les yeux.]]</tw-passagedata><tw-passagedata pid="96" name="Rapproche-toi." tags="" position="3175,3050" size="100,100">Sans te lever, tu te décales sur le banc dans sa direction, et puis places les mains en coupe autour de la (text-colour: #c0c195)[cigarette] et du (text-colour: #ab7875)[briquet] comme elle te l&#39;indique d&#39;un signe de tête. Tu n&#39;es pas sûre de ton utilité ; il n&#39;y a pas de vent, tu crois, mais Noah a l&#39;air convaincue que ça changera quelque chose.
+[[Tu fermes juste les yeux.]]
+
+(set: $f5 to 1)</tw-passagedata><tw-passagedata pid="85" name="Rapproche-toi." tags="" position="3175,3050" size="100,100">Sans te lever, tu te décales sur le banc dans sa direction, et puis places les mains en coupe autour de la (text-colour: #c0c195)[cigarette] et du (text-colour: #ab7875)[briquet] comme elle te l&#39;indique d&#39;un signe de tête. Tu n&#39;es pas sûre de ton utilité ; il n&#39;y a pas de vent, tu crois, mais Noah a l&#39;air convaincue que ça changera quelque chose.
 
 Et elle a raison, parce qu&#39;une petite flamme apparaît entre tes mains. Et elle sourit un peu, plus l&#39;air soulagée que vraiment heureuse, mais tu te contentes de ça, pour l&#39;instant. Parce que tu n&#39;es pas sûre de l&#39;avoir vue sourire depuis que vous êtes parties, plusieurs heures maintenant, et maintenant que c&#39;est allumé la lumière blanche s&#39;est un peu adoucie, alors. 
 
 Puis quelque chose de rapide, stupide, alors qu&#39;elle rejoint le bout de la (text-colour: #c0c195)[cigarette] à la flamme - une main qui tremble, un sursaut, juste le hasard, juste ça - et le (text-colour: #ab7875)[briquet] encore allumé lui échappe et tombe dans ta main encore ouverte. 
 
-[[Fuis le feu.]]</tw-passagedata><tw-passagedata pid="97" name="Fuis le feu." tags="" position="3100,3125" size="100,100">Trop tard. Tu as une sorte de glapissement alors que le briquet, projeté par ton geste brusque, rebondit contre le banc puis le gravier.
+[[Fuis le feu.]]</tw-passagedata><tw-passagedata pid="86" name="Fuis le feu." tags="" position="3100,3125" size="100,100">Trop tard. Tu as une sorte de glapissement alors que le briquet, projeté par ton geste brusque, rebondit contre le banc puis le gravier.
 
 - Merde. Merde, je suis désolée, Em&#39;, bredouille Noah, et elle a déjà attrapé ta main avant que tu puisses protester et lui dire que c&#39;était plus de peur que de mal (parce que c&#39;est vrai, c&#39;est à peine si tu sens encore une brûlure là où la flamme t&#39;a mordue si rapidement), l&#39;inspecte à la recherche d&#39;une marque.
 
 [[&quot;C&#39;est rien, c&#39;est pas grave.&quot;]]
 
-[[Ne bouge pas.]]</tw-passagedata><tw-passagedata pid="98" name="&quot;C&#39;est rien, c&#39;est pas grave.&quot;" tags="" position="2975,3175" size="100,100">Mais elle t&#39;écoute à peine, continue à tourner, manipuler la peau, jusqu&#39;à ce qu&#39;elle décide avec un soupir qu&#39;il n&#39;y a rien à trouver.
+[[Ne bouge pas.]]</tw-passagedata><tw-passagedata pid="87" name="&quot;C&#39;est rien, c&#39;est pas grave.&quot;" tags="" position="2975,3175" size="100,100">Mais elle t&#39;écoute à peine, continue à tourner, manipuler la peau, jusqu&#39;à ce qu&#39;elle décide avec un soupir qu&#39;il n&#39;y a rien à trouver.
 
 Noah relâche sa prise sur ta main, mais tiens encore le bout des doigts, juste contre le banc. Tu te souviens vaguement de sorties d&#39;il y a quelques années, à une fête foraine ou un parc d&#39;attractions, quelque chose avec beaucoup de monde en tout cas, et des mains que vous gardiez liées à l&#39;identique une fois la nuit tombée, pour ne pas vous perdre dans la foule. Juste le bout des doigts aussi (tu n&#39;avais pas osé essayé de prendre plus).
 
@@ -945,7 +943,7 @@ Vous restez silencieuses quelques instants.
 
 La lumière blanche est revenue, découpe de nouveau ses angles et ses arêtes sur son visage. Tu te sens bizarre, repenses au (text-colour: #ab7875)[briquet].
 
-[[&quot;Je me demande où il est tombé, est-ce que tu veux que-&quot;]]</tw-passagedata><tw-passagedata pid="99" name="Ne bouge pas." tags="" position="3050,3250" size="100,100">- Je ne vois rien, marmonne-t-elle après quelques instants (la lumière du néon n&#39;atteint toujours que son visage). Et puis elle lève la tête, remarque que tu t&#39;es mise à sourire. Détourne de nouveau les yeux, mi-gênée, mi-amusée. 
+[[&quot;Je me demande où il est tombé, est-ce que tu veux que-&quot;]]</tw-passagedata><tw-passagedata pid="88" name="Ne bouge pas." tags="" position="3050,3250" size="100,100">- Je ne vois rien, marmonne-t-elle après quelques instants (la lumière du néon n&#39;atteint toujours que son visage). Et puis elle lève la tête, remarque que tu t&#39;es mise à sourire. Détourne de nouveau les yeux, mi-gênée, mi-amusée. 
 
 - C&#39;est ça, moque-toi de moi parce que je m&#39;inquiète. 
 
@@ -957,7 +955,7 @@ Elle rit. Elle rit et tu te rends compte que tu avais cru que tu ne l&#39;entend
 
 Tu te sens bizarre, repenses au (text-colour: #ab7875)[briquet].
 
-[[&quot;Je me demande où il est tombé, est-ce que tu veux que-&quot;]]</tw-passagedata><tw-passagedata pid="100" name="&quot;Mais peut-être que s&#39;il avait...&quot;" tags="" position="2750,2950" size="100,100">(tu regrettes presque immédiatement.)
+[[&quot;Je me demande où il est tombé, est-ce que tu veux que-&quot;]]</tw-passagedata><tw-passagedata pid="89" name="&quot;Mais peut-être que s&#39;il avait...&quot;" tags="" position="2750,2950" size="100,100">(tu regrettes presque immédiatement.)
 
 Mais il est trop tard. Noah t&#39;a entendue, et Noah veut savoir.
 
@@ -975,7 +973,7 @@ Tu n&#39;oses pas la regarder en face. Mais tu vois quand même. Du coin de l&#3
 
 Silence.
 
-[[Excuse-toi, Emma.]] </tw-passagedata><tw-passagedata pid="101" name="Allume-le." tags="" position="3850,3975" size="100,100">Le froid a eu le temps de s&#39;infiltrer, dans les quelques secondes où Noah fouillait les poches de sa veste pour s&#39;assurer qu&#39;elle avait tout, paquet et briquet, mais tes doigts ne tremblent pas quand tu entres ton code, sélectionnes un contact (tu essaies d&#39;ignorer la vignette «27 appels manqués» en bas de votre conversation coincée entre une douzaine de variantes de «Emma ?» et un dernier «Rapelle-moi.»). Lorsque tu écris le message, c&#39;est rapidement, sans te laisser le temps de réfléchir :
+[[Excuse-toi, Emma.]] </tw-passagedata><tw-passagedata pid="90" name="Allume-le." tags="" position="3850,3975" size="100,100">Le froid a eu le temps de s&#39;infiltrer, dans les quelques secondes où Noah fouillait les poches de sa veste pour s&#39;assurer qu&#39;elle avait tout, paquet et briquet, mais tes doigts ne tremblent pas quand tu entres ton code, sélectionnes un contact (tu essaies d&#39;ignorer la vignette «27 appels manqués» en bas de votre conversation coincée entre une douzaine de variantes de «Emma ?» et un dernier «Rapelle-moi.»). Lorsque tu écris le message, c&#39;est rapidement, sans te laisser le temps de réfléchir :
 
 &quot;C&#39;est Noah qui a tout fait, je l&#39;ai vue, je pourrai témoigner. Le flingue est caché quelque part dans la cabane à côté de chez David, avec le bidon d&#39;essence. Il faut fouiller un peu, mais c&#39;est là.&quot; 
 
@@ -985,7 +983,7 @@ Tu t&#39;interromps un court instant.
 
 [[Écris : &quot;Elle est en route vers la frontière.&quot;]]
 
-[[Arrête. Éteins le téléphone.]]</tw-passagedata><tw-passagedata pid="102" name="Repose-le." tags="" position="4125,4000" size="100,100">Non, ça ne vaut pas la peine de l&#39;allumer juste pour utiliser la lampe intégrée. Il faudra se contenter du briquet, alors.
+[[Arrête. Éteins le téléphone.]]</tw-passagedata><tw-passagedata pid="91" name="Repose-le." tags="" position="4125,4000" size="100,100">Non, ça ne vaut pas la peine de l&#39;allumer juste pour utiliser la lampe intégrée. Il faudra se contenter du briquet, alors.
 
 Tu soupires, t&#39;enfonces un peu plus dans le siège.
 
@@ -995,7 +993,7 @@ Et qu&#39;est-ce qu&#39;elle fait, Noah ?
 
 [[Vérifie que le briquet fonctionne.]]
 
-(set:$nbriquet to 1)</tw-passagedata><tw-passagedata pid="103" name="Arrête. Éteins le téléphone." tags="" position="4025,4125" size="100,100">Tu as l&#39;impression de l&#39;entendre, tout d&#39;un coup - Qu&#39;est-ce que tu //fais//, Emma. Ce genre de questions qui n&#39;attend pas de réponses mais juste l&#39;obéissane à un ordre non-dit.
+(set:$nbriquet to 1)</tw-passagedata><tw-passagedata pid="92" name="Arrête. Éteins le téléphone." tags="" position="4025,4125" size="100,100">Tu as l&#39;impression de l&#39;entendre, tout d&#39;un coup - Qu&#39;est-ce que tu //fais//, Emma. Ce genre de questions qui n&#39;attend pas de réponses mais juste l&#39;obéissane à un ordre non-dit.
 
 Alors tu obéis. Tu effaces les mots que tu as commencés à écrire, tu le ré-éteins complètement, et tu le ranges dans la boîte à gants. Comme vous en aviez convenu.
 
@@ -1008,13 +1006,13 @@ Qu&#39;est-ce qu&#39;elle fait, Noah ?
 [[Vérifie que le briquet fonctionne.]]
 
 (set:$nbriquet to 1)
-</tw-passagedata><tw-passagedata pid="104" name="Vérifie que le briquet fonctionne." tags="" position="4175,4125" size="100,100">C&#39;est plus pour passer le temps que par véritable inquiétude, mais tu fais jouer le mécanisme quelques fois. Rien.
+</tw-passagedata><tw-passagedata pid="93" name="Vérifie que le briquet fonctionne." tags="" position="4175,4125" size="100,100">C&#39;est plus pour passer le temps que par véritable inquiétude, mais tu fais jouer le mécanisme quelques fois. Rien.
 
-(set:$nbriquet to 0) [[Réessaie.]]</tw-passagedata><tw-passagedata pid="105" name="Réessaie." tags="" position="4200,4300" size="100,100">(clic.) Rien. (set:$essai to $essai + 1)
+(set:$nbriquet to 0) [[Réessaie.]]</tw-passagedata><tw-passagedata pid="94" name="Réessaie." tags="" position="4200,4300" size="100,100">(clic.) Rien. (set:$essai to $essai + 1)
 
 (if: $essai &lt; 10)[ [[Réessaie.]] ]
 
-(else:)[ [[Jette le briquet contre la vitre.]] ]</tw-passagedata><tw-passagedata pid="106" name="Jette le briquet contre la vitre." tags="obja" position="3975,4450" size="100,100">Avec un cri de frustration, tu balances le stupide rectangle de plastique dur contre la stupide vitre de cette stupide voiture où tu es coincée depuis des heures. Ce stupide briquet devrait être le moindre de tes soucis, mais plus rien ne va depuis - depuis pas si longtemps, mais si tu y réfléchis juste un peu tu sais que plus rien n&#39;ira jamais bien. Pour le reste de ta vie, probablement.
+(else:)[ [[Jette le briquet contre la vitre.]] ]</tw-passagedata><tw-passagedata pid="95" name="Jette le briquet contre la vitre." tags="obja" position="3975,4450" size="100,100">Avec un cri de frustration, tu balances le stupide rectangle de plastique dur contre la stupide vitre de cette stupide voiture où tu es coincée depuis des heures. Ce stupide briquet devrait être le moindre de tes soucis, mais plus rien ne va depuis - depuis pas si longtemps, mais si tu y réfléchis juste un peu tu sais que plus rien n&#39;ira jamais bien. Pour le reste de ta vie, probablement.
 
 Alors tu n&#39;y penses pas. N&#39;y pense pas. Récupère le stupide briquet qui ne fonctionne pas, garde-le pour la forme dans ta main, juste pour avoir quelque chose à quoi te raccrocher, mais n&#39;y pense pas, ne pense à rien. 
 
@@ -1025,7 +1023,7 @@ Mais tu sais que tu ne vas pas sortir d&#39;ici.
 [[Attends qu&#39;elle revienne.]]
 
 (set: $briquet to 1)
-</tw-passagedata><tw-passagedata pid="107" name="&quot;Je t&#39;ai cherchée.&quot;" tags="" position="2925,1425" size="100,100">- Je sais.
+</tw-passagedata><tw-passagedata pid="96" name="&quot;Je t&#39;ai cherchée.&quot;" tags="" position="2925,1425" size="100,100">- Je sais.
 
 Tu crois qu&#39;elle sourit aussi. 
 
@@ -1035,7 +1033,7 @@ Elle ne se lève toujours pas, reste assise, alors tu continuer à avancer, t&#3
 
 Tu obéis. Tu sens un peu l&#39;écorce rêche contre ton dos, le bras et l&#39;épaule de Noah qui presse contre les tiens. 
 
-[[&quot;J&#39;ai très sommeil.&quot;]]</tw-passagedata><tw-passagedata pid="108" name="&quot;Rentrons.&quot;" tags="" position="2950,1550" size="100,100">(ah, tu essaies encore ?)
+[[&quot;J&#39;ai très sommeil.&quot;]]</tw-passagedata><tw-passagedata pid="97" name="&quot;Rentrons.&quot;" tags="" position="2950,1550" size="100,100">(ah, tu essaies encore ?)
 
 Elle ne dit rien. Se lève au bout de quelques instants pour se mettre à ta hauteur. Tu crois qu&#39;elle te regarde.
 
@@ -1043,7 +1041,7 @@ Tu regrettes encore une fois de ne pas avoir pris de quoi faire de la lumière. 
 
 Tu n&#39;es pas spécialement inquiète, cependant. 
 
-[[Répète : &quot;Rentrons.&quot;]]</tw-passagedata><tw-passagedata pid="109" name="Répète : &quot;Rentrons.&quot;" tags="" position="2825,1575" size="100,100">Un peu plus doucement, cette fois-ci. Et quand elle hoche à moitié la tête, tu fais quelque chose que tu n&#39;as pas fait depuis longtemps, depuis que vous étiez enfants peut-être : tu tends une main vers la sienne, attrape le bout de ses doigts. 
+[[Répète : &quot;Rentrons.&quot;]]</tw-passagedata><tw-passagedata pid="98" name="Répète : &quot;Rentrons.&quot;" tags="" position="2825,1575" size="100,100">Un peu plus doucement, cette fois-ci. Et quand elle hoche à moitié la tête, tu fais quelque chose que tu n&#39;as pas fait depuis longtemps, depuis que vous étiez enfants peut-être : tu tends une main vers la sienne, attrape le bout de ses doigts. 
 
 Quand elle suit ton geste et s&#39;accroche à ta main, tu n&#39;es pas spécialement heureuse. Paisible, peut-être. L&#39;impression aussi diffuse que la lumière grise du jour que tout est comme il est censé l&#39;être.
 
@@ -1052,14 +1050,14 @@ Quand elle suit ton geste et s&#39;accroche à ta main, tu n&#39;es pas spécial
 Quand Noah appuie sur la gâchette (la deuxième fois en quelques heures), tu n&#39;entends même pas la détonation. 
 
 [[Tu fermes juste les yeux.]]
-]
+(set: $f7 to 1)]
 
 (if: $gun &gt; 0)[ Et quand tu lâches sa main pour la prendre dans tes bras, et qu&#39;elle ne réagit pas même lorsqu&#39;elle entende le cliquetis de la sécurité de (text-colour: #9d9db0)[l&#39;arme] derrière elle, et que d&#39;un bras tu la serres, fort, alors que l&#39;autre main vive comme un serpent vient presser le métal contre sa tempe, tu ne te sens pas spécialement coupable. Ou triomphante. Ou en sécurité.
 
 Quand tu appuies sur la gâchette, elle ne crie même pas.
 
 [[Mais le monde entier disparaît.]]
-]</tw-passagedata><tw-passagedata pid="110" name="&quot;J&#39;ai très sommeil.&quot;" tags="" position="2800,1450" size="100,100">- Je sais, Em&#39;. 
+]</tw-passagedata><tw-passagedata pid="99" name="&quot;J&#39;ai très sommeil.&quot;" tags="" position="2800,1450" size="100,100">- Je sais, Em&#39;. 
 
 Et elle appuie sa tête contre son épaule.
 
@@ -1070,14 +1068,14 @@ Peut-être pour la première fois depuis très, très longtemps, tu te sens pais
 Quand Noah appuie sur la gâchette (la deuxième fois en quelques heures), tu n&#39;entends même pas la détonation. 
 
 [[Tu fermes juste les yeux.]]
-]
+(set: $f7 to 1)]
 
 (if: $gun &gt; 0)[ Et quand elle ne réagit pas même lorsqu&#39;elle entende le cliquetis de la sécurité de (text-colour: #9d9db0)[l&#39;arme] derrière elle, et que d&#39;un bras tu la serres, fort, comme si ça allait suffire à la tenir en place (ça suffira), alors que l&#39;autre main vive comme un serpent vient presser le métal contre sa tempe, tu ne te sens pas spécialement coupable. Ou triomphante. Ou en sécurité.
 
 Quand tu appuies sur la gâchette, elle ne crie même pas.
 
 [[Mais le monde entier disparaît.]]
-]</tw-passagedata><tw-passagedata pid="111" name="Fais le tour." tags="" position="3775,2650" size="100,100">C&#39;est vite fait, vingt pas à peine. Pas de fenêtre sur aucun des murs. Lorsque tu étais sur le côté opposé à la voiture (ou ce que tu percevais comme tel), le vronbissement a semblé s&#39;intensifier, et maintenant que tu es de retour à ton point de départ, le bruit de l&#39;autoroute a complètement disparu.
+]</tw-passagedata><tw-passagedata pid="100" name="Fais le tour." tags="" position="3775,2650" size="100,100">C&#39;est vite fait, vingt pas à peine. Pas de fenêtre sur aucun des murs. Lorsque tu étais sur le côté opposé à la voiture (ou ce que tu percevais comme tel), le vronbissement a semblé s&#39;intensifier, et maintenant que tu es de retour à ton point de départ, le bruit de l&#39;autoroute a complètement disparu.
 
 
 
@@ -1085,26 +1083,26 @@ L&#39;autoroute a complètement disparu.
 
 [[Fais le tour encore une fois.]]
 
-[[Tu te trompes. C&#39;est encore là.]]</tw-passagedata><tw-passagedata pid="112" name="Fais le tour encore une fois." tags="" position="3625,2725" size="100,100">C&#39;est encore plus rapide cette fois-ci, à grands pas presque apeurés, le regard fixé loin du mur, la main contre celui-ci.
+[[Tu te trompes. C&#39;est encore là.]]</tw-passagedata><tw-passagedata pid="101" name="Fais le tour encore une fois." tags="" position="3625,2725" size="100,100">C&#39;est encore plus rapide cette fois-ci, à grands pas presque apeurés, le regard fixé loin du mur, la main contre celui-ci.
 
 [[Rien.]]
 
-[[Tu te trompes. C&#39;est encore là.]]</tw-passagedata><tw-passagedata pid="113" name="Tu te trompes. C&#39;est encore là." tags="" position="3650,2575" size="100,100">Il n&#39;y a rien, Enma. Juste le gravier et le cabanon.
+[[Tu te trompes. C&#39;est encore là.]]</tw-passagedata><tw-passagedata pid="102" name="Tu te trompes. C&#39;est encore là." tags="" position="3650,2575" size="100,100">Il n&#39;y a rien, Enma. Juste le gravier et le cabanon.
 
 [[Rien.]]
 
-[[Et les tables ? La ligne des arbres ?]]</tw-passagedata><tw-passagedata pid="114" name="Et les tables ? La ligne des arbres ?" tags="" position="3525,2575" size="100,100">Tu te tournes et te retournes presque furieusement, poussée, tirée par la panique. 
+[[Et les tables ? La ligne des arbres ?]]</tw-passagedata><tw-passagedata pid="103" name="Et les tables ? La ligne des arbres ?" tags="" position="3525,2575" size="100,100">Tu te tournes et te retournes presque furieusement, poussée, tirée par la panique. 
 
 [[Fais le tour encore une fois.]]
 
 [[Rien.]]
-</tw-passagedata><tw-passagedata pid="115" name="Rien." tags="" position="3400,2650" size="100,100">Juste le gravier et le cabanon.
+</tw-passagedata><tw-passagedata pid="104" name="Rien." tags="" position="3400,2650" size="100,100">Juste le gravier et le cabanon.
 
 Tu avances. Quelques pas hésitants, marche, pas trop s&#39;éloigner du cabanon qui est à présent le seul repère. La voiture est censée être de ce côté, non ? Et le reste là-bas ? 
 
 [[Rien de rien.]]
 
-[[Retourne au cabanon.]]</tw-passagedata><tw-passagedata pid="116" name="Rien de rien." tags="" position="3350,2550" size="100,100">Retour vers le cabanon. Ne pas trop s&#39;éloigner. Toucher le (if: $briquet &lt; 1)[froid du béton](else:)[rugueux des planches] du bout des doigts. 
+[[Retourne au cabanon.]]</tw-passagedata><tw-passagedata pid="105" name="Rien de rien." tags="" position="3350,2550" size="100,100">Retour vers le cabanon. Ne pas trop s&#39;éloigner. Toucher le (if: $briquet &lt; 1)[froid du béton](else:)[rugueux des planches] du bout des doigts. 
 
 Courir dans l&#39;autre direction.
 
@@ -1112,7 +1110,7 @@ Courir dans l&#39;autre direction.
 
 [[Retourne au cabanon.]]
 
-(if: $cabanon &gt; 0)[ [[Arrête.]] ]</tw-passagedata><tw-passagedata pid="117" name="Retourne au cabanon." tags="" position="3500,2450" size="100,100">Tu t&#39;asseois par terre. Sur le gravier, contre le mur. Tu respires normalement. 
+(if: $cabanon &gt; 0)[ [[Arrête.]] ]</tw-passagedata><tw-passagedata pid="106" name="Retourne au cabanon." tags="" position="3500,2450" size="100,100">Tu t&#39;asseois par terre. Sur le gravier, contre le mur. Tu respires normalement. 
 
 [[Fais le tour.]]
 
@@ -1132,7 +1130,7 @@ Courir dans l&#39;autre direction.
 
 [[Rien de rien.]]
 
-(set: $cabanon to 1)</tw-passagedata><tw-passagedata pid="118" name="Arrête." tags="" position="3325,2425" size="100,100">(set: $cabanon to 0) Ça ne sert à rien. Il n&#39;y a plus rien.
+(set: $cabanon to 1)</tw-passagedata><tw-passagedata pid="107" name="Arrête." tags="" position="3325,2425" size="100,100">(set: $cabanon to 0) Ça ne sert à rien. Il n&#39;y a plus rien.
 
 Tu retournes lentement vers la bâtisse, du côté de la petite porte enfoncée dans le mur. Concentre-toi sur ça. Parce que penser au reste, penser au gravier qui s&#39;étend à l&#39;infini et au //rien// te semble une très mauvaise idée.
 
@@ -1144,7 +1142,7 @@ Tu retournes lentement vers la bâtisse, du côté de la petite porte enfoncée 
 
 Et puis au moment où tu t&#39;apprêtes à embraser le bout de la (text-colour: #c0c195)[cigarette], tu remarques quelque chose dans ton champ de vision. Un reflet rapide, à peine plus qu&#39;un point, qui te renvoie la lumière orangée de la flamme.
 
-[[Va voir ce que c&#39;est.]]]</tw-passagedata><tw-passagedata pid="119" name="Essaie d&#39;ouvrir la porte." tags="" position="3900,2350" size="100,100">Tu es presque surprise de sentir la poignée rouillée céder facilement, de voir le panneau pivoter dans l&#39;obscurité, derrière.
+[[Va voir ce que c&#39;est.]]]</tw-passagedata><tw-passagedata pid="108" name="Essaie d&#39;ouvrir la porte." tags="" position="3900,2350" size="100,100">Tu es presque surprise de sentir la poignée rouillée céder facilement, de voir le panneau pivoter dans l&#39;obscurité, derrière.
 
 Un pas en avant. Tu as l&#39;impression que ton pied se fait avaler par une nuit bien plus profonde, bien plus absolue que celle d&#39;où tu arrives.
 
@@ -1156,11 +1154,11 @@ Tu hésites.
 
 (else:)[Tu serres le (text-colour: #ab7875)[briquet] dans ta main. Un deuxième pas. 
 
-[[Pourquoi tu hésites encore ? Allume.]] ]</tw-passagedata><tw-passagedata pid="120" name="Va voir ce que c&#39;est." tags="objr" position="3225,2325" size="100,100">Juste de l&#39;autre côté de la porte, posé comme s&#39;il avait toujours été là, il y a un bidon d&#39;essence. 
+[[Pourquoi tu hésites encore ? Allume.]] ]</tw-passagedata><tw-passagedata pid="109" name="Va voir ce que c&#39;est." tags="objr" position="3225,2325" size="100,100">Juste de l&#39;autre côté de la porte, posé comme s&#39;il avait toujours été là, il y a un bidon d&#39;essence. 
 
 Tu tapotes le contenant du bout du pied, sens le poids qui résiste contre ton geste. Bien rempli. Peut-être complètement. Tu regardes autour de toi, cette fois-ci avec plus de panique consciente, l&#39;idée que quelqu&#39;un l&#39;ait posé là, quelqu&#39;un que tu n&#39;aurais ni vu, ni entendu. 
 
-[[Refais le tour. Encore une fois. En silence.]]</tw-passagedata><tw-passagedata pid="121" name="&quot;Noah ?&quot;" tags="wip" position="3375,2300" size="100,100">Pas de réponse. Pas de bruit. </tw-passagedata><tw-passagedata pid="122" name="Refais le tour. Encore une fois. En silence." tags="" position="3200,2200" size="100,100">Tu marches avec précautions, essayant de faire le moins de bruit possible sur le gravier. Le (text-colour: #ab7875)[briquet] éclaire le monde en maigres filaments oranges, et les ombres n&#39;ont l&#39;air que plus profondes ainsi. Mais tu n&#39;oses plus l&#39;éteindre. 
+[[Refais le tour. Encore une fois. En silence.]]</tw-passagedata><tw-passagedata pid="110" name="&quot;Noah ?&quot;" tags="wip" position="3375,2300" size="100,100">Pas de réponse. Pas de bruit. </tw-passagedata><tw-passagedata pid="111" name="Refais le tour. Encore une fois. En silence." tags="" position="3200,2200" size="100,100">Tu marches avec précautions, essayant de faire le moins de bruit possible sur le gravier. Le (text-colour: #ab7875)[briquet] éclaire le monde en maigres filaments oranges, et les ombres n&#39;ont l&#39;air que plus profondes ainsi. Mais tu n&#39;oses plus l&#39;éteindre. 
 
 Protège-le, alors que tu avances, tiens-le près de ton cœur, sous ta main. 
 
@@ -1168,22 +1166,22 @@ Tu reviens au bidon et tu n&#39;as rien trouvé. Alors que tu t&#39;accroupis le
 
 Lorsque tu appuies ton dos contre le mur pour assurer ton équilibre, tu sens les planches de bois qui s&#39;affaissent juste un peu sous ton poids. Qui grincent juste un peu. Le seul bruit autour de toi. 
 
-[[Attends.]]</tw-passagedata><tw-passagedata pid="123" name="N&#39;y pense même pas." tags="" position="3150,1975" size="100,100">Ne pense même pas à quoi ?
+[[Attends.]]</tw-passagedata><tw-passagedata pid="112" name="N&#39;y pense même pas." tags="" position="3150,1975" size="100,100">Ne pense même pas à quoi ?
 
 [[Au bois derrière ton dos ?]]
 
 [[À l&#39;essence dans le bidon ?]]
 
 [[Au feu entre tes mains ?]]
-</tw-passagedata><tw-passagedata pid="124" name="Au bois derrière ton dos ?" tags="" position="3025,1850" size="100,100">(il va falloir le faire discrètement, alors.)
+</tw-passagedata><tw-passagedata pid="113" name="Au bois derrière ton dos ?" tags="" position="3025,1850" size="100,100">(il va falloir le faire discrètement, alors.)
 
 (le plus silencieusement possible. le plus lentement possible.)
 
-[[(encore une fois, on entendra à peine le son des planches que tu arraches au mur.)]]</tw-passagedata><tw-passagedata pid="125" name="Au feu entre tes mains ?" tags="" position="3225,1875" size="100,100">(il va falloir le faire discrètement, alors.)
+[[(encore une fois, on entendra à peine le son des planches que tu arraches au mur.)]]</tw-passagedata><tw-passagedata pid="114" name="Au feu entre tes mains ?" tags="" position="3225,1875" size="100,100">(il va falloir le faire discrètement, alors.)
 
 (le plus silencieusement possible. le plus lentement possible.)
 
-[[(encore une fois, on entendra à peine le cliquetis du briquet.)]]</tw-passagedata><tw-passagedata pid="126" name="Attends." tags="" position="3250,2125" size="100,100">Tu restes assise un long moment. 
+[[(encore une fois, on entendra à peine le cliquetis du briquet.)]]</tw-passagedata><tw-passagedata pid="115" name="Attends." tags="" position="3250,2125" size="100,100">Tu restes assise un long moment. 
 
 
 
@@ -1191,7 +1189,7 @@ Assez pour que l&#39;infini de rien autour de toi te semble un peu plus facile �
 
 
 
-[[Attends encore.]]</tw-passagedata><tw-passagedata pid="127" name="Attends encore." tags="" position="3200,2050" size="100,100">Tu restes assises un long, long moment.
+[[Attends encore.]]</tw-passagedata><tw-passagedata pid="116" name="Attends encore." tags="" position="3200,2050" size="100,100">Tu restes assises un long, long moment.
 
 
 
@@ -1199,41 +1197,41 @@ Assez pour que tu finisses par comprendre que quelque chose est de trop, ici, en
 
 
 
-[[N&#39;y pense même pas.]]</tw-passagedata><tw-passagedata pid="128" name="À l&#39;essence dans le bidon ?" tags="" position="3125,1825" size="100,100">(il va falloir le faire discrètement, alors.)
+[[N&#39;y pense même pas.]]</tw-passagedata><tw-passagedata pid="117" name="À l&#39;essence dans le bidon ?" tags="" position="3125,1825" size="100,100">(il va falloir le faire discrètement, alors.)
 
 (le plus silencieusement possible. le plus lentement possible.)
 
-[[(encore une fois, on entendra à peine le son du liquide que tu répands au sol.)]]</tw-passagedata><tw-passagedata pid="129" name="(encore une fois, on entendra à peine le son des planches que tu arraches au mur.)" tags="" position="3025,1775" size="100,100">Tu mets le feu au cabanon. 
+[[(encore une fois, on entendra à peine le son du liquide que tu répands au sol.)]]</tw-passagedata><tw-passagedata pid="118" name="(encore une fois, on entendra à peine le son des planches que tu arraches au mur.)" tags="" position="3025,1775" size="100,100">Tu mets le feu au cabanon. 
 
 Et puis quand une nouvelle lumière se met à dévorer le monde entier (pas le soleil, pas le soleil, tu sais que tu ne le reverras jamais), tu te rasseois, juste devant le cœur. Tu as un peu chaud. Tu as un peu sommeil.
 
 Encore une fois, tu attends. Il ne reste rien d&#39;autre à faire.
 
-[[Tu fermes les yeux.]]</tw-passagedata><tw-passagedata pid="130" name="(encore une fois, on entendra à peine le son du liquide que tu répands au sol.)" tags="" position="3125,1750" size="100,100">Tu mets le feu au cabanon. 
+[[Tu fermes les yeux.]]</tw-passagedata><tw-passagedata pid="119" name="(encore une fois, on entendra à peine le son du liquide que tu répands au sol.)" tags="" position="3125,1750" size="100,100">Tu mets le feu au cabanon. 
 
 Et puis quand une nouvelle lumière se met à dévorer le monde entier (pas le soleil, pas le soleil, tu sais que tu ne le reverras jamais), tu te rasseois, juste devant le cœur. Tu as un peu chaud. Tu as un peu sommeil.
 
 Encore une fois, tu attends. Il ne reste rien d&#39;autre à faire.
 
-[[Tu fermes les yeux.]]</tw-passagedata><tw-passagedata pid="131" name="(encore une fois, on entendra à peine le cliquetis du briquet.)" tags="" position="3225,1800" size="100,100">Tu mets le feu au cabanon. 
+[[Tu fermes les yeux.]]</tw-passagedata><tw-passagedata pid="120" name="(encore une fois, on entendra à peine le cliquetis du briquet.)" tags="" position="3225,1800" size="100,100">Tu mets le feu au cabanon. 
 
 Et puis quand une nouvelle lumière se met à dévorer le monde entier (pas le soleil, pas le soleil, tu sais que tu ne le reverras jamais), tu te rasseois, juste devant le cœur. Tu as un peu chaud. Tu as un peu sommeil.
 
 Encore une fois, tu attends. Il ne reste rien d&#39;autre à faire.
 
-[[Tu fermes les yeux.]]</tw-passagedata><tw-passagedata pid="132" name="Pourquoi tu hésites encore ? Allume." tags="objr" position="4025,2300" size="100,100">La flamme orangée jaillit du premier coup, mais ne sert à rien contre l&#39;obscurité épaisse, presque palpable autour de toi. Tu distingues un peu tes doigts serrés autour du plastique, une flaque de lumière à tes pieds qui vient lécher le bout de tes chaussures ; c&#39;est tout. 
+[[Tu fermes les yeux.]]</tw-passagedata><tw-passagedata pid="121" name="Pourquoi tu hésites encore ? Allume." tags="objr" position="4025,2300" size="100,100">La flamme orangée jaillit du premier coup, mais ne sert à rien contre l&#39;obscurité épaisse, presque palpable autour de toi. Tu distingues un peu tes doigts serrés autour du plastique, une flaque de lumière à tes pieds qui vient lécher le bout de tes chaussures ; c&#39;est tout. 
 
 Tu fais quelques pas de plus, les planches du sol grinçant sous tes pieds. Le (text-colour: #ab7875)[briquet] reste impuissant, les murs invisibles, comme si la nuit les avaient éloignés de toi et ne te donnait à voir que toi-même, tes chaussures, trois doigts.
 
 Et puis la porte claque derrière toi.
 
-[[Ne panique pas, Emma.]]</tw-passagedata><tw-passagedata pid="133" name="Pourquoi ? Avance." tags="" position="3775,2275" size="100,100">Tu gardes une main appuyée contre le mur à ta droite alors que tu fais quelques pas prudents. Le béton est froid sous tes doigts. Un peu trop lisse, tu trouves. Et peut-être presque gluant.
+[[Ne panique pas, Emma.]]</tw-passagedata><tw-passagedata pid="122" name="Pourquoi ? Avance." tags="" position="3775,2275" size="100,100">Tu gardes une main appuyée contre le mur à ta droite alors que tu fais quelques pas prudents. Le béton est froid sous tes doigts. Un peu trop lisse, tu trouves. Et peut-être presque gluant.
 
-[[De quoi tu parles ? Bien sûr que non.]]</tw-passagedata><tw-passagedata pid="134" name="De quoi tu parles ? Bien sûr que non." tags="" position="3675,2200" size="100,100">Si, si. Le mur est poisseux et humide sous ta main, et quand tu fais un geste brusque pour la retirer, ta peau reste collée un bref instant avant de s&#39;en détacher. 
+[[De quoi tu parles ? Bien sûr que non.]]</tw-passagedata><tw-passagedata pid="123" name="De quoi tu parles ? Bien sûr que non." tags="" position="3675,2200" size="100,100">Si, si. Le mur est poisseux et humide sous ta main, et quand tu fais un geste brusque pour la retirer, ta peau reste collée un bref instant avant de s&#39;en détacher. 
 
 Tu recules brusquement, emportée par ton élan, heurte soudain le mur opposé avec ton dos. Tu retiens un cri de dégoût lorsque tu le sens s&#39;affaisser juste un peu sous ton poids, que l&#39;humidité suinte à travers ta veste, et tu titubes à nouveau. 
 
-[[Cinq pas en arrière.]] </tw-passagedata><tw-passagedata pid="135" name="Ne panique pas, Emma." tags="" position="4100,2175" size="100,100">Un pas en arrière.
+[[Cinq pas en arrière.]] </tw-passagedata><tw-passagedata pid="124" name="Ne panique pas, Emma." tags="" position="4100,2175" size="100,100">Un pas en arrière.
 
 Ne panique pas. 
 
@@ -1243,13 +1241,13 @@ Cours à reculons. Trébuche. Pas de mur. Tu tombes en arrière, et tu lâches l
 
 Immédiatement, tu te redresse, cherche à quatre pattes, avec les mains, avec les genoux. Encore des échardes. Est-ce que c&#39;est ton sang qui rend le sol poisseux ? Cherche.
 
-[[Cherche mieux que ça.]]</tw-passagedata><tw-passagedata pid="136" name="Cherche mieux que ça." tags="" position="3950,2125" size="100,100">Rien. 
+[[Cherche mieux que ça.]]</tw-passagedata><tw-passagedata pid="125" name="Cherche mieux que ça." tags="" position="3950,2125" size="100,100">Rien. 
 
 Tu abandonnes après ce qui te semble être des heures, lorsque tu as tellement rampé que tu sais pertinemment que la porte est loin, loin derrière toi, peut-être disparu pour toujours. Parce que tu n&#39;as pas rencontré de mur une seule fois depuis que tu es tombée. Parce que tu as de plus en plus de mal à distinguer la limite entre les planches, si bien que tu commences à imaginer le sol comme une seule surface de bois lisse.
 
 Tu as fini par t&#39;asseoir en tailleur, seule au cœur (au milieu ? comment définir ça, à présent ?) du cabanon. Tu t&#39;es remise à penser à Noah. Est-ce qu&#39;elle est dehors ? Est-ce qu&#39;il y a encore un dehors ? Est-ce que tu es vraiment, définitivement seule au monde ?
 
-[[(est-ce que tu ne l&#39;étais pas déjà ?)]]</tw-passagedata><tw-passagedata pid="137" name="finir" tags="finFIN" position="1750,3650" size="100,100">(if: $finobs &gt; 1)[ Nuit. Trois heures après l&#39;erreur : vous avez assez roulé pour que tes mains arrêtent de trembler, la terreur et l&#39;adrénaline comme semées sur la route. Ce qui veut dire qu&#39;il y a toujours cette trace de goudron qui te relie à la chose, dans la ville, et quand tu fermes les yeux tu peux sentir le souvenir se rapprocher pas à pas ; mais pour l&#39;instant, ce n&#39;est plus là. Vous avez encore du temps et tu te sens terriblement légère. 
+[[(est-ce que tu ne l&#39;étais pas déjà ?)]]</tw-passagedata><tw-passagedata pid="126" name="finir" tags="finFIN" position="1750,3650" size="100,100">(if: $finobs &gt; 1)[ Nuit. Trois heures après l&#39;erreur : vous avez assez roulé pour que tes mains arrêtent de trembler, la terreur et l&#39;adrénaline comme semées sur la route. Ce qui veut dire qu&#39;il y a toujours cette trace de goudron qui te relie à la chose, dans la ville, et quand tu fermes les yeux tu peux sentir le souvenir se rapprocher pas à pas ; mais pour l&#39;instant, ce n&#39;est plus là. Vous avez encore du temps et tu te sens terriblement légère. 
 
 Noah s&#39;arrête un peu avant quatre heures du matin. La disparition brusque du ronronnement du moteur t&#39;arrache à ton début de somnolence, mais tu arrives à te réveiller assez pour la voir enfiler sa veste, ouvrir la porte, et – [[et rien, attrape-la par le bras avant qu&#39;elle se lève, marmonne quelque chose que tu as toi-même du mal à comprendre.]]
 ]
@@ -1298,7 +1296,7 @@ Tu attends Noah à la sortie de son entraînement de volley-ball. Ça dure depui
                 
                 Refais un tour, alors. Tu vas finir par trouver.
                 
-                [[recommencer]]
+                [[Recommencer.]]
                 
                 (set: $gun to 0)
                 
@@ -1306,23 +1304,23 @@ Tu attends Noah à la sortie de son entraînement de volley-ball. Ça dure depui
                 ]
             ]
         ]
-    ]</tw-passagedata><tw-passagedata pid="138" name="Cinq pas en arrière." tags="" position="3625,2125" size="100,100">À nouveau, le mur. Pivote. Où est le fond ?
+    ]</tw-passagedata><tw-passagedata pid="127" name="Cinq pas en arrière." tags="" position="3625,2125" size="100,100">À nouveau, le mur. Pivote. Où est le fond ?
 
-[[Quatre pas en arrière.]]</tw-passagedata><tw-passagedata pid="139" name="Quatre pas en arrière." tags="" position="3575,2075" size="100,100">À nouveau, le mur. Le cabanon n&#39;était pas aussi petit de l&#39;extérieur, si ?
+[[Quatre pas en arrière.]]</tw-passagedata><tw-passagedata pid="128" name="Quatre pas en arrière." tags="" position="3575,2075" size="100,100">À nouveau, le mur. Le cabanon n&#39;était pas aussi petit de l&#39;extérieur, si ?
 
-[[Trois pas en arrière.]]</tw-passagedata><tw-passagedata pid="140" name="Trois pas en arrière." tags="" position="3550,2000" size="100,100">À nouveau, le mur. Tu as l&#39;impression que tu as plus de mal à détacher ton bras de la surface poisseuse.
+[[Trois pas en arrière.]]</tw-passagedata><tw-passagedata pid="129" name="Trois pas en arrière." tags="" position="3550,2000" size="100,100">À nouveau, le mur. Tu as l&#39;impression que tu as plus de mal à détacher ton bras de la surface poisseuse.
 
-[[Deux pas en arrière.]]</tw-passagedata><tw-passagedata pid="141" name="Deux pas en arrière." tags="" position="3525,1925" size="100,100">À nouveau, le mur.
+[[Deux pas en arrière.]]</tw-passagedata><tw-passagedata pid="130" name="Deux pas en arrière." tags="" position="3525,1925" size="100,100">À nouveau, le mur.
 
 Est-ce que tu arrives encore à respirer ?
 
-[[Un pas en arrière.]]</tw-passagedata><tw-passagedata pid="142" name="Un pas en arrière." tags="" position="3550,1875" size="100,100">À nouveau, le mur. 
+[[Un pas en arrière.]]</tw-passagedata><tw-passagedata pid="131" name="Un pas en arrière." tags="" position="3550,1875" size="100,100">À nouveau, le mur. 
 
 Cette fois-ci, tu ne recules pas. Pour aller où, de toute façon ? Il y a un mur contre ton dos. Il y a deux murs contre tes épaules. Si tu étends un peu le bras, pas complètement tendu, il y a un mur contre ta main.
 
 Au moins, ça n&#39;a pas l&#39;air de bouger tant que tu restes aussi immobile.
 
-[[Reste immobile, donc.]]</tw-passagedata><tw-passagedata pid="143" name="Reste immobile, donc." tags="" position="3550,1775" size="100,100">Tu restes ainsi un long, long moment. 
+[[Reste immobile, donc.]]</tw-passagedata><tw-passagedata pid="132" name="Reste immobile, donc." tags="" position="3550,1775" size="100,100">Tu restes ainsi un long, long moment. 
 
 Les murs restent poisseux et gluants et suintants autour de toi, mais tu commences à te faire à la sensation. Tu as un peu froid. Tu as un peu la nausée quand l&#39;odeur sucrée et entêtante commence à monter, mais tu ne te mets à t&#39;inquiéter que lorsque les bruits commencent.
 
@@ -1332,7 +1330,9 @@ Et tu finis par comprendre que les murs dégoûlinent, dans ce cabanon dont tu n
 
 [[Reste debout.]]
 
-[[Assieds-toi.]]</tw-passagedata><tw-passagedata pid="144" name="Reste debout." tags="" position="3400,1675" size="100,100">Lorsque le niveau du liquide atteint tes chevilles, tu ne bouges pas.
+[[Assieds-toi.]]
+
+(set: $f10 to 1)</tw-passagedata><tw-passagedata pid="133" name="Reste debout." tags="" position="3400,1675" size="100,100">Lorsque le niveau du liquide atteint tes chevilles, tu ne bouges pas.
 
 Lorsque le niveau du liquide atteint tes genoux, tu ne bouges pas.
 
@@ -1346,7 +1346,17 @@ Lorsque le niveau du liquide atteint tes lèvres, que tu ne peux plus nier à la
 
 Tu serres la première entre tes doigts. Tu ne cries pas.
 
-[[Tu fermes juste les yeux.]]</tw-passagedata><tw-passagedata pid="145" name="Assieds-toi." tags="varfin" position="3525,1625" size="100,100">Il n&#39;y a presque pas assez de place pour que tu t&#39;installes par terre, les genoux serrés contre ta poitrine, mais tu finis par y arriver. Le liquide monte vite, par grandes vagues régulières sorties on ne sait d&#39;où qui dégagent toujours cette odeur, ces vapeurs désagréablent te brûlant les yeux et te donnant le tournis. 
+[[Tu fermes juste les yeux.]]</tw-passagedata><tw-passagedata pid="134" name="Assieds-toi." tags="varfin" position="3525,1625" size="100,100">Il n&#39;y a presque pas assez de place pour que tu t&#39;installes par terre, les genoux serrés contre ta poitrine, mais tu finis par y arriver. Le liquide monte vite, par grandes vagues régulières sorties on ne sait d&#39;où qui dégagent toujours cette odeur, ces vapeurs désagréablent te brûlant les yeux et te donnant le tournis. 
+
+&lt;style&gt; img {
+max-width:100%;
+max-height:100%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://static.wixstatic.com/media/559f19_b030b6a245b148a3a831b7fc0e643573~mv2.png/v1/fill/w_493,h_360,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/559f19_b030b6a245b148a3a831b7fc0e643573~mv2.png&gt;
+&lt;/div&gt;
 
 Lorsque tu finis par identifier l&#39;essence, tu peux seulement penser &quot;heureusement que Noah n&#39;est pas là, avec sa (text-colour: #c0c195)[cigarette], avec son briquet.&quot; Et puis tu te demandes si tu mourras intoxiquée ou noyée. Tu n&#39;as pas de préférence particulière.
 
@@ -1354,7 +1364,7 @@ Lorsque tu finis par identifier l&#39;essence, tu peux seulement penser &quot;he
 
 [[Tu fermes juste les yeux.]]
 
-(set: $fintrue to $fintrue + 1)</tw-passagedata><tw-passagedata pid="146" name="(est-ce que tu ne l&#39;étais pas déjà ?)" tags="" position="3825,2175" size="100,100">Au bout d&#39;un autre long, long moment, tu t&#39;allonges au sol. Le bois est plat, ni froid, ni tiède.
+(set: $fintrue to $fintrue + 1)</tw-passagedata><tw-passagedata pid="135" name="(est-ce que tu ne l&#39;étais pas déjà ?)" tags="" position="3825,2175" size="100,100">Au bout d&#39;un autre long, long moment, tu t&#39;allonges au sol. Le bois est plat, ni froid, ni tiède.
 
 Tu fermes les yeux.
 
@@ -1362,7 +1372,7 @@ Et les rouvre un peu plus tard quand tu entends quelqu&#39;un frapper à la port
 
 [[Reste allongée.]]
 
-[[Va ouvrir la porte.]] </tw-passagedata><tw-passagedata pid="147" name="Reste allongée." tags="" position="3675,1775" size="100,100">À quoi bon ? Tu sais que tu ne sortiras pas d&#39;ici. Tu sais que plus rien n&#39;entreras.
+[[Va ouvrir la porte.]] </tw-passagedata><tw-passagedata pid="136" name="Reste allongée." tags="" position="3675,1775" size="100,100">À quoi bon ? Tu sais que tu ne sortiras pas d&#39;ici. Tu sais que plus rien n&#39;entreras.
 
 Alors tu restes là où tu es. Lorsque le même bruit retentit, deux //toc// courts, tu ne bouges pas. Lorsqu&#39;ils se font plus insistants, plus fréquents, plus nombreux, lorsque tu as l&#39;impression que la porte est juste à côté de toi et qu&#39;on essaie de l&#39;enfoncer, tu croises les mains sur ton ventre, comme si tu allais dormir.
 
@@ -1372,9 +1382,11 @@ Non, tu ne feras plus rien. Même lorsque la voix de Noah retentit, tremblante e
 
 &quot;Ouvre-moi, Em&#39;.&quot;
 
-[[Tu fermes juste les yeux.]]</tw-passagedata><tw-passagedata pid="148" name="Va ouvrir la porte." tags="" position="3800,2050" size="100,100">Quelle porte ? Tu ne sais pas où elle est. Tu ne sais pas si elle existe encore. Il n&#39;y a que toi et l&#39;intérieur du cabanon, pour toujours.
+[[Tu fermes juste les yeux.]]</tw-passagedata><tw-passagedata pid="137" name="Va ouvrir la porte." tags="" position="3800,2050" size="100,100">Quelle porte ? Tu ne sais pas où elle est. Tu ne sais pas si elle existe encore. Il n&#39;y a que toi et l&#39;intérieur du cabanon, pour toujours.
 
-[[Va ouvrir la porte, Emma.]]</tw-passagedata><tw-passagedata pid="149" name="Va ouvrir la porte, Emma." tags="" position="3850,1900" size="100,100">Tu finis par te lever.
+[[Va ouvrir la porte, Emma.]]
+
+(set: $f9 to 1)</tw-passagedata><tw-passagedata pid="138" name="Va ouvrir la porte, Emma." tags="varfin" position="3850,1900" size="100,100">Tu finis par te lever.
 
 Tu marches vers ce que tu supposes être la direction du bruit, ajuste un peu tes pas lorsqu&#39;on frappe une deuxième fois, avec plus d&#39;impatience. 
 
@@ -1382,29 +1394,41 @@ Et puis tu trébuches sur le (text-colour: #ab7875)[briquet].
 
 Tu le ramasses sans un mot, rallumes la flamme. Face à toi, la porte s&#39;éclaire d&#39;orange.
 
+&lt;style&gt; img {
+max-width:100%;
+max-height:100%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://static.wixstatic.com/media/559f19_a390b9cba13141049de8626cdf68267d~mv2.png/v1/fill/w_482,h_500,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/559f19_a390b9cba13141049de8626cdf68267d~mv2.png&gt;
+&lt;/div&gt;
+
 Derrière, la voix de Noah retentit. Furieuse.
 
 &quot;Ouvre-moi, Emma.&quot;
 
-[[Ouvre la porte.]]</tw-passagedata><tw-passagedata pid="150" name="Ouvre la porte." tags="wip" position="3825,1725" size="100,100">Mais quoi qu&#39;il y ait de l&#39;autre côté, tu ne le verras pas.
+[[Ouvre la porte.]]
 
-[[Tu fermes juste les yeux.]]</tw-passagedata><tw-passagedata pid="151" name="Prend à gauche." tags="" position="4075,1375" size="100,100">Le chemin continue à descendre, mais la pente est moins raide. 
+(set: $finav to $finav+1)</tw-passagedata><tw-passagedata pid="139" name="Ouvre la porte." tags="wip" position="3825,1725" size="100,100">Mais quoi qu&#39;il y ait de l&#39;autre côté, tu ne le verras pas.
 
-Après quelques pas, le vent souffle la flamme.
-
-[[Rallume le briquet.]]</tw-passagedata><tw-passagedata pid="152" name="Prend à droite." tags="" position="4200,1350" size="100,100">Le chemin monte un peu, puis s&#39;aplanit. Tu as l&#39;impression, en avançant, que tu continues à longer la limite de l&#39;aire d&#39;autoroute, parce que le bruit ne diminue pas plus. Tu ne sais pas si c&#39;est une bonne ou une mauvaise chose.
+[[Tu fermes juste les yeux.]]</tw-passagedata><tw-passagedata pid="140" name="Prend à gauche." tags="" position="4075,1375" size="100,100">Le chemin continue à descendre, mais la pente est moins raide. 
 
 Après quelques pas, le vent souffle la flamme.
 
-[[Rallume le briquet.]]</tw-passagedata><tw-passagedata pid="153" name="Rallume le briquet." tags="" position="4050,1225" size="100,100">Une nouvelle bifurcation devant toi. Tu hésites.
+[[Rallume le briquet.]]</tw-passagedata><tw-passagedata pid="141" name="Prend à droite." tags="" position="4200,1350" size="100,100">Le chemin monte un peu, puis s&#39;aplanit. Tu as l&#39;impression, en avançant, que tu continues à longer la limite de l&#39;aire d&#39;autoroute, parce que le bruit ne diminue pas plus. Tu ne sais pas si c&#39;est une bonne ou une mauvaise chose.
+
+Après quelques pas, le vent souffle la flamme.
+
+[[Rallume le briquet.]]</tw-passagedata><tw-passagedata pid="142" name="Rallume le briquet." tags="" position="4050,1225" size="100,100">Une nouvelle bifurcation devant toi. Tu hésites.
 
 [[À gauche.]]
 
-[[Tout droit.]]</tw-passagedata><tw-passagedata pid="154" name="À gauche." tags="" position="3900,1250" size="100,100">Tu continues à t&#39;enfoncer dans la forêt. Les arbres se font plus grands, plus proches, l&#39;obscurité plus difficile à percer. Tu n&#39;es pas sûre que le (text-colour: #ab7875)[briquet] suffise à éclairer ton chemin encore très longtemps.
+[[Tout droit.]]</tw-passagedata><tw-passagedata pid="143" name="À gauche." tags="" position="3900,1250" size="100,100">Tu continues à t&#39;enfoncer dans la forêt. Les arbres se font plus grands, plus proches, l&#39;obscurité plus difficile à percer. Tu n&#39;es pas sûre que le (text-colour: #ab7875)[briquet] suffise à éclairer ton chemin encore très longtemps.
 
 Tu trébuches sur une racine, manque de lâcher le (text-colour: #ab7875)[briquet] mais le rattrape à la dernière minute. Il s&#39;est éteint dans la manœuvre, et tu es laissée un court instant dans l&#39;obscurité totale.
 
-[[Rallume-le.]]</tw-passagedata><tw-passagedata pid="155" name="Tout droit." tags="" position="3925,1125" size="100,100">Le bruit de l&#39;autoroute t&#39;accompagne encore. Tu commences à craindre de trop t&#39;enfoncer dans la forêt que tu devines plus sombre, plus hostile devant toi. 
+[[Rallume-le.]]</tw-passagedata><tw-passagedata pid="144" name="Tout droit." tags="" position="3925,1125" size="100,100">Le bruit de l&#39;autoroute t&#39;accompagne encore. Tu commences à craindre de trop t&#39;enfoncer dans la forêt que tu devines plus sombre, plus hostile devant toi. 
 
 Et si Noah y était ?
 
@@ -1412,19 +1436,19 @@ Et si Noah y était ?
 
 Le vent éteint ton (text-colour: #ab7875)[briquet] une deuxième fois.
 
-[[Rallume-le.]]</tw-passagedata><tw-passagedata pid="156" name="Rallume-le." tags="" position="3775,1200" size="100,100">Nouvelle bifurcation.
+[[Rallume-le.]]</tw-passagedata><tw-passagedata pid="145" name="Rallume-le." tags="" position="3775,1200" size="100,100">Nouvelle bifurcation.
 
 [[Continue tout droit.]]
 
-[[Tourne à droite.]]</tw-passagedata><tw-passagedata pid="157" name="Continue tout droit." tags="" position="3650,1225" size="100,100">Tu ne sais plus depuis combien de temps tu marches. 
+[[Tourne à droite.]]</tw-passagedata><tw-passagedata pid="146" name="Continue tout droit." tags="" position="3650,1225" size="100,100">Tu ne sais plus depuis combien de temps tu marches. 
 
 Le vent s&#39;est mis à souffler plus fort, couvrant le bruit de l&#39;autoroute, de tes propres pas même. La flamme s&#39;éteint de plus en plus souvent.
 
-[[Rallume.]]</tw-passagedata><tw-passagedata pid="158" name="Tourne à droite." tags="" position="3650,1100" size="100,100">Tu ne sais plus depuis combien de temps tu marches. 
+[[Rallume.]]</tw-passagedata><tw-passagedata pid="147" name="Tourne à droite." tags="" position="3650,1100" size="100,100">Tu ne sais plus depuis combien de temps tu marches. 
 
 Le vent s&#39;est mis à souffler plus fort, couvrant le bruit de l&#39;autoroute, de tes propres pas même. La flamme s&#39;éteint de plus en plus souvent.
 
-[[Rallume.]]</tw-passagedata><tw-passagedata pid="159" name="Rallume." tags="" position="3525,1125" size="100,100">Et puis l&#39;inévitable se produit : le chemin s&#39;arrête.
+[[Rallume.]]</tw-passagedata><tw-passagedata pid="148" name="Rallume." tags="" position="3525,1125" size="100,100">Et puis l&#39;inévitable se produit : le chemin s&#39;arrête.
 
 Tu crois que ce sont des buissons, devant toi. Ou bien des arbustes épais ? Un conifère aux branches basses, mais en réalité immense ? Tu n&#39;en sais rien. Tu ne peux plus avancer, c&#39;est tout.
 
@@ -1432,29 +1456,49 @@ Mais tu n&#39;as toujours pas trouvé Noah.
 
 [[Continue.]]
 
-[[Fais demi-tour.]]</tw-passagedata><tw-passagedata pid="160" name="Continue." tags="" position="3400,1175" size="100,100">Tu n&#39;as pas trouvé Noah. Noah doit être quelque part. Est-ce que tu as le choix ? 
+[[Fais demi-tour.]]</tw-passagedata><tw-passagedata pid="149" name="Continue." tags="varfin" position="3400,1175" size="100,100">Tu n&#39;as pas trouvé Noah. Noah doit être quelque part. Est-ce que tu as le choix ? 
 
 Est-ce que tu as (text-style:&quot;blur&quot;)[une seule fois] eu le choix de faire autre chose que de la suivre ?
 
+&lt;style&gt; img {
+max-width:100%;
+max-height:100%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://static.wixstatic.com/media/559f19_40a4f04dd2ac46168791d0e8f880c024~mv2.png/v1/fill/w_528,h_371,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/559f19_40a4f04dd2ac46168791d0e8f880c024~mv2.png&gt;
+&lt;/div&gt;
+
 Mais alors que tu t&#39;apprêtes à t&#39;enfoncer dans les fourrés devant toi (prête à déchirer le feuillage à mains nues, avec tes dents, à tout brûler s&#39;il le faut), tu entends la voix de Noah qui résonne juste derrière toi, juste dans ton oreille.
 
-[[Jette-toi dans ses bras.]]</tw-passagedata><tw-passagedata pid="161" name="Fais demi-tour." tags="" position="3400,1050" size="100,100">Non, tant pis, c&#39;est stupide. Elle est sûrement déjà retournée à la voiture ; elle t&#39;attend déjà sûrement. Qu&#39;est-ce que tu fais là de toute façon ? À te perdre au milieu de la forêt alors que...
+[[Jette-toi dans ses bras.]]
+
+(set: $finbb to $finbb + 1)</tw-passagedata><tw-passagedata pid="150" name="Fais demi-tour." tags="" position="3400,1050" size="100,100">Non, tant pis, c&#39;est stupide. Elle est sûrement déjà retournée à la voiture ; elle t&#39;attend déjà sûrement. Qu&#39;est-ce que tu fais là de toute façon ? À te perdre au milieu de la forêt alors que...
 
 Et puis tu t&#39;arrêtes. Parce que derrière toi, si loin, si proche, tu entends Noah qui t&#39;appelle.
 
-[[Cours vers elle.]]</tw-passagedata><tw-passagedata pid="162" name="Retourne-toi." tags="wip" position="3225,1225" size="100,100">Elle a l&#39;air furieuse. Elle a l&#39;air déçue. Elle a l&#39;air épuisée. Elle n&#39;a l&#39;air de rien, simplement, tout d&#39;un coup, d&#39;une certaine manière, la lumière de ton (text-colour: #ab7875)[briquet] semble ridicule, les arbres plats et faux, à côté de Noah. Noah et le quelque chose qu&#39;elle a dans son regard, dans sa posture, dans son nom.
+[[Cours vers elle.]]</tw-passagedata><tw-passagedata pid="151" name="Retourne-toi." tags="wip" position="3225,1225" size="100,100">Elle a l&#39;air furieuse. Elle a l&#39;air déçue. Elle a l&#39;air épuisée. Elle n&#39;a l&#39;air de rien, simplement, tout d&#39;un coup, d&#39;une certaine manière, la lumière de ton (text-colour: #ab7875)[briquet] semble ridicule, les arbres plats et faux, à côté de Noah. Noah et le quelque chose qu&#39;elle a dans son regard, dans sa posture, dans son nom.
 
 Quelque chose d&#39;irréel. Quelque chose de lumineux. Quelque chose de pire que ça.
 
 Quelque chose que tu ne préfères pas voir.
 
-[[Tu fermes juste les yeux.]]</tw-passagedata><tw-passagedata pid="163" name="Cours vers elle." tags="varfin" position="3275,1050" size="100,100">Cours vers Noah qui se tient au milieu du chemin, devant le mur de feuillages que tu hésitais à traverser un instant plus tôt, les bras croisés, l&#39;air indescriptible. En colère. Épuisée. Si, si triste. Juste soulagée de te voir.
+[[Tu fermes juste les yeux.]]</tw-passagedata><tw-passagedata pid="152" name="Cours vers elle." tags="" position="3275,1050" size="100,100">Cours vers Noah qui se tient au milieu du chemin, devant le mur de feuillages que tu hésitais à traverser un instant plus tôt, les bras croisés, l&#39;air indescriptible. En colère. Épuisée. Si, si triste. Juste soulagée de te voir.
+
+&lt;style&gt; img {
+max-width:100%;
+max-height:100%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=&gt;
+&lt;/div&gt;
 
 Tu ne réfléchis pas plus.
 
-[[Jette-toi dans ses bras.]] 
-
-(set: $finbb to $finbb + 1)</tw-passagedata><tw-passagedata pid="164" name="Jette-toi dans ses bras." tags="" position="3150,1050" size="100,100">Elle se raidit un instant, mais ne recule pas, et te serre bientôt contre elle, elle aussi.
+[[Jette-toi dans ses bras.]] </tw-passagedata><tw-passagedata pid="153" name="Jette-toi dans ses bras." tags="" position="3150,1050" size="100,100">Elle se raidit un instant, mais ne recule pas, et te serre bientôt contre elle, elle aussi.
 
 Tu ne pleures pas, mais elle fait tout de même les gestes usuels, carresse ton dos, murmure des choses aussi rassurantes que possibles à ton oreille. Tu la laisses faire. Le (text-colour: #ab7875)[briquet] est éteint, mais tu n&#39;as plus peur de la nuit.
 
@@ -1464,7 +1508,7 @@ Quand vous vous détachez, tu sais qu&#39;elle a ce sourire un peu aplati sur so
 
 Tu n&#39;es pas sûre de quoi répondre.
 
-[[&quot;De quoi tu parles ? Je te cherche depuis des heures.&quot;]]</tw-passagedata><tw-passagedata pid="165" name="Appelle. &quot;Noah ?&quot;" tags="" position="4500,1625" size="100,100">Pas de réponse, bien sûr. Tu te sens stupide. Stupide d&#39;avoir appelé une fille qui ne veut que s&#39;éloigner de toi, stupide de l&#39;avoir laissée s&#39;éloigner. Qu&#39;est-ce que tu t&#39;étais pourtant promis, ne pas la quitter des yeux, quelque chose comme ça ? Jamais ? Et pourtant tu la perds en quelques minutes à l&#39;aire d&#39;autoroute la plus minable de tout le canton. Bravo, Emma.
+[[&quot;De quoi tu parles ? Je te cherche depuis des heures.&quot;]]</tw-passagedata><tw-passagedata pid="154" name="Appelle. &quot;Noah ?&quot;" tags="" position="4500,1625" size="100,100">Pas de réponse, bien sûr. Tu te sens stupide. Stupide d&#39;avoir appelé une fille qui ne veut que s&#39;éloigner de toi, stupide de l&#39;avoir laissée s&#39;éloigner. Qu&#39;est-ce que tu t&#39;étais pourtant promis, ne pas la quitter des yeux, quelque chose comme ça ? Jamais ? Et pourtant tu la perds en quelques minutes à l&#39;aire d&#39;autoroute la plus minable de tout le canton. Bravo, Emma.
 
 (if: $(text-colour: #ab7875)[briquet] &lt; 1)[ Tu scrute l&#39;obscurité en espérant y trouver quelque chose.
 
@@ -1472,7 +1516,7 @@ Arrête, ça ne sert à rien. Vas-y. Enjambe le grillage.]
 
 (if:$(text-colour: #ab7875)[briquet] &gt; 0)[ [[Utilise le (text-colour: #ab7875)[briquet].]]
 
-Pas de temps à perdre. Enjambe le grillage.]</tw-passagedata><tw-passagedata pid="166" name="Utilise le briquet." tags="objr" position="4625,1725" size="100,100">Et d&#39;un coup Noah est face à toi.
+Pas de temps à perdre. Enjambe le grillage.]</tw-passagedata><tw-passagedata pid="155" name="Utilise le briquet." tags="objr" position="4625,1725" size="100,100">Et d&#39;un coup Noah est face à toi.
 
 Tu sursautes, lâches presque le (text-colour: #ab7875)[briquet] en reculant d&#39;un pas brusque. Tu ne l&#39;as pas entendue arriver, ne réussis pas, dans les quelques secondes où la panique a encore le contrôle de tes pensées, à comprendre d&#39;où elle est sortie. La forêt ? Derrière toi ? Portée par le vent ? 
 
@@ -1480,13 +1524,13 @@ Et pourtant elle est là. Avec sa grande veste, son visage creusé, ses cheveux 
 
 [[&quot;Bon Dieu, Noah, tu m&#39;as fait peur.&quot;]]
 
-[[Éteins-le.]]</tw-passagedata><tw-passagedata pid="167" name="&quot;Bon Dieu, Noah, tu m&#39;as fait peur.&quot;" tags="" position="4600,1850" size="100,100">Elle te dévisage quelques instants (trop longtemps ?), puis baisse les yeux, les mains dans les poches. Piétine le gravier. Est-ce qu&#39;elle est gênée ? Elle en a un peu l&#39;air. 
+[[Éteins-le.]]</tw-passagedata><tw-passagedata pid="156" name="&quot;Bon Dieu, Noah, tu m&#39;as fait peur.&quot;" tags="" position="4600,1850" size="100,100">Elle te dévisage quelques instants (trop longtemps ?), puis baisse les yeux, les mains dans les poches. Piétine le gravier. Est-ce qu&#39;elle est gênée ? Elle en a un peu l&#39;air. 
 
 Tu soupires. 
 
 - Je crois que tu as oublié ça, dis-tu en lui passant le (text-colour: #ab7875)[briquet]. Lentement, pour éviter que la flamme s&#39;éteigne trop vite.
 
-Elle s&#39;en saisit sans rien dire. </tw-passagedata><tw-passagedata pid="168" name="Éteins-le." tags="" position="4750,1825" size="100,100">Tu fais disparaître la flamme en silence, sans un mot. </tw-passagedata><tw-passagedata pid="169" name="&quot;De quoi tu parles ? Je te cherche depuis des heures.&quot;" tags="" position="3025,1000" size="100,100">Elle ne répond pas immédiatement, et tu regrettes de ne plus voir son visage, cette fois-ci.
+Elle s&#39;en saisit sans rien dire. </tw-passagedata><tw-passagedata pid="157" name="Éteins-le." tags="" position="4750,1825" size="100,100">Tu fais disparaître la flamme en silence, sans un mot. </tw-passagedata><tw-passagedata pid="158" name="&quot;De quoi tu parles ? Je te cherche depuis des heures.&quot;" tags="" position="3025,1000" size="100,100">Elle ne répond pas immédiatement, et tu regrettes de ne plus voir son visage, cette fois-ci.
 
 - Noah ? 
 
@@ -1495,9 +1539,9 @@ Le silence s&#39;éternise. Tu n&#39;es plus sûre de l&#39;entendre respirer.
 (if: $gun &lt; 1)[ [[Allume la flamme.]]
 ]
 (if: $gun &gt; 0)[ [[Prépare ton arme.]] 
-] </tw-passagedata><tw-passagedata pid="170" name="&quot;Je crois que je me suis perdue.&quot;" tags="" position="3050,1200" size="100,100">un peu pareil juste
+] </tw-passagedata><tw-passagedata pid="159" name="&quot;Je crois que je me suis perdue.&quot;" tags="" position="3050,1200" size="100,100">un peu pareil juste
 
-[[&quot;Est-ce que tu veux que j&#39;éteigne ?&quot;]]</tw-passagedata><tw-passagedata pid="171" name="Allume la flamme." tags="" position="2875,950" size="100,100">(le cliquetis de (text-colour: #ab7875)[briquet] semble résonner à double.)
+[[&quot;Est-ce que tu veux que j&#39;éteigne ?&quot;]]</tw-passagedata><tw-passagedata pid="160" name="Allume la flamme." tags="" position="2875,950" size="100,100">(le cliquetis de (text-colour: #ab7875)[briquet] semble résonner à double.)
 
 La première chose que tu vois es le reflet de la lumière orange sur le métal de l&#39;arme. Et puis la main de Noah serrée autour du manche sans trembler, et ses bras droits, assurés, qui continuent si bien la ligne qui va de toi, au canon, à elle. 
 
@@ -1507,7 +1551,7 @@ Ah, c&#39;est elle qui est au bord des larmes, cette fois-ci. Tu le sais parce q
 
 [[ÉTEINS LE BRIQUET.]]
 
-</tw-passagedata><tw-passagedata pid="172" name="ÉTEINS LE BRIQUET." tags="" position="2725,950" size="100,100">Tu ne l&#39;éteins pas seulement : tu le lances droit sur Noah, qui n&#39;a pas (pas encore) le réflexe de tirer et qui te laisse, dans la seconde de confusion et d&#39;obscurité soudaine, le temps de te mettre à courir. Chemin sur quelques mètres, tu l&#39;entends encore jurer derrière toi, puis ce que tu supposes être une éclaircie dans les fourrés sur le c&#39;oté, dans la direction que tu supposes être celle de l&#39;autoroute. 
+</tw-passagedata><tw-passagedata pid="161" name="ÉTEINS LE BRIQUET." tags="" position="2725,950" size="100,100">Tu ne l&#39;éteins pas seulement : tu le lances droit sur Noah, qui n&#39;a pas (pas encore) le réflexe de tirer et qui te laisse, dans la seconde de confusion et d&#39;obscurité soudaine, le temps de te mettre à courir. Chemin sur quelques mètres, tu l&#39;entends encore jurer derrière toi, puis ce que tu supposes être une éclaircie dans les fourrés sur le c&#39;oté, dans la direction que tu supposes être celle de l&#39;autoroute. 
 
 Tu ne l&#39;entends pas courir derrière toi. Malgré les racines, malgré les buissons, tu essaies d&#39;accélérer.
 
@@ -1517,9 +1561,9 @@ Tu tombes. C&#39;était plus bruyant que dans tes souvenirs, et ça fait plus ma
 
 (parce que personne n&#39;aura pitié de toi). 
 
-[[Calme-toi avant que Noah te retrouve.]]</tw-passagedata><tw-passagedata pid="173" name="&quot;Est-ce que tu veux que j&#39;éteigne ?&quot;" tags="wip" position="2925,1250" size="100,100">Elle 
+[[Calme-toi avant que Noah te retrouve.]]</tw-passagedata><tw-passagedata pid="162" name="&quot;Est-ce que tu veux que j&#39;éteigne ?&quot;" tags="wip" position="2925,1250" size="100,100">Elle 
 
-[[Tu fermes juste les yeux.]]</tw-passagedata><tw-passagedata pid="174" name="Calme-toi avant que Noah te retrouve." tags="" position="2600,975" size="100,100">Pour qu&#39;elle te retrouve moins vite ? Pour que ce soit plus paisible, la fin ? 
+[[Tu fermes juste les yeux.]]</tw-passagedata><tw-passagedata pid="163" name="Calme-toi avant que Noah te retrouve." tags="" position="2600,975" size="100,100">Pour qu&#39;elle te retrouve moins vite ? Pour que ce soit plus paisible, la fin ? 
 
 Tu n&#39;es pas sûre. Tu t&#39;installes, c&#39;est tout. Dos à moitié soutenu par des racines apparentes contre lesquelles tu t&#39;es écrasée, le corps et les jambes étalées sur le sol de pin. Tu essaies de reprendre ta respiration le moins bruyamment possible. Tu essaies de ne pas penser à la douleur cuisante dans ton épaule.
 
@@ -1529,19 +1573,21 @@ Tu sais que Noah t&#39;as retrouvée parce qu&#39;elle s&#39;excuse, en arrivant
 
 Elle parle très doucement.
 
-[[&quot;Je sais.&quot;]]</tw-passagedata><tw-passagedata pid="175" name="&quot;Je sais.&quot;" tags="" position="2475,1000" size="100,100">- J&#39;aurais voulu...
+[[&quot;Je sais.&quot;]]</tw-passagedata><tw-passagedata pid="164" name="&quot;Je sais.&quot;" tags="" position="2475,1000" size="100,100">- J&#39;aurais voulu...
 
 Tu l&#39;entends hésiter.
 
 - J&#39;aurais voulu pouvoir m&#39;en sortir autrement. 
 
-[[&quot;Comment ?&quot;]]</tw-passagedata><tw-passagedata pid="176" name="&quot;Comment ?&quot;" tags="" position="2350,1075" size="100,100">Tu entends le sourire dans sa voix quand elle répond, alors qu&#39;elle tremble aussi, alors que tu sais que Noah pleure, aussi.
+[[&quot;Comment ?&quot;]]</tw-passagedata><tw-passagedata pid="165" name="&quot;Comment ?&quot;" tags="" position="2350,1075" size="100,100">Tu entends le sourire dans sa voix quand elle répond, alors qu&#39;elle tremble aussi, alors que tu sais que Noah pleure, aussi.
 
 - Mais avec toi, Em&#39;. J&#39;aurais voulu pouvoir m&#39;en sortir avec toi.
 
 Elle tire.
 
-[[Tu fermes juste les yeux.]]</tw-passagedata><tw-passagedata pid="177" name="&quot;Noah !&quot;" tags="déblocerreur" position="3250,3725" size="100,100">Tu t&#39;es collée contre la fenêtre, as appelé assez fort pour qu&#39;elle s&#39;arrête, se retourne. Elle fait quelques pas pour revenir vers toi et se penche par-dessus la vitre qu&#39;elle a laissée ouverte.
+[[Tu fermes juste les yeux.]]
+
+(set: $f8 to 1)</tw-passagedata><tw-passagedata pid="166" name="&quot;Noah !&quot;" tags="déblocerreur" position="3250,3725" size="100,100">Tu t&#39;es collée contre la fenêtre, as appelé assez fort pour qu&#39;elle s&#39;arrête, se retourne. Elle fait quelques pas pour revenir vers toi et se penche par-dessus la vitre qu&#39;elle a laissée ouverte.
 
 - Qu&#39;est-ce que tu veux, Em&#39; ?
 
@@ -1549,7 +1595,7 @@ Elle sonne irritée, impatiente. Une de ses mains joue nerveusement avec le col 
 
 Tu hésites.
 
-[[&quot;Rien, juste... Attends-moi.&quot;]]</tw-passagedata><tw-passagedata pid="178" name="&quot;Rien, juste... Attends-moi.&quot;" tags="" position="3350,3675" size="100,100">Elle lève les yeux au ciel, mais ne bouge pas jusqu&#39;à ce que tu te sois péniblement extirpée de ton siège. La porte claque une deuxième fois derrière toi, et vous vous mettez en marche, vos pas crissant sur le gravier, vos ombres étirées par la lumière des phares. 
+[[&quot;Rien, juste... Attends-moi.&quot;]]</tw-passagedata><tw-passagedata pid="167" name="&quot;Rien, juste... Attends-moi.&quot;" tags="" position="3350,3675" size="100,100">Elle lève les yeux au ciel, mais ne bouge pas jusqu&#39;à ce que tu te sois péniblement extirpée de ton siège. La porte claque une deuxième fois derrière toi, et vous vous mettez en marche, vos pas crissant sur le gravier, vos ombres étirées par la lumière des phares. 
 
 Après quelques pas, Noah s&#39;arrête, te regarde.
 
@@ -1565,9 +1611,7 @@ Elle jette quelques regards nerveux autour d&#39;elle, vers le fond de l&#39;air
 
 Et sans attendre ta réponse, elle retourne vers la voiture à grands pas.
 
-[[Vas-y.]]
-
-[[Regarde-la partir.]]</tw-passagedata><tw-passagedata pid="179" name="Tu sais très bien que tu ne pourras jamais lui dire." tags="finFIN" position="2075,4225" size="100,100">Elle soupire, secoue la tête.
+[[Vas-y.]]</tw-passagedata><tw-passagedata pid="168" name="Tu sais très bien que tu ne pourras jamais lui dire." tags="finFIN" position="2075,4225" size="100,100">Elle soupire, secoue la tête.
 
 — Bien sûr. Bien sûr. Pourquoi je m&#39;attendais à autre chose.
 
@@ -1582,7 +1626,7 @@ Alors que vous dépassez l&#39;aire d&#39;autoroute, qui disparaît dans une tra
 
 Heureusement que Noah s&#39;est faite de silence. Peut-être pour toujours. 
 
-[[Lorsque tu t&#39;endors, tu rêves à une vie où tu parles enfin la même langue que tout le monde.]]</tw-passagedata><tw-passagedata pid="180" name="Vas-y." tags="" position="3550,3525" size="100,100">Tu obéis et va t&#39;asseoir à la table, sur un des bancs inconfortables qui semble presque plier sous ton poids. À quelques mètres derrière toi, il y a un cabanon qui accueille probablement une cabine de toilettes, seul édifice de toute la place, qui ne mérite peut-être même plus d&#39;être nommée aire d&#39;autoroute. Un seul néon clignote sur une de ses faces et t&#39;éclaire d&#39;une lumière blanche et froide, désagréable.
+[[Lorsque tu t&#39;endors, tu rêves à une vie où tu parles enfin la même langue que tout le monde.]]</tw-passagedata><tw-passagedata pid="169" name="Vas-y." tags="" position="3550,3525" size="100,100">Tu obéis et va t&#39;asseoir à la table, sur un des bancs inconfortables qui semble presque plier sous ton poids. À quelques mètres derrière toi, il y a un cabanon qui accueille probablement une cabine de toilettes, seul édifice de toute la place, qui ne mérite peut-être même plus d&#39;être nommée aire d&#39;autoroute. Un seul néon clignote sur une de ses faces et t&#39;éclaire d&#39;une lumière blanche et froide, désagréable.
 
 Tu mets les mains dans tes poches en frissonnant. Sursautes d&#39;un coup lorsque tu y trouves une (text-colour: #c0c195)[cigarette](if: $briquet &gt; 0)[et un (text-colour: #ab7875)[briquet]]. Tu fronces les sourcils. Comment est-ce arrivé là ? Ce n&#39;est pas toi qui fumes. Ce n&#39;est pas toi qui gardes toujours paquet, (text-colour: #ab7875)[briquet] dans la poche intérieure de ta veste (près du cœur). Est-ce que c&#39;est ça que Noah cherche ? Mais la (text-colour: #c0c195)[cigarette] est déjà à moitié entamée. Elle ne fumait pas pendant le trajet, non ?
 Ou peut-être que tu as juste oublié. Tu as sommeil. Tu as tellement sommeil, et ta mémoire fait des choses étranges depuis, depuis la chose d&#39;avant. Tu as sûrement oublié.
@@ -1591,13 +1635,13 @@ Tu t&#39;étires vers la voiture, essaie d&#39;apercevoir une ombre, une silhoue
 
 [[Attends qu&#39;elle te rejoigne à la table de pique-nique.]]
 
-[[Lève-toi.]]</tw-passagedata><tw-passagedata pid="181" name="Attends qu&#39;elle te rejoigne à la table de pique-nique." tags="" position="3425,2875" size="100,100">Noah finit par arriver, ce qui te surprend presque un peu (à quoi t&#39;attendais-tu d&#39;autre ?). Elle s&#39;asseoit sans un mot, avec un air étrange, un peu fuyant. Tu n&#39;oses pas lui adresser la parole.
+[[Lève-toi.]]</tw-passagedata><tw-passagedata pid="170" name="Attends qu&#39;elle te rejoigne à la table de pique-nique." tags="" position="3425,2875" size="100,100">Noah finit par arriver, ce qui te surprend presque un peu (à quoi t&#39;attendais-tu d&#39;autre ?). Elle s&#39;asseoit sans un mot, avec un air étrange, un peu fuyant. Tu n&#39;oses pas lui adresser la parole.
 
 Ses mains vides s&#39;agitent nerveusement sur le bord de la table, et elle évite ton regard. La surface du bois est abîmée, marquée par le temps et, devant toi, une petite brûlure circulaire. Entre tes doigts, sous la table, la (text-colour: #c0c195)[cigarette] pèse un poids étrange.
 
 [[Tends-lui la cigarette.]]
 
-[[Essaie de faire la conversation.]]</tw-passagedata><tw-passagedata pid="182" name="Lève-toi." tags="" position="3475,3700" size="100,100">Tu fais quelque pas hésitants vers la voiture, avant que quelque chose attire ton attention dans le coin de ton champ de vision. Tu te retournes. Ce n&#39;est presque rien, à peine une ombre, peut-être même juste le clignotement des néons, mais tu es sûre, tu es sûre d&#39;avoir vu une silhouette s&#39;enfoncer dans l&#39;horizon sombre de la forêt qui borde l&#39;aire. 
+[[Essaie de faire la conversation.]]</tw-passagedata><tw-passagedata pid="171" name="Lève-toi." tags="" position="3475,3700" size="100,100">Tu fais quelque pas hésitants vers la voiture, avant que quelque chose attire ton attention dans le coin de ton champ de vision. Tu te retournes. Ce n&#39;est presque rien, à peine une ombre, peut-être même juste le clignotement des néons, mais tu es sûre, tu es sûre d&#39;avoir vu une silhouette s&#39;enfoncer dans l&#39;horizon sombre de la forêt qui borde l&#39;aire. 
 
 - Noah ?
 
@@ -1607,7 +1651,7 @@ Alors que tu continues à scruter l&#39;obscurité, le bruit d&#39;une portière
 
 [[Retourne à la voiture.]]
 
-[[Va jusqu&#39;au fond, la ligne des arbres.]]</tw-passagedata><tw-passagedata pid="183" name="Retourne à la voiture." tags="" position="3525,3875" size="100,100">Tu cours jusqu&#39;au véhicule.
+[[Va jusqu&#39;au fond, la ligne des arbres.]]</tw-passagedata><tw-passagedata pid="172" name="Retourne à la voiture." tags="" position="3525,3875" size="100,100">Tu cours jusqu&#39;au véhicule.
 
 (elle ne partirait pas sans toi, si ?)
 
@@ -1619,7 +1663,7 @@ Et puis tu fais le tour, arrive au coffre. Il est fermé. Toujours pas de Noah, 
 
 (et ce que tu traînes avec toi. et les choses dans tes poches qui ne devraient pas y être.)
 
-[[Ouvre le coffre.]]</tw-passagedata><tw-passagedata pid="184" name="Regarde-la partir." tags="" position="3350,3850" size="100,100">Tu l&#39;observes disparaître dans la lumière des phares. </tw-passagedata><tw-passagedata pid="185" name="Ouvre le coffre." tags="" position="3400,4000" size="100,100">C&#39;est plus pour t&#39;occuper qu&#39;autre chose ; tu ne penses pas trouver de Noah recroquevillée sur la carpette encrassée, ou quoi que ce soit du style. Ce qui y est, par contre, te surprend presque plus. 
+[[Ouvre le coffre.]]</tw-passagedata><tw-passagedata pid="173" name="Regarde-la partir." tags="" position="3350,3850" size="100,100">Tu l&#39;observes disparaître dans la lumière des phares. </tw-passagedata><tw-passagedata pid="174" name="Ouvre le coffre." tags="" position="3400,4000" size="100,100">C&#39;est plus pour t&#39;occuper qu&#39;autre chose ; tu ne penses pas trouver de Noah recroquevillée sur la carpette encrassée, ou quoi que ce soit du style. Ce qui y est, par contre, te surprend presque plus. 
 
 Dans un coin, couché sur le côté, tu reconnais le bidon d&#39;essence que vous aviez utilisé pour - oh, tu sais bien.
 
@@ -1635,31 +1679,41 @@ La conclusion se fait d&#39;elle-même, parce que tu entends la sécurité cliqu
 
 [[Cours.]]
 
-[[Jette-toi sur elle.]]</tw-passagedata><tw-passagedata pid="186" name="&quot;Ne me laisse pas.&quot;" tags="finFIN" position="2200,3925" size="100,100">Arrête. 
+[[Jette-toi sur elle.]]</tw-passagedata><tw-passagedata pid="175" name="&quot;Ne me laisse pas.&quot;" tags="finFIN" position="2200,3925" size="100,100">Arrête. 
 
-[[Tu sais très bien que tu ne pourras jamais lui dire.]]</tw-passagedata><tw-passagedata pid="187" name="&quot;J&#39;ai peur, Noah.&quot;" tags="finFIN" position="2100,3975" size="100,100">Arrête. 
+[[Tu sais très bien que tu ne pourras jamais lui dire.]]</tw-passagedata><tw-passagedata pid="176" name="&quot;J&#39;ai peur, Noah.&quot;" tags="finFIN" position="2100,3975" size="100,100">Arrête. 
 
-[[Tu sais très bien que tu ne pourras jamais lui dire.]]</tw-passagedata><tw-passagedata pid="188" name="&quot;Je voudrais juste...&quot;" tags="finFIN" position="1950,3925" size="100,100">Arrête. 
+[[Tu sais très bien que tu ne pourras jamais lui dire.]]</tw-passagedata><tw-passagedata pid="177" name="&quot;Je voudrais juste...&quot;" tags="finFIN" position="1950,3925" size="100,100">Arrête. 
 
-[[Tu sais très bien que tu ne pourras jamais lui dire.]]</tw-passagedata><tw-passagedata pid="189" name="&quot;Ça ne sert plus à rien, tu sais. On ne peut plus rien faire.&quot;" tags="finFIN" position="2025,4000" size="100,100">Arrête. 
+[[Tu sais très bien que tu ne pourras jamais lui dire.]]</tw-passagedata><tw-passagedata pid="178" name="&quot;Ça ne sert plus à rien, tu sais. On ne peut plus rien faire.&quot;" tags="finFIN" position="2025,4000" size="100,100">Arrête. 
 
-[[Tu sais très bien que tu ne pourras jamais lui dire.]]</tw-passagedata><tw-passagedata pid="190" name="&quot;Tu ne veux pas qu&#39;on arrête ? Qu&#39;on reste ici jusqu&#39;à ce qu&#39;ils nous retrouvent.&quot;" tags="finFIN" position="1925,4025" size="100,100">Arrête. 
+[[Tu sais très bien que tu ne pourras jamais lui dire.]]</tw-passagedata><tw-passagedata pid="179" name="&quot;Tu ne veux pas qu&#39;on arrête ? Qu&#39;on reste ici jusqu&#39;à ce qu&#39;ils nous retrouvent.&quot;" tags="finFIN" position="1925,4025" size="100,100">Arrête. 
 
-[[Tu sais très bien que tu ne pourras jamais lui dire.]]</tw-passagedata><tw-passagedata pid="191" name="&quot;Noah.&quot;" tags="finFIN" position="2000,4075" size="100,100">Arrête. 
+[[Tu sais très bien que tu ne pourras jamais lui dire.]]</tw-passagedata><tw-passagedata pid="180" name="&quot;Noah.&quot;" tags="finFIN" position="2000,4075" size="100,100">Arrête. 
 
-[[Tu sais très bien que tu ne pourras jamais lui dire.]]</tw-passagedata><tw-passagedata pid="192" name="&quot;Tu sais que je ferais n&#39;importe quoi pour toi. Vraiment n&#39;importe quoi.&quot;" tags="finFIN" position="2075,4050" size="100,100">Arrête. 
+[[Tu sais très bien que tu ne pourras jamais lui dire.]]</tw-passagedata><tw-passagedata pid="181" name="&quot;Tu sais que je ferais n&#39;importe quoi pour toi. Vraiment n&#39;importe quoi.&quot;" tags="finFIN" position="2075,4050" size="100,100">Arrête. 
 
-[[Tu sais très bien que tu ne pourras jamais lui dire.]]</tw-passagedata><tw-passagedata pid="193" name="&quot;J&#39;aurais vraiment voulu...&quot;" tags="finFIN" position="2200,4025" size="100,100">Arrête. 
+[[Tu sais très bien que tu ne pourras jamais lui dire.]]</tw-passagedata><tw-passagedata pid="182" name="&quot;J&#39;aurais vraiment voulu...&quot;" tags="finFIN" position="2200,4025" size="100,100">Arrête. 
 
-[[Tu sais très bien que tu ne pourras jamais lui dire.]]</tw-passagedata><tw-passagedata pid="194" name="Reste silencieuse." tags="" position="2775,2450" size="100,100">Noah te regarde encore.
+[[Tu sais très bien que tu ne pourras jamais lui dire.]]</tw-passagedata><tw-passagedata pid="183" name="Reste silencieuse." tags="" position="2775,2450" size="100,100">Noah te regarde encore.
 
 Tu craques
 
-[[&quot;Je vais retourner le chercher.&quot;]]</tw-passagedata><tw-passagedata pid="195" name="Cours." tags="" position="3425,4125" size="100,100">Pour aller où ?
+[[&quot;Je vais retourner le chercher.&quot;]]</tw-passagedata><tw-passagedata pid="184" name="Cours." tags="" position="3450,4125" size="100,100">Pour aller où ?
 
-[[Jette-toi sur elle.]]</tw-passagedata><tw-passagedata pid="196" name="Jette-toi sur elle." tags="obja varfin" position="3375,4250" size="100,100">Tu ne réfléchis même pas. Tant pis si c&#39;est Noah, tant pis pour tout ce qu&#39;il y a eu avant, tout ce que tu lui avais promis - tu ne verras pas son visage effacé par la lumière des phares, de toute façon, et tout se comprendra par tes mains uniquement. Tout ce qui compte, c&#39;est être plus rapide, plus rapide que son doigt sur la gâchette, plus rapide qu&#39;une balle - 
+[[Jette-toi sur elle.]]</tw-passagedata><tw-passagedata pid="185" name="Jette-toi sur elle." tags="obja varfin" position="3375,4250" size="100,100">Tu ne réfléchis même pas. Tant pis si c&#39;est Noah, tant pis pour tout ce qu&#39;il y a eu avant, tout ce que tu lui avais promis - tu ne verras pas son visage effacé par la lumière des phares, de toute façon, et tout se comprendra par tes mains uniquement. Tout ce qui compte, c&#39;est être plus rapide, plus rapide que son doigt sur la gâchette, plus rapide qu&#39;une balle - 
 
 Un premier coup de feu. Qui te manque, c&#39;est pour le ciel, ou le sol, pas ta peau qui s&#39;écrase contre Noah et la coince contre le sol et cherche, cherche désespérément quelle main s&#39;accroche encore à l&#39;arme, essaie de réassurer sa prise sur le manche - 
+
+&lt;style&gt; img {
+max-width:100%;
+max-height:100%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://static.wixstatic.com/media/559f19_c5a7089d8b6143c48cf82f7525fd4023~mv2.png/v1/fill/w_555,h_331,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/559f19_c5a7089d8b6143c48cf82f7525fd4023~mv2.png&gt;
+&lt;/div&gt;
 
 Un deuxième. Qui t&#39;attrape, à l&#39;épaule - petite explosion de feu et de douleur. Tu cries. 
 
@@ -1669,11 +1723,11 @@ Un deuxième. Qui t&#39;attrape, à l&#39;épaule - petite explosion de feu et d
 
 (set: $gun to 1)
 
-(set: $finobs to $finobs + 1)</tw-passagedata><tw-passagedata pid="197" name="Lève les mains. Retourne-toi lentement." tags="wip" position="3525,4250" size="100,100">Tu répètes doucement son nom alors que tu te retournes, encore et encore, comme à un animal apeuré. Peut-être que c&#39;est ce qu&#39;elle est, </tw-passagedata><tw-passagedata pid="198" name="Abandonne." tags="" position="3275,4375" size="100,100">Tu as le temps de reculer un peu, de t&#39;asseoir à ses pieds alors qu&#39;elle se relève. 
+(set: $finobs to $finobs + 1)</tw-passagedata><tw-passagedata pid="186" name="Lève les mains. Retourne-toi lentement." tags="wip" position="3525,4250" size="100,100">Tu répètes doucement son nom alors que tu te retournes, encore et encore, comme à un animal apeuré. Peut-être que c&#39;est ce qu&#39;elle est, </tw-passagedata><tw-passagedata pid="187" name="Abandonne." tags="" position="3275,4375" size="100,100">Tu as le temps de reculer un peu, de t&#39;asseoir à ses pieds alors qu&#39;elle se relève. 
 
 Tu ne la regardes pas. Quand Noah s&#39;excuse à voix basse en ajustant à nouveau l&#39;arme sur toi, quand elle commence à expliquer pourquoi elle doit faire ça, pourquoi c&#39;est plus simple, c&#39;est plus simple pour vous deux, et elle aurait vraiment aimé pouvoir faire autrement mais voilà, voilà, est-ce que tu comprends Emma, tu ne réponds même pas.
 
-[[Tu fermes juste les yeux.]]</tw-passagedata><tw-passagedata pid="199" name="Bats-toi encore." tags="" position="3400,4375" size="100,100">Tu ne réfléchis toujours pas. Les mains parlent pour toi, essaient de trouver une gorge, un œil, les ongles essaient de s&#39;accrocher, et lorsqu&#39;un bras s&#39;écrase contre ton visage, tu mords la chair jusqu&#39;au sang. 
+[[Tu fermes juste les yeux.]]</tw-passagedata><tw-passagedata pid="188" name="Bats-toi encore." tags="" position="3400,4375" size="100,100">Tu ne réfléchis toujours pas. Les mains parlent pour toi, essaient de trouver une gorge, un œil, les ongles essaient de s&#39;accrocher, et lorsqu&#39;un bras s&#39;écrase contre ton visage, tu mords la chair jusqu&#39;au sang. 
 
 Un troisième coup de feu. Le ventre, cette fois-ci, et ça ne te fait pas encore vraiment mal, pas encore, c&#39;est juste un choc un peu sourd, le souffle qui se coupe. Tu ne lâches pas ta prise, serres encore les dents, elle crie aussi, quatrième coup - dans le flanc. Et tu faiblis un peu. Et elle en profite pour se dégager, rampe jusqu&#39;à ce qu&#39;elle soit libérée de ton poids déjà presque mort, se relève en catastrophe. Sans lâcher l&#39;arme que tu vois encore étinceler du coin de l&#39;œil. Sans arrêter de s&#39;excuser.
 
@@ -1681,57 +1735,97 @@ Un troisième coup de feu. Le ventre, cette fois-ci, et ça ne te fait pas encor
 
 Tu ne réponds rien. Le goût du sang est lourd et ferreux dans ta bouche.
 
-[[Tu fermes juste les yeux.]]</tw-passagedata><tw-passagedata pid="200" name="Je veux savoir où je me suis trompée." tags="varfin" position="2150,1875" size="100,100">(enchant: ?page, (background: white))[D&#39;accord. Faisons de notre mieux toutes les deux.
+[[Tu fermes juste les yeux.]]</tw-passagedata><tw-passagedata pid="189" name="Je veux savoir où je me suis trompée." tags="varfin" position="2150,1875" size="100,100">(enchant: ?page, (background: white))[D&#39;accord. Faisons de notre mieux toutes les deux.
+
+&lt;style&gt; img {
+max-width:100%;
+max-height:100%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://static.wixstatic.com/media/559f19_33c7a8f91e784eb5ae7a6b4def4a08c0~mv2.png/v1/fill/w_225,h_240,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/559f19_33c7a8f91e784eb5ae7a6b4def4a08c0~mv2.png&gt;
+&lt;/div&gt;
 
 On se retrouve après.
 
 [[(après l&#39;erreur.)]]
 
 (set: $fintrue to $fintrue + 1)
-]</tw-passagedata><tw-passagedata pid="201" name="Je veux rentrer à la maison." tags="varfin" position="2150,2000" size="100,100">(enchant: ?page, (background: white))[D&#39;accord. Faisons de notre mieux toutes les deux.
+]</tw-passagedata><tw-passagedata pid="190" name="Je veux rentrer à la maison." tags="varfin" position="2150,2000" size="100,100">(enchant: ?page, (background: white))[D&#39;accord. Faisons de notre mieux toutes les deux.
+
+&lt;style&gt; img {
+max-width:100%;
+max-height:100%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://static.wixstatic.com/media/559f19_62e8d158899a4ecdaac620f9fc6bcf63~mv2.png/v1/fill/w_208,h_220,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/559f19_62e8d158899a4ecdaac620f9fc6bcf63~mv2.png&gt;
+&lt;/div&gt;
 
 On se retrouve après.
 
 [[(après l&#39;erreur.)]]
 
 (set: $finav to $finav + 1)
-]</tw-passagedata><tw-passagedata pid="202" name="Je veux juste dormir." tags="varfin" position="2150,2125" size="100,100">(enchant: ?page, (background: white))[D&#39;accord. Faisons de notre mieux toutes les deux.
+]</tw-passagedata><tw-passagedata pid="191" name="Je veux juste dormir." tags="varfin" position="2150,2125" size="100,100">(enchant: ?page, (background: white))[D&#39;accord. Faisons de notre mieux toutes les deux
+
+&lt;style&gt; img {
+max-width:100%;
+max-height:100%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://static.wixstatic.com/media/559f19_9e1f0b43d831496d81c99c39363a5383~mv2.png/v1/fill/w_257,h_266,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/559f19_9e1f0b43d831496d81c99c39363a5383~mv2.png&gt;
+&lt;/div&gt;
 
 On se retrouve après.
 
 [[(après l&#39;erreur.)]]
 
 (set: $finobs to $finobs + 1)
-]</tw-passagedata><tw-passagedata pid="203" name="Je veux Noah." tags="varfin" position="2150,2250" size="100,100">(enchant: ?page, (background: white))[D&#39;accord. Faisons de notre mieux toutes les deux.
+]</tw-passagedata><tw-passagedata pid="192" name="Je veux Noah." tags="varfin" position="2150,2250" size="100,100">(enchant: ?page, (background: white))[D&#39;accord. Faisons de notre mieux toutes les deux.
+
+&lt;style&gt; img {
+max-width:100%;
+max-height:100%;
+}
+
+&lt;/style&gt;
+&lt;img
+src=https://static.wixstatic.com/media/559f19_68daecb4d28f4af0ac6eb26f46617f4a~mv2.png/v1/fill/w_257,h_266,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/559f19_68daecb4d28f4af0ac6eb26f46617f4a~mv2.png&gt;
+&lt;/div&gt;
 
 On se retrouve après.
 
 [[(après l&#39;erreur.)]]
 
 (set: $finbb to $finbb + 1)
-]</tw-passagedata><tw-passagedata pid="204" name="Utilise le (text-colour: #ab7875)[briquet]." tags="" position="4375,1750" size="100,100"></tw-passagedata><tw-passagedata pid="205" name="Survis, Emma." tags="objr" position="2875,3550" size="100,100">Noah s&#39;arrête un peu avant quatre heures du matin.
+]</tw-passagedata><tw-passagedata pid="193" name="Utilise le (text-colour: #ab7875)[briquet]." tags="" position="4375,1750" size="100,100"></tw-passagedata><tw-passagedata pid="194" name="Survis, Emma." tags="objr" position="2875,3550" size="100,100">Noah s&#39;arrête un peu avant quatre heures du matin.
 
 Tu ne t&#39;étais pas rendue compte que tu somnolais mais le silence qui remplace brutalement le ronronnement du moteur t&#39;arrache du lent enfoncement dans ton siège, et tes yeux papillonnent quelques secondes. Par la fenêtre constellée de crasse, la lumière des néons. Tu t&#39;étires et tu vois : une aire d&#39;autoroute, le clignotement d&#39;un insigne publicitaire coloré, deux rangées de tables et de bancs pourrissants que tu scrutes avec inquiétude, à la recherche d&#39;une silhouette, avant que la honte ne te prenne (bien sûr qu&#39;il n&#39;y a personne, tu as vu l&#39;heure, c&#39;était stupide de même se poser la question). 
 
-[[Attends qu&#39;elle sorte.]]</tw-passagedata><tw-passagedata pid="206" name="Attends qu&#39;elle sorte." tags="" position="3050,3450" size="100,100">Tu l&#39;observes partir. Est-ce que tu sais où elle va ?
+[[Attends qu&#39;elle sorte.]]</tw-passagedata><tw-passagedata pid="195" name="Attends qu&#39;elle sorte." tags="" position="3050,3450" size="100,100">Tu l&#39;observes partir. Est-ce que tu sais où elle va ?
 
 (if: $pn &gt; 0)[ [[Vers les tables ?]] ]
 
 (if: $foret &gt; 0)[ [[Vers la forêt ?]] ]
 
-(if: $cab &gt; 0)[ [[Vers le cabanon ?]] ]</tw-passagedata><tw-passagedata pid="207" name="Vers les tables ?" tags="" position="3225,3400" size="100,100">Tu connais le chemin. 
+(if: $cab &gt; 0)[ [[Vers le cabanon ?]] ]</tw-passagedata><tw-passagedata pid="196" name="Vers les tables ?" tags="" position="3225,3400" size="100,100">Tu connais le chemin. 
 
 (text-colour: #9d9db0)[L&#39;arme] pèse si lourd dans ta main. Tu l&#39;enfonces dans la plus large poche de ta veste (non, la veste de Noah, encore une fois, la grande qu&#39;elle t&#39;a passée après deux heures de route parce que tu frissonnais sans rien dire), où elle disparaît presque complètement.
 
-[[Rejoins-la à la table de pique-nique où elle s&#39;est arrêtée.]]</tw-passagedata><tw-passagedata pid="208" name="Vers la forêt ?" tags="" position="3325,3375" size="100,100">Tu connais le chemin.
+[[Rejoins-la à la table de pique-nique où elle s&#39;est arrêtée.]]</tw-passagedata><tw-passagedata pid="197" name="Vers la forêt ?" tags="" position="3325,3375" size="100,100">Tu connais le chemin.
 
 (text-colour: #9d9db0)[L&#39;arme] pèse si lourd dans ta main. Tu l&#39;enfonces dans la plus large poche de ta veste (non, la veste de Noah, encore une fois, la grande qu&#39;elle t&#39;a passée après deux heures de route parce que tu frissonnais sans rien dire), où elle disparaît presque complètement.
 
-[[Enjambe le grillage.]] </tw-passagedata><tw-passagedata pid="209" name="Vers le cabanon ?" tags="" position="3425,3400" size="100,100">Tu connais le chemin.
+[[Enjambe le grillage.]] </tw-passagedata><tw-passagedata pid="198" name="Vers le cabanon ?" tags="" position="3425,3400" size="100,100">Tu connais le chemin.
 
 (text-colour: #9d9db0)[L&#39;arme] pèse si lourd dans ta main. Tu l&#39;enfonces dans la plus large poche de ta veste (non, la veste de Noah, encore une fois, la grande qu&#39;elle t&#39;a passée après deux heures de route parce que tu frissonnais sans rien dire), où elle disparaît presque complètement.
 
-[[Dirige-toi vers le cabanon.]]</tw-passagedata><tw-passagedata pid="210" name="Prépare ton arme." tags="objr" position="2900,1100" size="100,100">Le cliquetis de la sécurité résonne comme si tu avais déjà tiré. 
+[[Dirige-toi vers le cabanon.]]</tw-passagedata><tw-passagedata pid="199" name="Prépare ton arme." tags="objr" position="2900,1100" size="100,100">Le cliquetis de la sécurité résonne comme si tu avais déjà tiré. 
 
 Tu peux entendre Noah reculer. Quand elle prend la parole, tu as l&#39;impression d&#39;avoir déjà entendu ces mots.
 
@@ -1741,47 +1835,47 @@ Puis (pendant que tu pointes lentement l&#39;arme dans sa direction), &quot;Où 
 
 Et puis le silence. De nouveau.
 
-[[Allume le briquet de l&#39;autre main.]]</tw-passagedata><tw-passagedata pid="211" name="Mais le monde entier disparaît." tags="objr" position="2675,1525" size="100,100">(enchant: ?page, (background: white))[
+[[Allume le briquet de l&#39;autre main.]]</tw-passagedata><tw-passagedata pid="200" name="Mais le monde entier disparaît." tags="objr" position="2675,1525" size="100,100">(enchant: ?page, (background: white))[
 
 [[Tu fermes les yeux.]]
 
-]</tw-passagedata><tw-passagedata pid="212" name="(referme-les.)" tags="" position="2450,1800" size="100,100">(enchant: ?page, (background: white))[Non, garde les yeux ouverts, Emma.
+]</tw-passagedata><tw-passagedata pid="201" name="(referme-les.)" tags="" position="2450,1800" size="100,100">(enchant: ?page, (background: white))[Non, garde les yeux ouverts, Emma.
 
 Reste avec (text-style:&quot;blur&quot;)[moi].
 
 [[(mais tu es si fatiguée.)]]
-]</tw-passagedata><tw-passagedata pid="213" name="(mais tu es si fatiguée.)" tags="" position="2575,1875" size="100,100">(enchant: ?page, (background: white))[Je sais.
+]</tw-passagedata><tw-passagedata pid="202" name="(mais tu es si fatiguée.)" tags="" position="2575,1875" size="100,100">(enchant: ?page, (background: white))[(text-style:&quot;blur&quot;)[Je] sais.
 
 [[(mais tu veux juste être tranquille.)]]
-]</tw-passagedata><tw-passagedata pid="214" name="(mais tu veux juste être tranquille.)" tags="" position="2450,1925" size="100,100">(enchant: ?page, (background: white))[Je sais. Je suis désolée.
+]</tw-passagedata><tw-passagedata pid="203" name="(mais tu veux juste être tranquille.)" tags="" position="2450,1925" size="100,100">(enchant: ?page, (background: white))[(text-style:&quot;blur&quot;)[Je] sais. (text-style:&quot;blur&quot;)[Je] suis désolée.
 
 [[(qu&#39;est-ce qu&#39;on fait, alors ?)]]
-]</tw-passagedata><tw-passagedata pid="215" name="(qu&#39;est-ce qu&#39;on fait, alors ?)" tags="" position="2575,2000" size="100,100">(enchant: ?page, (background: white))[Je ne suis pas sûre. Attendre ?
+]</tw-passagedata><tw-passagedata pid="204" name="(qu&#39;est-ce qu&#39;on fait, alors ?)" tags="" position="2575,2000" size="100,100">(enchant: ?page, (background: white))[(text-style:&quot;blur&quot;)[Je] ne suis pas sûre. Attendre ?
 
 
 
 
 [[(raconte-moi une histoire.)]]
-]</tw-passagedata><tw-passagedata pid="216" name="(raconte-moi une histoire.)" tags="" position="2450,2050" size="100,100">(enchant: ?page, (background: white))[Je ne suis pas sûre. J&#39;en connais une seule, et ce n&#39;est pas une belle histoire. C&#39;est quelque chose sur la solitdue et la peur. Et des mauvais choix qu&#39;on fait pour essayer d&#39;y échapper. Et des cauchemars qu&#39;on finit par préférer à la réalité parce qu&#39;ils sont plus faciles à comprendre.
+]</tw-passagedata><tw-passagedata pid="205" name="(raconte-moi une histoire.)" tags="" position="2450,2050" size="100,100">(enchant: ?page, (background: white))[(text-style:&quot;blur&quot;)[Je] ne suis pas sûre. (text-style:&quot;blur&quot;)[J&#39;]en connais une seule, et ce n&#39;est pas une belle histoire. C&#39;est quelque chose sur la solitdue et la peur. Et des mauvais choix qu&#39;on fait pour essayer d&#39;y échapper. Et des cauchemars qu&#39;on finit par préférer à la réalité parce qu&#39;ils sont plus faciles à comprendre.
 
 [[(tu connais déjà cette histoire.)]]
-]</tw-passagedata><tw-passagedata pid="217" name="(tu connais déjà cette histoire.)" tags="" position="2575,2150" size="100,100">(enchant: ?page, (background: white))[Je sais. Je te la raconte depuis le début du voyage.
+]</tw-passagedata><tw-passagedata pid="206" name="(tu connais déjà cette histoire.)" tags="" position="2575,2150" size="100,100">(enchant: ?page, (background: white))[(text-style:&quot;blur&quot;)[Je] sais. (text-style:&quot;blur&quot;)[Je] te la raconte depuis le début du voyage.
 
 Tu as compris, n&#39;est-ce pas ? Que c&#39;est là-dedans que tu es. Que tu ne sais plus quoi faire de toi et de tes pensées et de tes mains alors tu t&#39;es enchaînée à quelque chose qui n&#39;implique rien de tout ça. Une pause le long de la grande autoroute. Une sorte de rêve. Une cage en château de sable. 
 
 [[(la marée arrive bientôt.)]]
-]</tw-passagedata><tw-passagedata pid="218" name="(la marée arrive bientôt.)" tags="" position="2450,2200" size="100,100">(enchant: ?page, (background: white))[Oui. Tu es prête à te remettre à nager ?
+]</tw-passagedata><tw-passagedata pid="207" name="(la marée arrive bientôt.)" tags="" position="2450,2200" size="100,100">(enchant: ?page, (background: white))[Oui. Tu es prête à te remettre à nager ?
 
 [[(cette question est pour la forme. personne n&#39;a vraiment le choix.)]]
-]</tw-passagedata><tw-passagedata pid="219" name="(cette question est pour la forme. personne n&#39;a vraiment le choix.)" tags="" position="2575,2300" size="100,100">(enchant: ?page, (background: white))[Je peux t&#39;en proposer un autre, par contre.
+]</tw-passagedata><tw-passagedata pid="208" name="(cette question est pour la forme. personne n&#39;a vraiment le choix.)" tags="" position="2575,2300" size="100,100">(enchant: ?page, (background: white))[(text-style:&quot;blur&quot;)[Je] peux t&#39;en proposer un autre, par contre.
 
-Oui, même depuis ici. Pour de vrai. On ne peut pas faire grand-chose, encore une fois ta cage est en sable et le monde est de terre et de béton, mais je crois que tu ne l&#39;as pas construite pour rien. Même s&#39;il faudra sortir tôt ou tard.
+Oui, même depuis ici. Pour de vrai. On ne peut pas faire grand-chose, encore une fois ta cage est en sable et le monde est de terre et de béton, mais (text-style:&quot;blur&quot;)[je] crois que tu ne l&#39;as pas construite pour rien. Même s&#39;il faudra sortir tôt ou tard.
 
-Ça ne fera pas tout. Rien ne fait tout en une seule fois. Tu comprends ? C&#39;est une question de suites. C&#39;est une question de continuité. Mais puisque tu es là. Puisque je suis un peu responsable.
+Ça ne fera pas tout. Rien ne fait tout en une seule fois. Tu comprends ? C&#39;est une question de suites. C&#39;est une question de continuité. Mais puisque tu es là. Puisque (text-style:&quot;blur&quot;)[je] suis un peu responsable.
 
-Puisque je t&#39;aime un peu.
-
-Je te demande quand même, donc. Un petit choix qui ne change rien, ou oh, si peu, mais un choix quand même. 
+(text-style:&quot;blur&quot;)[Puisque je t&#39;aime un peu.
+]
+(text-style:&quot;blur&quot;)[Je] te demande quand même, donc. Un petit choix qui ne change rien, ou oh, si peu, mais un choix quand même. 
 
 Alors, qu&#39;est-ce que tu veux, Emma ? Qu&#39;est-ce que tu veux plus que tout ?
 
@@ -1799,7 +1893,7 @@ Alors, qu&#39;est-ce que tu veux, Emma ? Qu&#39;est-ce que tu veux plus que tout
 [[Je veux Noah.]]
 
 (set: $res to 1)
-]</tw-passagedata><tw-passagedata pid="220" name="Allume le briquet de l&#39;autre main." tags="" position="2775,1100" size="100,100">Tu as un peu de mal, y parviens au bout du deuxième ou troisième essai.
+]</tw-passagedata><tw-passagedata pid="209" name="Allume le briquet de l&#39;autre main." tags="" position="2775,1100" size="100,100">Tu as un peu de mal, y parviens au bout du deuxième ou troisième essai.
 
 Et puis tu le lâches presque parce que la flamme éclaire le visage de Noah qui s&#39;est rapprochée d&#39;un coup, sans un bruit, sans un mouvement, un instant, cachée dans la nuit, à deux centimètres de toi juste après. 
 
@@ -1815,7 +1909,7 @@ En quelques instants, Noah est loin de toi, assise encore, et te vise d&#39;une 
 
 Tu soupires.
 
-[[Essaie, juste au cas où. &quot;Je suis désolée.&quot;]]</tw-passagedata><tw-passagedata pid="221" name="Essaie, juste au cas où. &quot;Je suis désolée.&quot;" tags="" position="2650,1125" size="100,100">Noah a un rire à moitié étranglé, se plie presque en deux.
+[[Essaie, juste au cas où. &quot;Je suis désolée.&quot;]]</tw-passagedata><tw-passagedata pid="210" name="Essaie, juste au cas où. &quot;Je suis désolée.&quot;" tags="" position="2650,1125" size="100,100">Noah a un rire à moitié étranglé, se plie presque en deux.
 
 - Mensonge. Tu avais prévu ça depuis le début. Me coincer dès que possible pour pouvoir me balancer aux flics plus tard et sauver ta peau, c&#39;est ça que tu espérais non ? Mais tu n&#39;avais pas prévu que je me débatte, Em&#39;. (elle crache ton nom comme une insulte.) Ou bien tu espérais une occasion de te débarrasser de moi depuis longtemps. Je comprendrais.
 
@@ -1829,13 +1923,13 @@ Enfin, (text-style:&quot;blur&quot;)[cette fois-ci], on dirait bien que ce sera 
 
 Tu le penses.
 
-[[&quot;J&#39;avais juste... peur.]]</tw-passagedata><tw-passagedata pid="222" name="&quot;J&#39;avais juste... peur." tags="" position="2525,1150" size="100,100">Elle ricane.
+[[&quot;J&#39;avais juste... peur.]]</tw-passagedata><tw-passagedata pid="211" name="&quot;J&#39;avais juste... peur." tags="" position="2525,1150" size="100,100">Elle ricane.
 
 - David disait ça aussi.
 
 Noah ajuste son tir avec les dernières forces qu&#39;il lui reste. 
 
-[[Tu fermes les yeux.]]</tw-passagedata><tw-passagedata pid="223" name="Ouvre doucement la porte." tags="objr" position="3950,2500" size="100,100">- Noah ? 
+[[Tu fermes les yeux.]]</tw-passagedata><tw-passagedata pid="212" name="Ouvre doucement la porte." tags="objr" position="3950,2500" size="100,100">- Noah ? 
 
 Pas de réponse. Tout est sombre. Tu entres.
 
@@ -1843,7 +1937,9 @@ La porte reste ouverte derrière toi, cette fois-ci. Le vent souffle doucement d
 
 Tu t&#39;asseois au milieu de la pièce, sors (text-colour: #9d9db0)[l&#39;arme], la dépose devant toi.
 
-[[Encore une fois, attends.]]</tw-passagedata><tw-passagedata pid="224" name="Et tu souris." tags="finFIN" position="1600,3475" size="100,100">&lt;style&gt; img {
+[[Encore une fois, attends.]]</tw-passagedata><tw-passagedata pid="213" name="Et tu souris." tags="finFIN" position="1600,3475" size="100,100">(et c&#39;est la fin. pour cette fois-ci.)
+
+&lt;style&gt; img {
 max-width:100%;
 max-height:100%;
 }
@@ -1851,25 +1947,25 @@ max-height:100%;
 &lt;/style&gt;
 &lt;img
 src=https://static.wixstatic.com/media/559f19_60776f81b3b9448187ac860645ccd7dc~mv2.png&gt;
-&lt;/div&gt;
-
-(et c&#39;est la fin. pour cette fois-ci.)</tw-passagedata><tw-passagedata pid="225" name="Toi aussi, reste debout sur le pas de sa maison le plus longtemps possible." tags="finFIN" position="1225,3650" size="100,100">Parce que c&#39;est comme ça avec Noah, avant. Elle te réchauffe de l&#39;intérieur. Elle te donne l&#39;impression qu&#39;enfin, tu fais les choses correctement. Et s&#39;il y a encore tellement de choses que tu t&#39;interdis, si tu dois parfois détourner les yeux de son rayonnement, tu te dis de plus en plus que tu es heureuse. À ta place.
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="214" name="Toi aussi, reste debout sur le pas de sa maison le plus longtemps possible." tags="finFIN" position="1225,3650" size="100,100">Parce que c&#39;est comme ça avec Noah, avant. Elle te réchauffe de l&#39;intérieur. Elle te donne l&#39;impression qu&#39;enfin, tu fais les choses correctement. Et s&#39;il y a encore tellement de choses que tu t&#39;interdis, si tu dois parfois détourner les yeux de son rayonnement, tu te dis de plus en plus que tu es heureuse. À ta place.
 
 Tu ne sais pas encore que cette chaleur te donnera un jour l&#39;impression de brûler vivante. Tu ne sais pas que Noah, Noah dont chaque geste ne fait que justifier à quel point tu l&#39;adores sera un jour cruelle, sera un jour injuste, sera un jour amère et si déterminée à l&#39;auto-destruction qu&#39;elle t&#39;emportera avec elle. Les années feront ça, d&#39;autres choses aussi, mais ignore-le tant que tu le peux. Ignore la suite. Ignore les soirées dont tu ramèneras ton amie incohérente et furieuse, ignore les moments où tu te perdras dans ta volonté de l&#39;aider à tout prix au point qu&#39;elle te dira un jour que tu la rends malade, ignore l&#39;aggravation jusqu&#39;à ce qu&#39;elle aille se réfugier dans les bras d&#39;un garçon qui la traitera si mal qu&#39;elle ne verra plus qu&#39;une seule issue au problème nommé David.
 
 Pense seulement à ce que tu dis, une de ces fois où tu la ramènes chez elle. Une résolution, imprimée dans ton esprit comme l&#39;instruction à une machine dont c&#39;est la seule raison d&#39;être, une promesse qui ne se brisera que dans le sang, un ordre, enfin : 
 
-[[Tu ne la quitteras jamais, jamais des yeux.]]</tw-passagedata><tw-passagedata pid="226" name="Encore une fois, attends." tags="" position="3775,2475" size="100,100">Mais Noah ne vient pas. 
+[[Tu ne la quitteras jamais, jamais des yeux.]]</tw-passagedata><tw-passagedata pid="215" name="Encore une fois, attends." tags="" position="3775,2475" size="100,100">Mais Noah ne vient pas. 
 
-[[Tu continues d&#39;attendre.]]</tw-passagedata><tw-passagedata pid="227" name="Tu continues d&#39;attendre." tags="" position="3650,2400" size="100,100">Et le vent continue à souffler par la porte. 
+[[Tu continues d&#39;attendre.]]</tw-passagedata><tw-passagedata pid="216" name="Tu continues d&#39;attendre." tags="" position="3650,2400" size="100,100">Et le vent continue à souffler par la porte. 
 
-[[Attends, attends, attends.]]</tw-passagedata><tw-passagedata pid="228" name="Attends, attends, attends." tags="" position="3525,2275" size="100,100">Mais Noah ne vient pas. Noah ne viendra pas. Noah est repartie sans toi, ou tu es partie quelque part sans elle, et il n&#39;y a plus que toi, que le cabanon et (text-colour: #9d9db0)[l&#39;arme] devant toi.
+[[Attends, attends, attends.]]</tw-passagedata><tw-passagedata pid="217" name="Attends, attends, attends." tags="" position="3525,2275" size="100,100">Mais Noah ne vient pas. Noah ne viendra pas. Noah est repartie sans toi, ou tu es partie quelque part sans elle, et il n&#39;y a plus que toi, que le cabanon et (text-colour: #9d9db0)[l&#39;arme] devant toi.
 
 - Tu sais ce qu&#39;il te reste à faire ?
 
 C&#39;est sa voix qui te parle. Alors au moins ça. Au moins, quand tu obéiras, ce sera en emportant un bout d&#39;elle, d&#39;une certaine manière.
 
-[[Parce que tu sais.]]</tw-passagedata><tw-passagedata pid="229" name="Alors tu ne te soucies plus du reste." tags="finFIN" position="1600,3925" size="100,100">&lt;style&gt; img {
+[[Parce que tu sais.]]</tw-passagedata><tw-passagedata pid="218" name="Alors tu ne te soucies plus du reste." tags="finFIN" position="1600,3925" size="100,100">(et c&#39;est la fin. pour cette fois-ci.)
+
+&lt;style&gt; img {
 max-width:100%;
 max-height:100%;
 }
@@ -1877,9 +1973,9 @@ max-height:100%;
 &lt;/style&gt;
 &lt;img
 src=https://static.wixstatic.com/media/559f19_60776f81b3b9448187ac860645ccd7dc~mv2.png&gt;
-&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="219" name="Tu ne la quitteras jamais, jamais des yeux." tags="finFIN" position="1400,3650" size="100,100">(et c&#39;est la fin. pour cette fois-ci.)
 
-(et c&#39;est la fin. pour cette fois-ci.)</tw-passagedata><tw-passagedata pid="230" name="Tu ne la quitteras jamais, jamais des yeux." tags="finFIN" position="1400,3650" size="100,100">&lt;style&gt; img {
+&lt;style&gt; img {
 max-width:100%;
 max-height:100%;
 }
@@ -1887,9 +1983,9 @@ max-height:100%;
 &lt;/style&gt;
 &lt;img
 src=https://static.wixstatic.com/media/559f19_60776f81b3b9448187ac860645ccd7dc~mv2.png&gt;
-&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="220" name="Lorsque tu t&#39;endors, tu rêves à une vie où tu parles enfin la même langue que tout le monde." tags="finFIN" position="2075,4350" size="100,100">(et c&#39;est la fin. pour cette fois-ci.)
 
-(et c&#39;est la fin. pour cette fois-ci.)</tw-passagedata><tw-passagedata pid="231" name="Lorsque tu t&#39;endors, tu rêves à une vie où tu parles enfin la même langue que tout le monde." tags="finFIN" position="2075,4350" size="100,100">&lt;style&gt; img {
+&lt;style&gt; img {
 max-width:100%;
 max-height:100%;
 }
@@ -1897,11 +1993,9 @@ max-height:100%;
 &lt;/style&gt;
 &lt;img
 src=https://static.wixstatic.com/media/559f19_60776f81b3b9448187ac860645ccd7dc~mv2.png&gt;
-&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="221" name="Parce que tu sais." tags="" position="3425,2150" size="100,100">Après des vies passées à attendre dans l&#39;obscurité, tu lèves (text-colour: #9d9db0)[l&#39;arme] à ta tempe.
 
-(et c&#39;est la fin. pour cette fois-ci.)</tw-passagedata><tw-passagedata pid="232" name="Parce que tu sais." tags="" position="3425,2150" size="100,100">Après des vies passées à attendre dans l&#39;obscurité, tu lèves (text-colour: #9d9db0)[l&#39;arme] à ta tempe.
-
-[[Tu fermes les yeux.]]</tw-passagedata><tw-passagedata pid="233" name="&quot;Ce ne sera pas si grave que ça, non ?&quot;" tags="" position="3425,3050" size="100,100">Elle ne répond pas. Elle te regarde.
+[[Tu fermes les yeux.]]</tw-passagedata><tw-passagedata pid="222" name="&quot;Ce ne sera pas si grave que ça, non ?&quot;" tags="" position="3425,3050" size="100,100">Elle ne répond pas. Elle te regarde.
 
 Tu te sens un peu mal à l&#39;aise. Alors tu sors (text-colour: #9d9db0)[l&#39;arme], la pose sur la table. Histoire de te donner une contenance.
 
@@ -1909,7 +2003,7 @@ Noah la fixe de ses grands yeux gris comme si elle pouvait la trouer du regard.
 
 (tu te souviens de la lumière blanche du néon ? Elle éclaire tout comme en plein jour, à présent.)
 
-[[&quot;Désolée. C&#39;est pour moi, ça.&quot;]]</tw-passagedata><tw-passagedata pid="234" name="&quot;Désolée. C&#39;est pour moi, ça.&quot;" tags="" position="3575,3050" size="100,100">Elle lève brusquement la tête vers toi. 
+[[&quot;Désolée. C&#39;est pour moi, ça.&quot;]]</tw-passagedata><tw-passagedata pid="223" name="&quot;Désolée. C&#39;est pour moi, ça.&quot;" tags="" position="3575,3050" size="100,100">Elle lève brusquement la tête vers toi. 
 
 - Enfin, c&#39;est moi qui vais...
 
@@ -1917,7 +2011,7 @@ Tu soulèves l&#39;arme, plissant des yeux à cause de la lumière.
 
 Noah ne dit toujours rien. Ça te rend folle.
 
-[[&quot;Mais tu comprends, n&#39;est-ce pas ?&quot;]]</tw-passagedata><tw-passagedata pid="235" name="&quot;Mais tu comprends, n&#39;est-ce pas ?&quot;" tags="" position="3450,3175" size="100,100">Et elle te regarde. Et elle ouvre la bouche. Et elle se met à //hurler//.
+[[&quot;Mais tu comprends, n&#39;est-ce pas ?&quot;]]</tw-passagedata><tw-passagedata pid="224" name="&quot;Mais tu comprends, n&#39;est-ce pas ?&quot;" tags="" position="3450,3175" size="100,100">Et elle te regarde. Et elle ouvre la bouche. Et elle se met à //hurler//.
 
 Tu tires toutes les balles du réservoir et toutes celles qu&#39;il n&#39;a pas et les coups continuent à faire feu, mais ça ne sert à rien, ça ne sert à rien contre le déluge de lumière que Noah te vomit dessus et tes yeux te brûlent et ta peau commence à cloquer et (text-colour: #9d9db0)[l&#39;arme] va bientôt fondre dans tes mains mais tu continues, tu continues parce que qu&#39;est-ce qu&#39;il te reste d&#39;autre à faire ? 
 
@@ -1929,7 +2023,13 @@ Tu ne sais pas. Tu sais juste que tu essaies encore pendant longtemps, et elle a
 
 Et tu sais que c&#39;est toi qui finis par abandonner.
 
-[[Tu fermes les yeux.]]</tw-passagedata></tw-storydata>
+[[Tu fermes les yeux.]]</tw-passagedata><tw-passagedata pid="225" name="Commencer." tags="" position="2650,3575" size="100,100">Nuit. Trois heures après l&#39;erreur : vous avez assez roulé pour que tes mains arrêtent de trembler, la terreur et l&#39;adrénaline comme semées sur la route. Ce qui veut dire qu&#39;il y a toujours cette trace de goudron qui te relie à la chose, dans la ville, et quand tu fermes les yeux tu peux sentir le souvenir se rapprocher pas à pas ; mais pour l&#39;instant, ce n&#39;est plus là. Vous avez encore du temps et tu te sens terriblement légère.
+
+Parce que tout est derrière vous, à présent. Parce que tu n&#39;as rien pu emporter. Rien, rien que cette certitude (et c&#39;est tout ce qui compte, alors écoute bien, et retiens-la, c&#39;est la seule chose encore importante, c&#39;est la seule chose que tu peux encore faire) :
+
+(text-colour:red) [Il ne te reste plus que Noah. 
+
+[[Ne la quitte pas des yeux.]] )]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
