@@ -10,7 +10,12 @@ Télécharger le fichier html et l'ouvrir dans le navigateur.
 
 ## Content warnings
 
-L'histoire contient de manière plus ou moins explicite certains thèmes pouvant être sensibles : violence, meurtre, suicide, détresse psychologique, et un narrateur parfois trop autoritaire.
+L'histoire contient de manière plus ou moins explicite certains thèmes pouvant être sensibles : violence, meurtre, suicide, détresse psychologique, et un narrateur parfois un chouïa autoritaire.
+
+
+
+
+
 
 
 
