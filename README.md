@@ -2,7 +2,7 @@
 
 Après l'erreur est une fiction interactive réalisée sur Twine racontant l'histoire d'Emma, une jeune fille en cavale avec sa meilleure amie et qui se retrouve coincée sur une aire d'autoroute.
 
-![Screenshot from 2024-09-01 10-19-02](https://github.com/user-attachments/assets/40a529a6-4e9e-4d90-b9b3-9eec006c7362)
+![Screenshot from 2024-09-01 10-21-20](https://github.com/user-attachments/assets/6a3c2985-01c5-4802-8536-4e9927774535)
 
 Télécharger le fichier html et le lancer dans le navigateur.
 
