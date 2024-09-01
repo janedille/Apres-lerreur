@@ -1,6 +1,6 @@
 # Après l'erreur
 
-Après l'erreur est une fiction interactive principalement textuelle structurée sur la base d'une boucle narrative. L'histoire est celle d'Emma et de Noah, deux filles fuyant "l'erreur"; au milieu de la nuit, elles s'arrêtent à une aire d'autoroute et ont quelques difficultés à en repartir. Il s'agit moins d'atteindre un objectif spécifique et plutôt d'explorer les différentes ramifications de la boucle jusqu'à ce qu'on y échappe.
+Après l'erreur est une fiction interactive textuelle, structurée sur la base d'une boucle narrative. L'histoire est celle d'Emma et de Noah, deux filles fuyant "l'erreur"; au milieu de la nuit, elles s'arrêtent à une aire d'autoroute et ont quelques difficultés à en repartir. Il s'agit moins d'atteindre un objectif spécifique et plutôt d'explorer les différentes ramifications de la boucle jusqu'à ce qu'on y échappe.
 
 ![apreslerreur_sc](https://github.com/user-attachments/assets/b71d5d65-6324-4ba7-bc38-dde95e8e09cf)
 
