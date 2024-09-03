@@ -1,0 +1,2955 @@
+:: StoryTitle
+L'erreur
+
+
+:: StoryData
+{
+  "ifid": "06C577F0-0738-40D0-BBC9-C89DB4F4C76E",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "(après l'erreur.)",
+  "tag-colors": {
+    "fin": "blue",
+    "obja": "yellow",
+    "objr": "red",
+    "finfinalejsp": "purple",
+    "avant": "orange",
+    "déblocerreur": "green",
+    "wip": "purple",
+    "varfin": "orange",
+    "finFIN": "none"
+  },
+  "zoom": 0.6
+}
+
+
+:: "Bon Dieu, Noah, tu m'as fait peur." {"position":"4600,1850","size":"100,100"}
+Elle te dévisage quelques instants (trop longtemps ?), puis baisse les yeux, les mains dans les poches. Piétine le gravier. Est-ce qu'elle est gênée ? Elle en a un peu l'air. 
+
+Tu soupires. 
+
+- Je crois que tu as oublié ça, dis-tu en lui passant le (text-colour: #ab7875)[briquet]. Lentement, pour éviter que la flamme s'éteigne trop vite.
+
+Elle s'en saisit sans rien dire. 
+
+
+:: "C'est ce qu'il a fait aussi, tu penses ? David. Gratter." {"position":"2850,2900","size":"100,100"}
+Un silence.
+
+- Je ne sais pas. Je n'ai pas fait plus attention que ça. Le connaissant, probablement qu'il n'a pas essayé très longtemps.
+
+Noah a détourné le regard, fixe à présent la route - l'air étrange, lointain, un peu rêveur. La lumière blanche semble clignoter sur son visage, mais quand tu te concentres sur le néon du coin de l'œil, il brille tout à fait régulièrement. 
+
+[["Mais peut-être que s'il avait..."]] 
+
+
+:: "C'est rien, c'est pas grave." {"position":"2975,3175","size":"100,100"}
+Mais elle t'écoute à peine, continue à tourner, manipuler la peau, jusqu'à ce qu'elle décide avec un soupir qu'il n'y a rien à trouver.
+
+Noah relâche sa prise sur ta main, mais tiens encore le bout des doigts, juste contre le banc. Tu te souviens vaguement de sorties d'il y a quelques années, à une fête foraine ou un parc d'attractions, quelque chose avec beaucoup de monde en tout cas, et des mains que vous gardiez liées à l'identique une fois la nuit tombée, pour ne pas vous perdre dans la foule. Juste le bout des doigts aussi (tu n'avais pas osé essayé de prendre plus).
+
+((text-style:"blur")[Cette fois-ci] non plus, tu n'oseras pas.)
+
+Vous restez silencieuses quelques instants. 
+
+La lumière blanche est revenue, découpe de nouveau ses angles et ses arêtes sur son visage. Tu te sens bizarre, repenses au (text-colour: #ab7875)[briquet].
+
+[["Je me demande où il est tombé, est-ce que tu veux que-"]]
+
+
+:: "C'est... Il fait froid, hein ? Même pour..." {"position":"4850,3625","size":"100,100"}
+Tu calcules. Le mois vient de basculer, tu as du mal à tenir tes calendriers à jour.
+
+— Pour mars.
+
+Noah hoche la tête d'un air distant, retire un instant la cigarette pour cracher un long filet de fumée. Le silence se réinstalle immédiatement, comme une moquerie. 
+
+[[Et alors, rends-toi compte que tout est pareil.]]
+
+
+:: "Ce ne sera pas si grave que ça, non ?" {"position":"3425,3050","size":"100,100"}
+Elle ne répond pas. Elle te regarde.
+
+Tu te sens un peu mal à l'aise. Alors tu sors (text-colour: #9d9db0)[l'arme], la pose sur la table. Histoire de te donner une contenance.
+
+Noah la fixe de ses grands yeux gris comme si elle pouvait la trouer du regard.
+
+(tu te souviens de la lumière blanche du néon ? Elle éclaire tout comme en plein jour, à présent.)
+
+[["Désolée. C'est pour moi, ça."]]
+
+
+:: "Comment ?" {"position":"2350,1075","size":"100,100"}
+Tu entends le sourire dans sa voix quand elle répond, alors qu'elle tremble aussi, alors que tu sais que Noah pleure, aussi.
+
+- Mais avec toi, Em'. J'aurais voulu pouvoir m'en sortir avec toi.
+
+Elle tire.
+
+[[Tu fermes juste les yeux.]]
+
+(set: $f8 to 1)
+
+
+:: "De quoi tu parles ? Je te cherche depuis des heures." {"position":"3025,1000","size":"100,100"}
+Elle ne répond pas immédiatement, et tu regrettes de ne plus voir son visage, cette fois-ci.
+
+- Noah ? 
+
+Le silence s'éternise. Tu n'es plus sûre de l'entendre respirer.
+
+(if: $gun < 1)[ [[Allume la flamme.]]
+]
+(if: $gun > 0)[ [[Prépare ton arme.]] 
+] 
+
+
+:: "Désolée. C'est pour moi, ça." {"position":"3575,3050","size":"100,100"}
+Elle lève brusquement la tête vers toi. 
+
+- Enfin, c'est moi qui vais...
+
+Tu soulèves l'arme, plissant des yeux à cause de la lumière.
+
+Noah ne dit toujours rien. Ça te rend folle.
+
+[["Mais tu comprends, n'est-ce pas ?"]]
+
+
+:: "Est-ce qu'on doit vraiment retourner à la voiture ?" {"position":"3025,2500","size":"100,100"}
+Noah a un rire affreux, amer et bref, comme un aboiement.
+
+- Non, restons ici, quelle bonne idée. Peut-être que ça vaut mieux. Je me débrouille aussi longtemps que je peux pendant que tu... 
+
+Elle fait un vague geste dédaigneux de la main.
+
+- Je ne sais pas. J'avoue que je ne suis pas sûre de ce que tu sais faire en-dehors de me courir après comme un bon petit chien.
+
+Tu protestes. Très faiblement.
+
+- C'est toi qui m'as demandé de l'aide.
+
+- Et tu étais si enthousiaste ! Est-ce que c'est vraiment de ma faute ?
+
+Tu ne sais pas quoi répondre. 
+
+Elle joue avec la (text-colour: #c0c195)[cigarette] entre ses doigts, fronce les sourcils.
+
+- Et j'ai oublié mon briquet à la voiture. Fantastique.
+
+Et elle te regarde droit dans les yeux.
+
+[[Reste silencieuse.]]
+
+[["Je vais retourner le chercher."]]
+
+
+:: "Est-ce que tu veux que j'éteigne ?" [wip] {"position":"2925,1250","size":"100,100"}
+Elle 
+
+[[Tu fermes juste les yeux.]]
+
+
+:: "Et l'Italie, alors ?" {"position":"4675,4175","size":"100,100"}
+- Oublie l'Italie, tu as raison. Il y a une forêt juste à côté, on peut s'installer là. Vivre de chasse et de cueillette.
+
+- Construire une cabane... Voler les vacanciers qui s'arrêtent aussi...
+
+Tu trébuches encore une fois sur tes mots, et encore une fois, elle rit. Vos blagues ne sont pas drôles mais elle rit, longtemps (oh, la résurrection de l'idée qu'elle pouvait encore le faire !), et puis :
+
+— On va s'en sortir, Em'. Promis.
+
+Sa voix est fatiguée mais sincère, et la cigarette allume une étincelle au fond de ses yeux, et alors... Et alors, tu arrives presque à y croire. Non, tu y crois tout à fait, on va s'en sortir, pour la première fois depuis longtemps – pas juste depuis l'erreur, la première fois depuis des années, depuis cet été où tu l'avais vu rire, les dents étincelant sous le soleil et que tu t'étais dit «je suis foutue», et comme tu avais été bête ! ça aurait pu être si beau... 
+
+[[Essaie.]]
+
+[[Retiens-toi.]]
+
+
+:: "Et regarde où ça nous a menées." {"position":"2650,2725","size":"100,100"}
+Tu désignes vaguement, dédaigneusement l'espace autour de toi. Noah ne suit pas ton geste. Noah ne te regarde plus. 
+
+[[Excuse-toi, Emma.]]
+
+
+:: "J'ai peur, Noah." [finFIN] {"position":"2100,3975","size":"100,100"}
+Arrête. 
+
+[[Tu sais très bien que tu ne pourras jamais lui dire.]]
+
+
+:: "J'ai très sommeil." {"position":"2800,1450","size":"100,100"}
+- Je sais, Em'. 
+
+Et elle appuie sa tête contre son épaule.
+
+Peut-être pour la première fois depuis très, très longtemps, tu te sens paisible. Pas vraiment heureuse, mais à ta place. Entre l'arbre et ton amie. 
+
+(if: $gun < 1)[ Et quand tu entends le léger cliquetis de la sécurité de l'arme, et que d'un bras elle attrape ta main et serre, fort, comme si ça allait suffire à te tenir en place (ça suffira), alors que l'autre main vive comme un serpent vient presser le métal contre ta tempe, tu n'es pas spécialement effrayée. Ou triste. Ou en colère.
+
+Quand Noah appuie sur la gâchette (la deuxième fois en quelques heures), tu n'entends même pas la détonation. 
+
+[[Tu fermes juste les yeux.]]
+(set: $f7 to 1)]
+
+(if: $gun > 0)[ Et quand elle ne réagit pas même lorsqu'elle entende le cliquetis de la sécurité de (text-colour: #9d9db0)[l'arme] derrière elle, et que d'un bras tu la serres, fort, comme si ça allait suffire à la tenir en place (ça suffira), alors que l'autre main vive comme un serpent vient presser le métal contre sa tempe, tu ne te sens pas spécialement coupable. Ou triomphante. Ou en sécurité.
+
+Quand tu appuies sur la gâchette, elle ne crie même pas.
+
+[[Mais le monde entier disparaît.]]
+]
+
+
+:: "J'aurais vraiment voulu..." [finFIN] {"position":"2200,4025","size":"100,100"}
+Arrête. 
+
+[[Tu sais très bien que tu ne pourras jamais lui dire.]]
+
+
+:: "J'avais juste... peur. {"position":"2525,1150","size":"100,100"}
+Elle ricane.
+
+- David disait ça aussi.
+
+Noah ajuste son tir avec les dernières forces qu'il lui reste. 
+
+[[Tu fermes les yeux.]]
+
+
+:: "Je crois que je me suis perdue." {"position":"3050,1200","size":"100,100"}
+un peu pareil juste
+
+[["Est-ce que tu veux que j'éteigne ?"]]
+
+
+:: "Je me demande où il est tombé, est-ce que tu veux que-" {"position":"2850,3325","size":"100,100"}
+Noah ne te laisse pas finir. Noah lâche ta main, Noah attrape ton visage à la place, et Noah t'embrasse.
+
+[[Recule.]]
+
+[[Ne recule pas.]]
+
+
+:: "Je n'ai pas envie de retourner à la voiture." {"position":"4550,4050","size":"100,100"}
+- Est-ce qu'on est obligées ? tu ajoutes.
+
+Noah ne répond pas tout de suite. Tu vois à la manière dont elle promène ses yeux sur l'horizon, retire, remet en place, retire encore la cigarette sans plus tirer, qu'elle réfléchit.
+
+— C'est vrai qu'on pourrait rester ici, répond-elle enfin.
+
+Ailleurs, à un autre moment, ces mots t'auraient remplie de soulagement. Là, rien. 
+
+Tu testes si elle plaisante ou est vraiment sérieuse.
+
+[["Et l'Italie, alors ?"]]
+
+
+:: "Je ne peux vraiment pas retourner à la voiture, Noah." {"position":"2900,2525","size":"100,100"}
+Noah a un rire affreux, amer et bref, comme un aboiement.
+
+- Reste ici, alors. Peut-être que ça vaut mieux. Je me débrouille aussi longtemps que je peux pendant que tu... 
+
+Elle fait un vague geste dédaigneux de la main.
+
+- Je ne sais pas. J'avoue que je ne suis pas sûre de ce que tu sais faire en-dehors de me courir après comme un bon petit chien.
+
+Tu protestes. Très faiblement.
+
+- C'est toi qui m'as demandé de l'aide.
+
+- Et tu étais si enthousiaste ! Est-ce que c'est vraiment de ma faute ?
+
+Tu ne sais pas quoi répondre. 
+
+Elle joue avec la (text-colour: #c0c195)[cigarette] entre ses doigts, fronce les sourcils.
+
+- Et j'ai oublié mon briquet à la voiture. Fantastique.
+
+Et elle te regarde droit dans les yeux.
+
+[[Reste silencieuse.]]
+
+[["Je vais retourner le chercher."]]
+
+
+
+
+:: "Je ne sais plus quoi faire, je suppose." {"position":"2475,2625","size":"100,100"}
+- Et maintenant tu es coincée ici. Coincée avec...
+
+Et maintenant sa voix se brise. Juste un peu, juste un tremblotement de la lumière au coin de la bouche, mais oh tu connais Noah, tu sais quand elle a atteint la limite qu'elle prétend si bien être inexistante. Alors quand elle craque pour de bon, quand elle éclate en sanglots qui la secouent si fort qu'elle semble en perdre le souffle, [[n'hésite pas.]] 
+
+
+:: "Je sais." {"position":"2475,1000","size":"100,100"}
+- J'aurais voulu...
+
+Tu l'entends hésiter.
+
+- J'aurais voulu pouvoir m'en sortir autrement. 
+
+[["Comment ?"]]
+
+
+:: "Je suis désolée." {"position":"3125,2800","size":"100,100"}
+Elle grimace, hausse les épaules.
+
+- Ce n'est pas grave, je suppose. On devrait se remettre en route, de toute façon.
+
+Un silence. Quelque chose comme une odeur de plomb dans l'air, ou bien c'est l'angoisse seule qui serre tes poumons à ce point. Après une hésitation d'un moment, tu reprends la parole, à voix basse :
+
+[["Qu'est-ce qu'on va faire. Qu'est-ce qu'on va faire maintenant."]]
+
+[["Je ne peux vraiment pas retourner à la voiture, Noah."]]
+
+
+:: "Je t'ai cherchée." {"position":"2925,1425","size":"100,100"}
+- Je sais.
+
+Tu crois qu'elle sourit aussi. 
+
+Elle ne se lève toujours pas, reste assise, alors tu continuer à avancer, t'accroupis une fois arrivée à sa hauteur.
+
+- Assieds-toi, Em'. On n'est pas pressées. 
+
+Tu obéis. Tu sens un peu l'écorce rêche contre ton dos, le bras et l'épaule de Noah qui presse contre les tiens. 
+
+[["J'ai très sommeil."]]
+
+
+:: "Je vais retourner le chercher." [wip] {"position":"2900,2325","size":"100,100"}
+Noah ne répond pas mais tu te lèves tout de même, t'éloignes de quelques pas, attends peut-être une réponse - toujours rien.
+
+Tu n'as pas parcouru la moitié du chemin jusqu'à la voiture lorsque le premier coup de feu retentit. 
+
+Il t'a manqué de peu, mais tu ne te retournes pas. Tu ne veux pas voir Noah. Tu ne veux pas affronter son visage découpé par la lumière, transformé en lame lui aussi, alors tu attends qu'elle tire une deuxième fois.
+
+[[Tu fermes juste les yeux.]]
+
+(set: $f6 to 1)
+
+
+:: "Je voudrais juste..." [finFIN] {"position":"1950,3925","size":"100,100"}
+Arrête. 
+
+[[Tu sais très bien que tu ne pourras jamais lui dire.]]
+
+
+:: "L'Italie... Tu n'avais pas un plan ? Quelqu'un, quelque part..." {"position":"4825,4100","size":"100,100"}
+Tu trébuches encore une fois sur tes mots, et encore une fois, elle rit. Il n'y a rien de drôle mais elle rit, longtemps (oh, la résurrection de l'idée qu'elle pouvait encore le faire !), et puis :
+
+— On va s'en sortir, Em'. Promis.
+
+Sa voix est fatiguée mais sincère, et la cigarette allume une étincelle au fond de ses yeux, et alors... Et alors, tu arrives presque à y croire. Non, tu y crois tout à fait, on va s'en sortir, pour la première fois depuis longtemps – pas juste depuis l'erreur, la première fois depuis des années, depuis cet été où tu l'avais vu rire, les dents étincelant sous le soleil et que tu t'étais dit «je suis foutue», et comme tu avais été bête ! ça aurait pu être si beau... 
+
+[[Essaie.]]
+
+[[Retiens-toi.]]
+
+
+:: "Mais peut-être que s'il avait..." {"position":"2750,2950","size":"100,100"}
+(tu regrettes presque immédiatement.)
+
+Mais il est trop tard. Noah t'a entendue, et Noah veut savoir.
+
+- Peut-être que s'il avait quoi ?
+
+Elle ne sonne pas vraiment en colère. Pas encore.
+
+- Rien, pardon, oublie. Je suis fatiguée, je... je dis n'importe quoi. 
+
+- S'il avait //quoi//, Em' ? S'il s'était débattu plus longtemps ? S'il avait retenu le sang dans sa cage thoracique par sa propre volonté ? 
+
+Tu n'oses pas la regarder en face. Mais tu vois quand même. Du coin de l'œil, parce que ça étincelle presque, la lumière blanche qui rebondit sur son visage en rayons pointus. 
+
+- Emma. S'il avait juste refusé de mourir après s'être fait tiré dessus ? C'est ça que tu essaies de dire ?
+
+Silence.
+
+[[Excuse-toi, Emma.]] 
+
+
+:: "Mais tu comprends, n'est-ce pas ?" {"position":"3450,3175","size":"100,100"}
+Et elle te regarde. Et elle ouvre la bouche. Et elle se met à //hurler//.
+
+Tu tires toutes les balles du réservoir et toutes celles qu'il n'a pas et les coups continuent à faire feu, mais ça ne sert à rien, ça ne sert à rien contre le déluge de lumière que Noah te vomit dessus et tes yeux te brûlent et ta peau commence à cloquer et (text-colour: #9d9db0)[l'arme] va bientôt fondre dans tes mains mais tu continues, tu continues parce que qu'est-ce qu'il te reste d'autre à faire ? 
+
+Parce que quand Noah était à ta place, il y a quelques heures, est-ce qu'elle n'a pas réussi à abbattre le monstre ?
+
+(mais peut-être que c'est toi, cette fois-ci ? peut-être que c'est toujours elle le chevalier, le Saint George ?)
+
+Tu ne sais pas. Tu sais juste que tu essaies encore pendant longtemps, et elle aussi, tonnerre et éclairs partagés.
+
+Et tu sais que c'est toi qui finis par abandonner.
+
+[[Tu fermes les yeux.]]
+
+
+:: "Ne me laisse pas." [finFIN] {"position":"2200,3925","size":"100,100"}
+Arrête. 
+
+[[Tu sais très bien que tu ne pourras jamais lui dire.]]
+
+
+:: "Noah !" [déblocerreur] {"position":"3250,3725","size":"100,100"}
+Tu t'es collée contre la fenêtre, as appelé assez fort pour qu'elle s'arrête, se retourne. Elle fait quelques pas pour revenir vers toi et se penche par-dessus la vitre qu'elle a laissée ouverte.
+
+- Qu'est-ce que tu veux, Em' ?
+
+Elle sonne irritée, impatiente. Une de ses mains joue nerveusement avec le col de sa veste (étrange. d'habitude c'est le (text-colour: #ab7875)[briquet]), l'autre s'appuie contre la portière.
+
+Tu hésites.
+
+[["Rien, juste... Attends-moi."]]
+
+
+:: "Noah ?" [wip] {"position":"3375,2300","size":"100,100"}
+Pas de réponse. Pas de bruit. 
+
+
+:: "Noah, est-ce que... Est-ce que je peux te dire quelque chose ?" [finFIN] {"position":"1600,3800","size":"100,100"}
+La boule est dans ta gorge. Ta voix tremble déjà. 
+
+Noah se tourne à moitié vers toi, garde un œil sur la route. 
+
+— Oh, Em', dit-elle simplement.
+
+Et tu ne sais pas ce que c'est dans le ton de sa voix mais c'est affreux, insupportable, tu n'avais aucune idée que quelque chose d'aussi tendre pouvait être aussi douloureux c'est comme si on t'arrachait le cœur par la gorge ! et puis, et puis, tu te mets à pleurer. Et c'est absurde parce que la nuit a été longue, la nuit a été terrible, la nuit a été marquée par le sang et le feu mais là, là, dans l'impression que ton pire cauchemar s'est réalisé, ce cauchemar n'est rien de plus que pleurer dans la voiture de ta meilleure amie, ta seule amie pendant qu'elle te conduit vers une fuite sans fin. Voilà. Tu pleures, et je n'ai pas besoin de t'expliquer, la secousse des sanglots, les yeux qui brûlent à cause du sel, tu connais tout ça. Voilà.
+
+Noah ne dit rien, mais tu sens que ce n'est pas parce qu'elle t'ignore. D'une certaine manière, elle t'écoute. Et puis, et puis, au bout de quelques minutes, quand tu t'es un peu calmée, que le silence a commencé à se reposer comme un voile dérangé par le vent, elle tend une main vers ton visage, essuie comme elle peut les larmes collées juste en-dessous de tes paupières. Peut-être que tu te remets à sangloter, peut-être que tu t'endors comme ça, la joue dans le creux de sa paume. 
+
+Tu te souviens encore avoir vu l'aire d'autoroute disparaître derrière vous dans une traînée de néons, et avoir pensé "au moins ça de fait". Au moins ça de dépassé. Tu ne sais pas ce qu'il y a après. Tu ne sais pas si vous continuerez à avancer ainsi très longtemps, tu ne sais pas ce que la route vous réserve - un vrai échappatoire, au loin, au loin, une falaise, ou juste des années de ça, de fuite -, mais là, maintenant, la nuit n'est pas encore finie. Quoique tu fasses. Quoique tu dises. 
+
+Et même si la fin vous attends dès le prochain lever du soleil, elle n'est pas encore là. Mais toi tu l'es, tu es là, et Noah aussi, alors, alors, reste ici encore un peu, pour voir, ou juste pour quelques secondes de plus passées ensemble. Juste ça. Parce qu'il vous reste encore tellement, tant que l'autre est là. 
+
+[[Alors tu ne te soucies plus du reste.]]
+
+
+:: "Noah." [finFIN] {"position":"2000,4075","size":"100,100"}
+Arrête. 
+
+[[Tu sais très bien que tu ne pourras jamais lui dire.]]
+
+
+:: "Oui, maintenant qu'on a tué ton copain de merde, Noah." {"position":"2775,2650","size":"100,100"}
+Elle n'est pas en colère ? Très bien. Parce que peut-être que malgré tout, malgré le fait que ce soit Noah, toi tu l'es. Juste un peu.
+
+Tu continues.
+
+- Maintenant que //tu// l'as tué, d'ailleurs. Je te rappelle que je n'y suis pour rien, à la base. 
+
+Un silence.
+
+- Tu n'as pas hésité longtemps quand je t'ai demandé de m'aider, répond-elle enfin d'une voix basse.
+
+Noah a détourné le regard, fixe à présent le gravier - toujours l'air lointain, mais un peu adouci. Un peu plus triste ? Est-ce que tu regrettes déjà ? Peut-être que tu regrettes déjà.
+
+[[Excuse-toi.]]
+
+[["Et regarde où ça nous a menées."]]
+
+
+:: "Qu'est-ce qu'on va faire ? Maintenant que... Je ne sais pas. Qu'est-ce qu'on va faire." {"position":"2950,2675","size":"100,100"}
+Noah se tourne vers toi, toujours illuminée en blanc et froid, un air un peu étrangement lointain sur sa figure.
+
+- Maintenant qu'on a tué quelqu'un ?
+
+Elle ne sonne pas en colère. C'est presque pire.
+
+(quelqu'un devrait l'être, non ?)
+ 
+[["Oui, maintenant qu'on a tué ton copain de merde, Noah."]]
+
+
+:: "Qu'est-ce qu'on va faire maintenant ?" {"position":"4700,4000","size":"100,100"}
+Noah ne répond pas tout de suite. Tu vois à la manière dont elle promène ses yeux sur l'horizon, retire, remet en place, retire encore la cigarette sans plus tirer, qu'elle réfléchit.
+
+— J'en ai aucune idée, répond-elle enfin.
+
+Ailleurs, à un autre moment, ces mots t'auraient glacée de terreur. Là, rien.
+
+[["L'Italie... Tu n'avais pas un plan ? Quelqu'un, quelque part..."]]
+
+
+:: "Qu'est-ce qu'on va faire. Qu'est-ce qu'on va faire maintenant." {"position":"2950,2825","size":"100,100"}
+Noah a un rire affreux, amer et bref, comme un aboiement. Et puis qui se répète. Qui s'allonge. Qui ne se termine pas. Et juste quand tu commences à vraiment t'inquiéter qu'elle se mette à manquer de souffle, quand tu commences à te dire que ce n'est pas normal, qu'elle ne devrait pas être capable de rire (se moquer) aussi longtemps, elle s'arrête. Se reprend un peu.
+
+- Qu'est-ce que tu crois ? La même chose que tout le monde. Ne pas mourir aussi longtemps que possible, et quand ça arrivera... Gratter encore quelques secondes.
+
+[["C'est ce qu'il a fait aussi, tu penses ? David. Gratter."]]
+
+
+:: "Rentrons." {"position":"2950,1550","size":"100,100"}
+(ah, tu essaies encore ?)
+
+Elle ne dit rien. Se lève au bout de quelques instants pour se mettre à ta hauteur. Tu crois qu'elle te regarde.
+
+Tu regrettes encore une fois de ne pas avoir pris de quoi faire de la lumière. Tu aimerais pouvoir observer son visage, maintenant, mais la lueur grise du jour qui traverse à grand-peine la pénombre de la forêt lui donne cette teinte uniforme, brouillée, où les traits se confondent. Est-ce qu'elle sourit aussi ? Est-ce qu'elle est en colère ? Tu ne sais pas.
+
+Tu n'es pas spécialement inquiète, cependant. 
+
+[[Répète : "Rentrons."]]
+
+
+:: "Rien, juste... Attends-moi." {"position":"3350,3675","size":"100,100"}
+Elle lève les yeux au ciel, mais ne bouge pas jusqu'à ce que tu te sois péniblement extirpée de ton siège. La porte claque une deuxième fois derrière toi, et vous vous mettez en marche, vos pas crissant sur le gravier, vos ombres étirées par la lumière des phares. 
+
+Après quelques pas, Noah s'arrête, te regarde.
+
+- Attends. Je crois que j'ai oublié quelque chose. 
+
+- Tu veux que j'aille-
+
+- Non, Em', ne bouge pas. Je me débrouille. 
+
+Elle jette quelques regards nerveux autour d'elle, vers le fond de l'aire d'autoroute, vers toi de nouveau, puis te dit avec un sourire un peu de travers : 
+
+- Tu peux aller m'attendre à la table, là-bas. Je reviens vite.
+
+Et sans attendre ta réponse, elle retourne vers la voiture à grands pas.
+
+[[Vas-y.]]
+
+
+:: "Tu ne veux pas qu'on arrête ? Qu'on reste ici jusqu'à ce qu'ils nous retrouvent." [finFIN] {"position":"1925,4025","size":"100,100"}
+Arrête. 
+
+[[Tu sais très bien que tu ne pourras jamais lui dire.]]
+
+
+:: "Tu sais que je ferais n'importe quoi pour toi. Vraiment n'importe quoi." [finFIN] {"position":"2075,4050","size":"100,100"}
+Arrête. 
+
+[[Tu sais très bien que tu ne pourras jamais lui dire.]]
+
+
+:: "Ça ne sert plus à rien, tu sais. On ne peut plus rien faire." [finFIN] {"position":"2025,4000","size":"100,100"}
+Arrête. 
+
+[[Tu sais très bien que tu ne pourras jamais lui dire.]]
+
+
+:: (après l'erreur.) [pagedetitre] {"position":"2350,3600","size":"100,100"}
+(if:$erreur < 1)[
+[[Commencer.]]
+]
+
+(if:$erreur > 0)[ [[Recommencer.]] ]
+
+(if: $res > 0)[ [[finir]] ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+(align:"==>")+(box:"=X")[(erreurs : (print:$erreur) )]
+
+
+
+:: (cette question est pour la forme. personne n'a vraiment le choix.) {"position":"2575,2375","size":"100,100"}
+(enchant: ?page, (background: white))[(text-style:"blur")[Je] peux t'en proposer un autre, par contre.
+
+Oui, même depuis ici. Pour de vrai. On ne peut pas faire grand-chose, encore une fois ta cage est en sable et le monde est de terre et de béton, mais (text-style:"blur")[je] crois que tu ne l'as pas construite pour rien. Même s'il faudra sortir tôt ou tard.
+
+Ça ne fera pas tout. Rien ne fait tout en une seule fois. Tu comprends ? C'est une question de suites. C'est une question de continuité. Mais puisque tu es là. Puisque (text-style:"blur")[je] suis un peu responsable.
+
+(text-style:"blur")[Puisque je t'aime un peu.
+]
+(text-style:"blur")[Je] te demande quand même, donc. Un petit choix qui ne change rien, ou oh, si peu, mais un choix quand même. 
+
+Alors, qu'est-ce que tu veux, Emma ? Qu'est-ce que tu veux plus que tout ?
+
+
+
+
+
+(Emma parle pour la première fois.)
+
+[[Je veux savoir où je me suis trompée.]]
+
+[[Je veux rentrer à la maison.]]
+
+[[Je veux juste dormir.]]
+
+[[Je veux Noah.]]
+
+(set: $res to 1)
+]
+
+
+:: (concentre-toi.) {"position":"2950,3050","size":"100,100"}
+[[(ne pense à rien d'autre qu'au geste.)]]
+
+
+:: (encore une fois, on entendra à peine le cliquetis du briquet.) {"position":"3225,1800","size":"100,100"}
+Tu mets le feu au cabanon. 
+
+Et puis quand une nouvelle lumière se met à dévorer le monde entier (pas le soleil, pas le soleil, tu sais que tu ne le reverras jamais), tu te rasseois, juste devant le cœur. Tu as un peu chaud. Tu as un peu sommeil.
+
+Encore une fois, tu attends. Il ne reste rien d'autre à faire.
+
+[[Tu fermes les yeux.]]
+
+
+:: (encore une fois, on entendra à peine le son des planches que tu arraches au mur.) {"position":"3025,1775","size":"100,100"}
+Tu mets le feu au cabanon. 
+
+Et puis quand une nouvelle lumière se met à dévorer le monde entier (pas le soleil, pas le soleil, tu sais que tu ne le reverras jamais), tu te rasseois, juste devant le cœur. Tu as un peu chaud. Tu as un peu sommeil.
+
+Encore une fois, tu attends. Il ne reste rien d'autre à faire.
+
+[[Tu fermes les yeux.]]
+
+
+:: (encore une fois, on entendra à peine le son du liquide que tu répands au sol.) {"position":"3125,1750","size":"100,100"}
+Tu mets le feu au cabanon. 
+
+Et puis quand une nouvelle lumière se met à dévorer le monde entier (pas le soleil, pas le soleil, tu sais que tu ne le reverras jamais), tu te rasseois, juste devant le cœur. Tu as un peu chaud. Tu as un peu sommeil.
+
+Encore une fois, tu attends. Il ne reste rien d'autre à faire.
+
+[[Tu fermes les yeux.]]
+
+
+:: (est-ce que tu ne l'étais pas déjà ?) {"position":"3825,2175","size":"100,100"}
+Au bout d'un autre long, long moment, tu t'allonges au sol. Le bois est plat, ni froid, ni tiède.
+
+Tu fermes les yeux.
+
+Et les rouvre un peu plus tard quand tu entends quelqu'un frapper à la porte.
+
+[[Reste allongée.]]
+
+[[Va ouvrir la porte.]] 
+
+
+:: (et tu as oublié pourquoi tu es là, aussi.) {"position":"2575,2000","size":"100,100"}
+(enchant: ?page, (background: white))[(text-style:"blur")[Moi], tu veux dire ?
+
+[[(tu ne sais plus dire ce mot. mais oui.)]]
+]
+
+
+:: (la marée arrive bientôt.) {"position":"2450,2300","size":"100,100"}
+(enchant: ?page, (background: white))[Oui. Tu es prête à te remettre à nager ?
+
+[[(cette question est pour la forme. personne n'a vraiment le choix.)]]
+]
+
+
+:: (mais tu es si fatiguée.) {"position":"2575,1875","size":"100,100"}
+(enchant: ?page, (background: white))[(text-style:"blur")[Je] sais.
+
+[[(mais tu veux juste être tranquille.)]]
+]
+
+
+:: (mais tu veux juste être tranquille.) {"position":"2450,1925","size":"100,100"}
+(enchant: ?page, (background: white))[(text-style:"blur")[Je] sais. (text-style:"blur")[Je] suis désolée.
+
+[[(et tu as oublié pourquoi tu es là, aussi.)]]
+]
+
+
+:: (ne pense pas à son souffle ne pense pas à la proximité ne pense pas à ses mains une sur la cigarette l'autre qui protège la flamme du vent si proches la tienne les effleure presque ne pense pas {"position":"2750,3175","size":"100,100"}
+(text-style:"blur")[Cette fois-ci], c'est elle qui bouge la première.
+
+Parce que d'un coup c'est sa main qui s'appuie contre la tienne, délicate, qui prend la place du (text-colour: #ab7875)[briquet], doucement (lui tombe sur la table, creuse un trou noirâtre dans la table avant de s'éteindre(set: $troutable to 1)), qui déplie tes doigts, tout en lenteur, qui les enlace. 
+
+Et Noah est plus proche qu'elle ne l'a jamais été. Et elle te regarde avec un air étrange, de nouveau la lumière blanche et froide maintenant que les oranges du (text-colour: #ab7875)[briquet] et de la (text-colour: #c0c195)[cigarette] sont éteints, de nouveau ces angles un peu durs, malgré la main si douce dans la tienne. Froide aussi, mais encore tendre.
+
+Et Noah t'embrasse.
+
+[[Recule.]]
+
+[[Ne recule pas.]]
+
+
+:: (ne pense à rien d'autre qu'au geste.) {"position":"2875,3075","size":"100,100"}
+[[(ne pense à rien d'autre qu'à le réussir.)]]
+
+
+:: (ne pense à rien d'autre qu'à le réussir.) {"position":"2825,3125","size":"100,100"}
+[[(ne pense pas à son souffle ne pense pas à la proximité ne pense pas à ses mains une sur la cigarette l'autre qui protège la flamme du vent si proches la tienne les effleure presque ne pense pas]]
+
+
+:: (qu'est-ce qu'on fait maintenant, alors ?) {"position":"2575,2125","size":"100,100"}
+(enchant: ?page, (background: white))[(text-style:"blur")[Je] ne suis pas sûre. Attendre ?
+
+
+
+
+
+[[(raconte-moi une histoire.)]]
+]
+
+
+:: (raconte-moi une histoire.) {"position":"2450,2175","size":"100,100"}
+(enchant: ?page, (background: white))[(text-style:"blur")[Je] ne suis pas sûre. (text-style:"blur")[J']en connais une seule, et ce n'est pas une belle histoire. C'est quelque chose sur la solitdue et la peur. Et des mauvais choix qu'on fait pour essayer d'y échapper. Et des cauchemars qu'on finit par préférer à la réalité parce qu'ils sont plus faciles à comprendre.
+
+[[(tu connais déjà cette histoire.)]]
+]
+
+
+:: (referme-les.) {"position":"2450,1800","size":"100,100"}
+(enchant: ?page, (background: white))[Non, garde les yeux ouverts, Emma.
+
+Reste avec (text-style:"blur")[moi].
+
+[[(mais tu es si fatiguée.)]]
+]
+
+
+:: (tu connais déjà cette histoire.) {"position":"2575,2250","size":"100,100"}
+(enchant: ?page, (background: white))[(text-style:"blur")[Je] sais. (text-style:"blur")[Je] te la raconte depuis le début du voyage.
+
+Tu as compris, n'est-ce pas ? Que c'est là-dedans que tu es. Que tu ne sais plus quoi faire de toi et de tes pensées et de tes mains alors tu t'es enchaînée à quelque chose qui n'implique rien de tout ça. Une pause le long de la grande autoroute. Une sorte de rêve. Une cage en château de sable. 
+
+[[(la marée arrive bientôt.)]]
+]
+
+
+:: (tu ne sais plus dire ce mot. mais oui.) {"position":"2450,2050","size":"100,100"}
+(enchant: ?page, (background: white))[Dison que toi toute seule, ce n'était plus suffisant. Après ce qui s'est passé.
+
+Ou bien tu étais trop fatiguée. Et tu as préféré laisser quelqu'un d'autre te dire quoi faire, au moins pour un moment. 
+
+Tu n'avais juste pas prévu que ce quelqu'un d'autre... bloque un peu les choses. C'est (text-style:"blur")[ma] faute, ça, (text-style:"blur")[je] suis mauvaise avec le temps. Désolée encore.
+
+[[(qu'est-ce qu'on fait maintenant, alors ?)]]
+]
+
+
+:: Abandonne. {"position":"3275,4375","size":"100,100"}
+Tu as le temps de reculer un peu, de t'asseoir à ses pieds alors qu'elle se relève. 
+
+Tu ne la regardes pas. Quand Noah s'excuse à voix basse en ajustant à nouveau l'arme sur toi, quand elle commence à expliquer pourquoi elle doit faire ça, pourquoi c'est plus simple, c'est plus simple pour vous deux, et elle aurait vraiment aimé pouvoir faire autrement mais voilà, voilà, est-ce que tu comprends Emma, tu ne réponds même pas.
+
+[[Tu fermes juste les yeux.]]
+
+
+:: Allume la flamme. {"position":"2875,950","size":"100,100"}
+(le cliquetis de (text-colour: #ab7875)[briquet] semble résonner à double.)
+
+La première chose que tu vois es le reflet de la lumière orange sur le métal de l'arme. Et puis la main de Noah serrée autour du manche sans trembler, et ses bras droits, assurés, qui continuent si bien la ligne qui va de toi, au canon, à elle. 
+
+Tu recules d'un pas. Tu lèves un peu les mains. Ce n'est pas réfléchi, c'est instinctif, purement instinctif, tu sais très bien que ça ne changera rien, tu penses brièvement, "est-ce que David aussi il a", et puis tu regardes Noah dans les yeux. Le visage. Comme tu le voulais.
+
+Ah, c'est elle qui est au bord des larmes, cette fois-ci. Tu le sais parce que les reflets de la lumière font comme des petites flammes au coin de ses yeux.
+
+[[ÉTEINS LE BRIQUET.]]
+
+
+
+
+:: Allume le briquet de l'autre main. {"position":"2775,1100","size":"100,100"}
+Tu as un peu de mal, y parviens au bout du deuxième ou troisième essai.
+
+Et puis tu le lâches presque parce que la flamme éclaire le visage de Noah qui s'est rapprochée d'un coup, sans un bruit, sans un mouvement, un instant, cachée dans la nuit, à deux centimètres de toi juste après. 
+
+(ses yeux sont tellement, tellement terrifiés.)
+
+Elle se jette sur toi sans un mot de plus.
+
+Tu tires une fois, deux avant de t'écraser au sol, les branches basses bordant le chemin qui te fouettent le visage - tu n'es pas sûre de l'avoir touchée, Noah est toujours sur toi et essaie de te l'arracher des mains, ou de t'étouffer ? tu n'es pas sûre, tu te débats, tu tires un coup de plus, et cette fois-ci elle hurle. Mais elle reste là où elle est, et dans la fraction de seconde où tu te remets de l'idée d'avoir //réussi// elle a retrouvé le (text-colour: #ab7875)[briquet] tombé dans la lutte, l'allume, le presse contre tes mains qui serrent encore (text-colour: #9d9db0)[l'arme], et tu lâches prise malgré toi.
+
+En quelques instants, Noah est loin de toi, assise encore, et te vise d'une main tremblante. L'autre est pressée contre son ventre. Tu ne sais pas si c'est la flamme du (text-colour: #ab7875)[briquet] au sol qui teint son bras, son flanc d'une lueur rougeoyante.
+
+(probablement pas. C'est trop sombre.)
+
+Tu soupires.
+
+[[Essaie, juste au cas où. "Je suis désolée."]]
+
+
+:: Allume le briquet pour elle. [objr] {"position":"3100,2975","size":"100,100"}
+Il te faut trois essais pour y arriver, et Noah semble déjà s'apprêter à te le prendre pour s'en charger elle-même lorsqu'une petite flamme apparaît enfin. La lumière du néon blanche et froide sur son visage est remplacée par le halo chaleureux que vous connaissez si bien, et tu te penches, t'appuies d'un coude sur la table pour l'amener à sa bouche où elle a placé la (text-colour: #c0c195)[cigarette].
+
+[[(concentre-toi.)]]
+
+
+
+
+:: Allume le briquet. [objr] {"position":"4200,1475","size":"100,100"}
+Les arbres se définissent face à toi comme si tu y avais déjà mis le feu. Larges tranches de lumière orange qui lèchent les troncs, branches follement secouées par le vent et par les vacillations de la flamme, ombres acérées et tremblantes. 
+
+Tu fais quelques pas hésitants, protégeant la flamme de la petite brise qui s'est levée du mieux que tu peux. Derrière toi, le bruit de l'autoroute retentit toujours, mais déjà moins fort. 
+
+Le chemin devant tes pieds est imprécis et escarpé. Après la pente raide suivant le grillage qui a failli te faire trébucher, tu arrives devant ce qui ressemble à une bifurcation, à moins de deux mètres de vision en tout cas. 
+
+[[Prend à droite.]]
+
+[[Prend à gauche.]]
+
+
+:: Allume-le. {"position":"3850,3975","size":"100,100"}
+Le froid a eu le temps de s'infiltrer, dans les quelques secondes où Noah fouillait les poches de sa veste pour s'assurer qu'elle avait tout, paquet et briquet, mais tes doigts ne tremblent pas quand tu entres ton code, sélectionnes un contact (tu essaies d'ignorer la vignette «27 appels manqués» en bas de votre conversation coincée entre une douzaine de variantes de «Emma ?» et un dernier «Rapelle-moi.»). Lorsque tu écris le message, c'est rapidement, sans te laisser le temps de réfléchir :
+
+"C'est Noah qui a tout fait, je l'ai vue, je pourrai témoigner. Le flingue est caché quelque part dans la cabane à côté de chez David, avec le bidon d'essence. Il faut fouiller un peu, mais c'est là." 
+
+Tu t'interromps un court instant.
+
+[[Écris : "On est en route vers la frontière."]]
+
+[[Écris : "Elle est en route vers la frontière."]]
+
+[[Arrête. Éteins le téléphone.]]
+
+
+:: Alors tu ne te soucies plus du reste. [finFIN] {"position":"1600,3925","size":"100,100"}
+(et c'est la fin. pour cette fois-ci.)
+
+<style> img {
+max-width:100%;
+max-height:100%;
+}
+
+</style>
+<img
+src=https://static.wixstatic.com/media/559f19_60776f81b3b9448187ac860645ccd7dc~mv2.png>
+</div>
+
+
+:: Appelle-la. {"position":"3650,2900","size":"100,100"}
+Le doute qui te serre soudain la gorge te pousse à appeler d'une voix que tu espères claire, sans tremblements, "Noah ?". 
+
+La forme semble se retourner, avance d'un pas jusqu'à sortir des ombres, et oui, c'est bien elle, sa grande silhouette aux membres qui ont parfois l'air un peu trop longs, ses cheveux partagés entre les pointes et les racines par la décoloration qui commence à s'effacer. La veste trop grande qu'elle a enfilée en catastrophe juste avant de sauter dans la voiture toujours sur ses épaules (un court instant, tu te demandes, oh mais pourquoi, pourquoi celle-là, puis tu t'arrêtes, ne pas y penser, ne plus jamais y penser). Elle a l'air peut-être un peu fatiguée, peut-être un peu confuse ? À cette distance, à cette luminosité, tu as du mal à interpréter son regard.
+
+On verra bien. Tu t'avances, essaies d'avoir un sourir vaguement rassurant. Elle te regarde arriver en silence. Les mains dans les poches. Pas de (text-colour: #c0c195)[cigarette]. (elle n'était pas sortie pour ça ?). 
+
+[[Rejoins-la à la table de pique-nique où elle s'est arrêtée.]]
+
+
+:: Appelle. "Noah ?" {"position":"4500,1625","size":"100,100"}
+Pas de réponse, bien sûr. Tu te sens stupide. Stupide d'avoir appelé une fille qui ne veut que s'éloigner de toi, stupide de l'avoir laissée s'éloigner. Qu'est-ce que tu t'étais pourtant promis, ne pas la quitter des yeux, quelque chose comme ça ? Jamais ? Et pourtant tu la perds en quelques minutes à l'aire d'autoroute la plus minable de tout le canton. Bravo, Emma.
+
+(if: $(text-colour: #ab7875)[briquet] < 1)[ Tu scrute l'obscurité en espérant y trouver quelque chose.
+
+Arrête, ça ne sert à rien. Vas-y. Enjambe le grillage.]
+
+(if:$(text-colour: #ab7875)[briquet] > 0)[ [[Utilise le (text-colour: #ab7875)[briquet].]]
+
+Pas de temps à perdre. Enjambe le grillage.]
+
+
+:: Arrête. {"position":"3325,2425","size":"100,100"}
+(set: $cabanon to 0) Ça ne sert à rien. Il n'y a plus rien.
+
+Tu retournes lentement vers la bâtisse, du côté de la petite porte enfoncée dans le mur. Concentre-toi sur ça. Parce que penser au reste, penser au gravier qui s'étend à l'infini et au //rien// te semble une très mauvaise idée.
+
+(if: $briquet < 1)[Face au mur, tu poses une main contre la surface de béton. Comme pour vérifier que c'est bien là, aussi solide que le gravier sous tes pieds. Que ça ne va pas disparaître aussi.
+
+[[Essaie d'ouvrir la porte.]]]
+
+(if:$briquet > 0)[Accroupie contre le mur, tu repenses à ce que tu as rangé dans ta poche quelques instants plus tôt : la (text-colour: #c0c195)[cigarette], le (text-colour: #ab7875)[briquet]. Tu sors l'ensemble, un dans chaque main. Tu réfléchis. Allumes le (text-colour: #ab7875)[briquet] dès le premier essai.
+
+Et puis au moment où tu t'apprêtes à embraser le bout de la (text-colour: #c0c195)[cigarette], tu remarques quelque chose dans ton champ de vision. Un reflet rapide, à peine plus qu'un point, qui te renvoie la lumière orangée de la flamme.
+
+[[Va voir ce que c'est.]]]
+
+
+:: Arrête. Éteins le téléphone. {"position":"4025,4125","size":"100,100"}
+Tu as l'impression de l'entendre, tout d'un coup - Qu'est-ce que tu //fais//, Emma. Ce genre de questions qui n'attend pas de réponses mais juste l'obéissane à un ordre non-dit.
+
+Alors tu obéis. Tu effaces les mots que tu as commencés à écrire, tu le ré-éteins complètement, et tu le ranges dans la boîte à gants. Comme vous en aviez convenu.
+
+Tu soupires, t'enfonces un peu plus dans le siège. Maintenant qu'il est éteint, ça ne vaut pas la peine de l'allumer juste pour utiliser la lampe intégrée. Il faudra se contenter du briquet, alors.
+
+Qu'est-ce qu'elle fait, Noah ?
+
+[[Sors toi aussi.]]
+
+[[Vérifie que le briquet fonctionne.]]
+
+(set:$nbriquet to 1)
+
+
+
+:: Assieds-toi. [varfin] {"position":"3525,1625","size":"100,100"}
+Il n'y a presque pas assez de place pour que tu t'installes par terre, les genoux serrés contre ta poitrine, mais tu finis par y arriver. Le liquide monte vite, par grandes vagues régulières sorties on ne sait d'où qui dégagent toujours cette odeur, ces vapeurs désagréablent te brûlant les yeux et te donnant le tournis. 
+
+<style> img {
+max-width:100%;
+max-height:100%;
+}
+
+</style>
+<img
+src=https://static.wixstatic.com/media/559f19_e5af21e8e18b49fca3e60261b65ef9ef~mv2.png/v1/fill/w_493,h_360,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/true2.png>
+</div>
+
+Lorsque tu finis par identifier l'essence, tu peux seulement penser "heureusement que Noah n'est pas là, avec sa (text-colour: #c0c195)[cigarette], avec son briquet." Et puis tu te demandes si tu mourras intoxiquée ou noyée. Tu n'as pas de préférence particulière.
+
+À quoi bon se débattre ? Tu sais que tu ne sortiras pas d'ici. 
+
+[[Tu fermes juste les yeux.]]
+
+(set: $fintrue to $fintrue + 1)
+
+
+:: Attends encore. {"position":"3200,2050","size":"100,100"}
+Tu restes assises un long, long moment.
+
+
+
+Assez pour que tu finisses par comprendre que quelque chose est de trop, ici, entre le cabanon et toi.
+
+
+
+[[N'y pense même pas.]]
+
+
+:: Attends qu'elle revienne. [fin] {"position":"3725,4550","size":"100,100"}
+(enchant: ?page, (background: (gradient:180, 0,#1e2433, 0.5,#1e2433, 1,#ffffff)))[(if: $tel > 0) [Quand Noah revient, tu fais semblant de dormir. Elle redémarre vite, et dans les heures qui suivent le hurlement de l'autoroute ne suffit pas à faire taire les pensées qui mordent à ta poitrine. Qu'est-ce que tu as fait, Emma. Qu'est-ce que tu as fait. Mais c'est trop tard. On ne sort pas les balles du torse d'un corps, et on n'efface pas des mots après les avoir prononcés, écrits, transmis. C'est trop tard, et ça fait probablement un bon moment que c'est trop tard. Si seulement...
+
+(set: $f3 to 1)
+]
+
+(if: $tel < 1) [Attends, attends, attends.
+
+Son retour te réveille à moitié. Dans la conscience encore embrumée par le soleil auquel on l'a arrachée, un début de rêve se confond avec un souvenir. Ici, c'est l'image du chien de ton enfance qui attend dans la voiture quand ta mère vous traînait tous deux au supermarché, et d'une poignée de mégots flottants dans la gamelle d'eau que vous lui laissiez, les jours de canicule. Il les renifle mais n'y touche pas, malgré la chaleur, malgré l'attente, malgré son regard triste et tiède qu'il fixe sur toi et que tu sens sur ta nuque même derrière les murs des grands magasins.  Sous l'air climatisé ou sous la nuit froide et sombre, toujours, toujours ce regard triste et tiède. ]
+
+Même des années après.
+
+[[(après l'erreur.)]]
+
+(set: $erreur to $erreur + 1)
+
+(set: $nbriquet to 0)
+
+(set: $tel to 0)
+
+(set: $f4 to 1)
+]
+
+
+:: Attends qu'elle sorte. {"position":"3050,3450","size":"100,100"}
+Tu l'observes partir. Est-ce que tu sais où elle va ?
+
+(if: $pn > 0)[ [[Vers les tables ?]] ]
+
+(if: $foret > 0)[ [[Vers la forêt ?]] ]
+
+(if: $cab > 0)[ [[Vers le cabanon ?]] ]
+
+
+:: Attends qu'elle te rejoigne à la table de pique-nique. {"position":"3425,2875","size":"100,100"}
+Noah finit par arriver, ce qui te surprend presque un peu (à quoi t'attendais-tu d'autre ?). Elle s'asseoit sans un mot, avec un air étrange, un peu fuyant. Tu n'oses pas lui adresser la parole.
+
+Ses mains vides s'agitent nerveusement sur le bord de la table, et elle évite ton regard. La surface du bois est abîmée, marquée par le temps et, devant toi, une petite brûlure circulaire. Entre tes doigts, sous la table, la (text-colour: #c0c195)[cigarette] pèse un poids étrange.
+
+[[Tends-lui la cigarette.]]
+
+[[Essaie de faire la conversation.]]
+
+
+:: Attends, attends, attends. {"position":"3525,2275","size":"100,100"}
+Mais Noah ne vient pas. Noah ne viendra pas. Noah est repartie sans toi, ou tu es partie quelque part sans elle, et il n'y a plus que toi, que le cabanon et (text-colour: #9d9db0)[l'arme] devant toi.
+
+- Tu sais ce qu'il te reste à faire ?
+
+C'est sa voix qui te parle. Alors au moins ça. Au moins, quand tu obéiras, ce sera en emportant un bout d'elle, d'une certaine manière.
+
+[[Parce que tu sais.]]
+
+
+:: Attends. {"position":"3250,2125","size":"100,100"}
+Tu restes assise un long moment. 
+
+
+
+Assez pour que l'infini de rien autour de toi te semble un peu plus facile à accepter.
+
+
+
+[[Attends encore.]]
+
+
+:: Au bois derrière ton dos ? {"position":"3025,1850","size":"100,100"}
+(il va falloir le faire discrètement, alors.)
+
+(le plus silencieusement possible. le plus lentement possible.)
+
+[[(encore une fois, on entendra à peine le son des planches que tu arraches au mur.)]]
+
+
+:: Au feu entre tes mains ? {"position":"3225,1875","size":"100,100"}
+(il va falloir le faire discrètement, alors.)
+
+(le plus silencieusement possible. le plus lentement possible.)
+
+[[(encore une fois, on entendra à peine le cliquetis du briquet.)]]
+
+
+:: Avance ! {"position":"3875,1475","size":"100,100"}
+Tu t'asseois au pied d'un tronc d'arbre quelques instants. Le sol semble grouiller sous ta main, une masse étrangement mouvante de mousse et de bestioles (n'y pense pas.) Il y a eu une petite pente sur quelques mètres, qui a tout de même réussi à t'essouffler - il est tard, il fait nuit, tu as dû t'accrocher à des racines et enjamber des ronces et tu n'as jamais été très athlétique mais oh tu en as assez et si on allongeait cette pause et si on restait ici pour toujours de toute façon qu'est-ce qu'il reste-
+
+[[Avance, Emma.]]
+
+
+:: Avance lentement. {"position":"4650,3625","size":"100,100"}
+Il fait trop sombre pour vraiment regarder où tu marches et tu manques de trébucher une fois ou deux, mais tu peux encore voir, au fond du terrain, devant la ligne des arbres, la toute petite lumière rougeâtre qui s'est mise à briller et dessine les contours tremblotants de ton amie. Lorsque tu la rejoins vers les barrières où elle s'est appuyée, tu retiens quelques instants ta respiration pour ne pas tout de suite sentir la cigarette qu'elle a coincée entre ses lèvres. 
+
+Au bout d'un long moment de silence, tu forces quelques mots : 
+
+[["C'est... Il fait froid, hein ? Même pour..."]]
+
+
+:: Avance à tâtons. {"position":"3975,1600","size":"100,100"}
+Sous une main, l'écorce d'un arbre qui te guide pour trois pas, puis disparaît pour être remplacé par un autre. Sous l'autre, buissons, branches basses, aiguilles d'un pin, les feuilles hautes d'une plante de sous-bois - tout d'un coup la toile d'araignée tendue entre deux tiges. Tu retires ton bras d'un geste sec, essaies d'ignorer la panique qui monte au rythme de ton cœur qui bat la chamade. 
+
+Tu regrettes vite de ne pas avoir amené de source de lumière. Tu pourrais retourner en arrière. Tu pourrais attendre Noah à la voiture, ou peut-être la rejoindre, peut-être qu'elle y est déjà. Tu pourrais tout laisser tomber, qu'est-ce que tu fais là, c'est stupide de toute façon-
+
+Mais il est trop tard. Tu sais très bien, quelque part au fond de toi, qu'il est trop tard depuis longtemps.
+
+[[Avance.]]
+
+
+:: Avance, Emma. {"position":"3825,1425","size":"100,100"}
+Et juste lorsque tu penses que la forêt ne se terminera jamais, que la nuit ne se terminera jamais, que ça fait des des années que tu marches et que tu es perdue pour toujours, tu arrives à la fin. 
+
+La forêt s'arrête brusquement à la limite d'un champ, et en quelques pas tu es face à des herbes hautes qui t'arrivent presque à la taille. Il fait encore sombre mais tout au bout de l'horizon, de l'autre côté, le bas du ciel s'éclaire juste un peu, juste un peu de gris. 
+
+Tu n'as toujours pas retrouvé Noah.
+
+[[Retourne dans la forêt.]]
+
+[[Rentre chez toi.]]
+
+
+:: Avance. {"position":"3925,1525","size":"100,100"}
+La forêt est sombre et l'autoroute est oubliée.
+
+Tu avances. 
+
+À un moment donné, tu t'es mise à appeler Noah, presque malgré toi, presque comme si tu cherchais à rejoindre le chant des oiseaux de nuit.
+
+Tu avances.
+
+Tu pourrais retourner en arrière. Tu devrais retourner en arrière.
+
+[[Avance !]]
+
+
+:: Bats-toi encore. {"position":"3400,4375","size":"100,100"}
+Tu ne réfléchis toujours pas. Les mains parlent pour toi, essaient de trouver une gorge, un œil, les ongles essaient de s'accrocher, et lorsqu'un bras s'écrase contre ton visage, tu mords la chair jusqu'au sang. 
+
+Un troisième coup de feu. Le ventre, cette fois-ci, et ça ne te fait pas encore vraiment mal, pas encore, c'est juste un choc un peu sourd, le souffle qui se coupe. Tu ne lâches pas ta prise, serres encore les dents, elle crie aussi, quatrième coup - dans le flanc. Et tu faiblis un peu. Et elle en profite pour se dégager, rampe jusqu'à ce qu'elle soit libérée de ton poids déjà presque mort, se relève en catastrophe. Sans lâcher l'arme que tu vois encore étinceler du coin de l'œil. Sans arrêter de s'excuser.
+
+- Je suis désolée, je suis si désolée. Em'. Emma. 
+
+Tu ne réponds rien. Le goût du sang est lourd et ferreux dans ta bouche.
+
+[[Tu fermes juste les yeux.]]
+
+
+:: CONCENTRE-TOI {"position":"2300,3375","size":"100,100"}
+Partir. Tu arrives à penser, malgré la nausée, malgrée le poids affreux insurmontable de la (text-colour: #c0c195)[cigarette] dans ta main, que tu veux partir. Que tu devrais partir.
+
+Mais il est trop tard. Ça ne changera rien.
+
+- Ça ne changera rien, Emma
+
+La lumière blanche hurle, quelque part, au loin, si proche que ça sort de son sourire.
+
+[[Il est trop tard.]]
+
+
+:: Calme-toi avant que Noah te retrouve. {"position":"2600,975","size":"100,100"}
+Pour qu'elle te retrouve moins vite ? Pour que ce soit plus paisible, la fin ? 
+
+Tu n'es pas sûre. Tu t'installes, c'est tout. Dos à moitié soutenu par des racines apparentes contre lesquelles tu t'es écrasée, le corps et les jambes étalées sur le sol de pin. Tu essaies de reprendre ta respiration le moins bruyamment possible. Tu essaies de ne pas penser à la douleur cuisante dans ton épaule.
+
+Tu sais que Noah t'as retrouvée parce qu'elle s'excuse, en arrivant.
+
+- Je suis désolée.
+
+Elle parle très doucement.
+
+[["Je sais."]]
+
+
+:: Cherche mieux que ça. {"position":"3950,2125","size":"100,100"}
+Rien. 
+
+Tu abandonnes après ce qui te semble être des heures, lorsque tu as tellement rampé que tu sais pertinemment que la porte est loin, loin derrière toi, peut-être disparu pour toujours. Parce que tu n'as pas rencontré de mur une seule fois depuis que tu es tombée. Parce que tu as de plus en plus de mal à distinguer la limite entre les planches, si bien que tu commences à imaginer le sol comme une seule surface de bois lisse.
+
+Tu as fini par t'asseoir en tailleur, seule au cœur (au milieu ? comment définir ça, à présent ?) du cabanon. Tu t'es remise à penser à Noah. Est-ce qu'elle est dehors ? Est-ce qu'il y a encore un dehors ? Est-ce que tu es vraiment, définitivement seule au monde ?
+
+[[(est-ce que tu ne l'étais pas déjà ?)]]
+
+
+:: Cinq pas en arrière. {"position":"3625,2125","size":"100,100"}
+À nouveau, le mur. Pivote. Où est le fond ?
+
+[[Quatre pas en arrière.]]
+
+
+:: Commencer. {"position":"2650,3575","size":"100,100"}
+Nuit. Trois heures après l'erreur : vous avez assez roulé pour que tes mains arrêtent de trembler, la terreur et l'adrénaline comme semées sur la route. Ce qui veut dire qu'il y a toujours cette trace de goudron qui te relie à la chose, dans la ville, et quand tu fermes les yeux tu peux sentir le souvenir se rapprocher pas à pas ; mais pour l'instant, ce n'est plus là. Vous avez encore du temps et tu te sens terriblement légère.
+
+Parce que tout est derrière vous, à présent. Parce que tu n'as rien pu emporter. Rien, rien que cette certitude (et c'est tout ce qui compte, alors écoute bien, et retiens-la, c'est la seule chose encore importante, c'est la seule chose que tu peux encore faire) :
+
+(text-colour:red) [Il ne te reste plus que Noah. 
+
+[[Ne la quitte pas des yeux.]] )]
+
+
+:: Continue tout droit. {"position":"3650,1225","size":"100,100"}
+Tu ne sais plus depuis combien de temps tu marches. 
+
+Le vent s'est mis à souffler plus fort, couvrant le bruit de l'autoroute, de tes propres pas même. La flamme s'éteint de plus en plus souvent.
+
+[[Rallume.]]
+
+
+:: Continue. [varfin] {"position":"3400,1175","size":"100,100"}
+Tu n'as pas trouvé Noah. Noah doit être quelque part. Est-ce que tu as le choix ? 
+
+Est-ce que tu as (text-style:"blur")[une seule fois] eu le choix de faire autre chose que de la suivre ?
+
+<style> img {
+max-width:100%;
+max-height:100%;
+}
+
+</style>
+<img
+src=https://static.wixstatic.com/media/559f19_40a4f04dd2ac46168791d0e8f880c024~mv2.png/v1/fill/w_528,h_371,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/559f19_40a4f04dd2ac46168791d0e8f880c024~mv2.png>
+</div>
+
+Mais alors que tu t'apprêtes à t'enfoncer dans les fourrés devant toi (prête à déchirer le feuillage à mains nues, avec tes dents, à tout brûler s'il le faut), tu entends la voix de Noah qui résonne juste derrière toi, juste dans ton oreille.
+
+[[Jette-toi dans ses bras.]]
+
+(set: $finbb to $finbb + 1)
+
+
+:: Cours pour retrouver Noah plus vite. {"position":"3875,2900","size":"100,100"}
+Malgré l'obscurité, tu trottines sur le gravier, sans regarder où tu poses les pieds, trop occupée à scruter les alentours à la recherche de Noah. Tu l'aperçois rapidement, ou en tout cas une forme sombre et isolée qui doit bien être elle.
+
+C'est bien elle, non ?
+
+(if: $gun < 1)[ [[Appelle-la.]]]
+
+(if: $gun > 0)[ [[Rejoins-la en silence.]]]
+
+
+:: Cours vers elle. {"position":"3275,1050","size":"100,100"}
+Cours vers Noah qui se tient au milieu du chemin, devant le mur de feuillages que tu hésitais à traverser un instant plus tôt, les bras croisés, l'air indescriptible. En colère. Épuisée. Si, si triste. Juste soulagée de te voir.
+
+Tu ne réfléchis pas plus.
+
+[[Jette-toi dans ses bras.]] 
+
+
+:: Cours. {"position":"3450,4125","size":"100,100"}
+Pour aller où ?
+
+[[Jette-toi sur elle.]]
+
+
+:: De quoi tu parles ? Bien sûr que non. {"position":"3675,2200","size":"100,100"}
+Si, si. Le mur est poisseux et humide sous ta main, et quand tu fais un geste brusque pour la retirer, ta peau reste collée un bref instant avant de s'en détacher. 
+
+Tu recules brusquement, emportée par ton élan, heurte soudain le mur opposé avec ton dos. Tu retiens un cri de dégoût lorsque tu le sens s'affaisser juste un peu sous ton poids, que l'humidité suinte à travers ta veste, et tu titubes à nouveau. 
+
+[[Cinq pas en arrière.]] 
+
+
+:: Deux pas en arrière. {"position":"3525,1925","size":"100,100"}
+À nouveau, le mur.
+
+Est-ce que tu arrives encore à respirer ?
+
+[[Un pas en arrière.]]
+
+
+:: Dirige-toi vers le cabanon. {"position":"4125,2475","size":"100,100"}
+(if: $gun < 1)[C'est à peine plus qu'un cube de (if:$briquet < 1)[béton] (else:)[bois] avec un toit de tôle incliné, dont la porte est presque invisible dans l'obscurité. Il y a peut-être une petite fenêtre dans un des quatre murs, mais pour l'instant tu ne la vois pas.
+
+Pour la première fois depuis votre arrivée, tu remarques qu'en-dehors de cet édifice et des quelques tables que tu as laissées derrière toi, il n'y a vraiment rien ici. Pas de station-service, pas de petit magasin à l'enseigne en néon, et tu doutes que le cabanon serve même de toilettes. 
+
+Juste du gravier et la forêt qui semble onduler derrière.
+
+Et le bruit de l'autoroute qui semble avoir disparu. Ou peut-être que c'est ce vrombissement sourd qui pèse sur tes oreilles, mais ce n'était pas là avant que tu sortes, si ?
+
+[[Fais le tour.]]
+
+[[Essaie d'ouvrir la porte.]]
+]
+
+(else:)[Tu es presque contente de revoir le cube. Quelque chose d'un peu plus délimité. Quand il le veut bien. 
+
+[[Ouvre doucement la porte.]]
+]
+
+(set: $cab to 1)
+
+
+:: Donne-lui le briquet. [objr] {"position":"3300,2950","size":"100,100"}
+Noah s'en saisit, fait fonctionner le mécanisme trois ou quatre fois, sans succès. Pas de flamme, juste l'étincelle qui disparaît aussi vite qu'elle est apparue. Une cinqième. Une sixième. Elle soupire de frustration. 
+
+Tu l'observes faire sans rien dire, jusqu'à ce qu'elle jette un regard vers toi. La lumière blanche et froide donne un air étrange à son visage, quelque chose d'un peu dur, comme un soupçon de mépris dans le coin de ses sourcils et de sa bouche.
+
+(ce n'est rien, c'est peut-être habituel. Noah est juste... très certaine de la valeur des personnes autour de soi. en bien ou en mal. mais tu sais que la tienne est positive, même lorsqu'elle te regarde comme ça. tu penses qu'elle l'est.)
+
+- Tu peux m'aider ? dit-elle enfin. 
+
+[[Rapproche-toi.]]
+
+
+:: Détourne le regard. {"position":"2350,3125","size":"100,100"}
+Tu ne peux plus la regarder en face.
+
+- Qu'est-ce que tu //as fait// ?
+
+Elle est tellement, tellement en colère. Tu n'es pas sûre de l'avoir jamais entendue ainsi - même juste avant que, non, c'est indescriptible, sa voix tordue par la rage, par la lumière, par la peur ? 
+
+Il y a quelque chose de ça. Elle recule et la lumière la suit. Elle te regarde. Emma, regarde toi aussi, relève les yeux, fixe droit dans la lumière, regarde comme elle a peur. Comme si tu avais commis l'irréparable. Mais qu'est-ce que ça pourrait bien être ? Tu pensais déjà avoir fait la pire, pire chose possible, tu pensais que rien ne pourrait être plus grave que ça, alors quoi, pourquoi te regarde-t-elle comme ça, le visage déformé par
+
+oh, ça suffit.
+
+[[Il est trop tard.]]
+
+
+:: Encore une fois, attends. {"position":"3775,2475","size":"100,100"}
+Mais Noah ne vient pas. 
+
+[[Tu continues d'attendre.]]
+
+
+:: Enjambe ce grillage une deuxième fois. {"position":"3225,1475","size":"100,100"}
+Elle t'appelle encore, quelque part, toujours au loin - mais tu te rapproches. Tu ne l'entends pas, mais tu le sens.
+
+Les racines semblent s'écarter de ton chemin. Les toiles d'araignée te tirent par la main. Tu avances, et tu souris presque, parce que tu vas retrouver Noah et au moins ça, au moins ça restera vrai même après la nuit de sang et de mensonges. Que c'est vous deux. Que c'est Noah et Emma.
+
+[[Retrouve Noah.]]
+
+
+:: Enjambe le grillage. {"position":"4125,1600","size":"100,100"}
+Tu t'enfonces dans la forêt.
+
+Très vite, la nuit te dévores, couvre tes yeux d'un voile d'obscurité et de formes indéfinissables, fuyantes. Tu n'es pas sûre si les craquements qui résonnent proviennent de tes propres pas ou d'autre chose. Tu essaies de ne pas trop te poser la question.
+
+(if: $briquet < 1)[ [[Avance à tâtons.]] ]
+
+(else:)[ [[Allume le briquet.]] ]
+
+
+:: Envoie le message. [varfin] {"position":"3825,4425","size":"100,100"}
+Tu te sens très fatiguée, soudain. Pas soulagée du tout, alors que tu as fait ce qu'il fallait faire, non ? Tu as été raisonnable ? Tu as peut-être fait le seul choix qui pouvait encore t'assurer une fin pas complètement malheureuse ?
+
+<style> img {
+max-width:100%;
+max-height:100%;
+}
+
+</style>
+<img
+src=https://static.wixstatic.com/media/559f19_945cee4ef57e44d28de2372f261ab42d~mv2.png/v1/fill/w_489,h_390,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/true1.png>
+</div>
+
+Mais non. Tu te sens aussi misérable que lorsque tu étais en train de traîner un cadavre par les pieds. Tu crois que tu comprends pourquoi : malgré ce que tu viens de faire, malgré ce sursaut de, quoi, tentative de survie ?, tu sais bien que c'est foutu. Que tu ne retourneras pas à quoi que ce soit qui en vaut la peine avant très, très longtemps. Peut-être jamais.
+
+Tu t'enfonces dans ton siège, soupire. Et qu'est-ce qu'elle fait, Noah ?
+
+[[Sors toi aussi.]]
+
+(à quoi bon ?)
+
+[[Attends qu'elle revienne.]]
+
+(set: $message to 1)
+
+(set: $tel to 1)
+
+(set:$nbriquet to 1)
+
+(set: $fintrue to $fintrue + 1)
+
+
+:: Essaie d'ouvrir la porte. {"position":"3900,2350","size":"100,100"}
+Tu es presque surprise de sentir la poignée rouillée céder facilement, de voir le panneau pivoter dans l'obscurité, derrière.
+
+Un pas en avant. Tu as l'impression que ton pied se fait avaler par une nuit bien plus profonde, bien plus absolue que celle d'où tu arrives.
+
+(if: $briquet < 1)[Tu regrettes de ne rien avoir avec toi pour t'éclairer. Un deuxième pas.
+
+Tu hésites.
+
+[[Pourquoi ? Avance.]] ]
+
+(else:)[Tu serres le (text-colour: #ab7875)[briquet] dans ta main. Un deuxième pas. 
+
+[[Pourquoi tu hésites encore ? Allume.]] ]
+
+
+:: Essaie de faire la conversation. {"position":"3125,2650","size":"100,100"}
+La (text-colour: #c0c195)[cigarette] toujours en main, sous la table (vague impression de lui cacher quelque chose ; pourquoi ?)
+
+Un silence. Quelque chose comme une odeur de plomb dans l'air, ou bien c'est l'angoisse seule qui serre tes poumons à ce point. Après une hésitation d'un moment, tu prends la parole, à voix basse :
+
+[["Qu'est-ce qu'on va faire ? Maintenant que... Je ne sais pas. Qu'est-ce qu'on va faire."]]
+
+[["Est-ce qu'on doit vraiment retourner à la voiture ?"]]
+
+
+:: Essaie encore une fois. {"position":"2350,2900","size":"100,100"}
+[[Toujours la même erreur, Emma.]]
+
+
+:: Essaie, juste au cas où. "Je suis désolée." {"position":"2650,1125","size":"100,100"}
+Noah a un rire à moitié étranglé, se plie presque en deux.
+
+- Mensonge. Tu avais prévu ça depuis le début. Me coincer dès que possible pour pouvoir me balancer aux flics plus tard et sauver ta peau, c'est ça que tu espérais non ? Mais tu n'avais pas prévu que je me débatte, Em'. (elle crache ton nom comme une insulte.) Ou bien tu espérais une occasion de te débarrasser de moi depuis longtemps. Je comprendrais.
+
+Tu as envie de protester, de lui dire que rien de tout ça n'est vrai, que tu n'as jamais prémédité quoi que ce soit, mais la vérité serait bien pire à expliquer. 
+
+Parce que depuis si longtemps, tu as l'impression d'avoir déjà vécu ça. La violence, le métal et le sang, tu veux dire. Et que ça se termine toujours par toi ou elle.
+
+Enfin, (text-style:"blur")[cette fois-ci], on dirait bien que ce sera les deux.
+
+- Je suis désolée.
+
+Tu le penses.
+
+[["J'avais juste... peur.]]
+
+
+:: Essaie. {"position":"4800,4325","size":"100,100"}
+Tu essaies.
+
+[[tu commets une autre erreur]]
+
+
+:: Et alors, rends-toi compte que tout est pareil. [fin] {"position":"5050,3625","size":"100,100"}
+(enchant: ?page, (background: (gradient:180, 0,#1e2433, 0.5,#1e2433, 1,#ffffff)))[Tu as toujours été celle qui essaie de remplir les vides maladroitement, pas pour dire quoi que ce soit mais juste parce que face à Noah, le bruit de tes propres pensées te terrifie, et Noah a toujours été... Noah. Les cheveux blonds cendrés, le regard de terre poussérieuse, l'odeur de fumée accrochée à ses vêtements, une image de palpable et de réel (pas exactement solide, tu as fini par le comprendre, mais là), Noah. Tu ne sais plus pourquoi tu t'étais dit, dans la voiture, que sûrement les choses allaient changer. Peut-être l'idée que le terrible secret que vous partagez maintenant allait vous relier d'une manière fondamentale, inconsciente, et que tu n'aurais plus eu besoin des mots traîtres et gluants pour lui parler. Mais ça n'a pas marché, c'est toi qui aurais dû faire plus d'efforts au lieu d'attendre un miracle. C'est toi qui aurais dû...
+
+Mais il est trop tard. Il est trop tard pour changer quoi que ce soit, après...
+
+[[(après l'erreur.)]]
+
+(set: $erreur to $erreur +1)
+
+(set: $f1 to 1)]
+
+
+:: Et les tables ? La ligne des arbres ? {"position":"3525,2575","size":"100,100"}
+Tu te tournes et te retournes presque furieusement, poussée, tirée par la panique. 
+
+[[Fais le tour encore une fois.]]
+
+[[Rien.]]
+
+
+
+:: Et tu souris. [finFIN] {"position":"1600,3475","size":"100,100"}
+(et c'est la fin. pour cette fois-ci.)
+
+<style> img {
+max-width:100%;
+max-height:100%;
+}
+
+</style>
+<img
+src=https://static.wixstatic.com/media/559f19_60776f81b3b9448187ac860645ccd7dc~mv2.png>
+</div>
+
+
+:: Excuse-toi, Emma. {"position":"2575,2775","size":"100,100"}
+- Je suis désolée. C'était... c'était gratuit. Ce n'est pas ta faute.
+
+Peut-être que tu le penses même un peu.
+
+Elle hausse les épaules. 
+
+- Non, je comprends. Tu n'avais rien demandé. Et maintenant tu es coincée ici. Et maintenant... 
+
+Et maintenant sa voix se brise. Juste un peu, juste un tremblotement de la lumière au coin de la bouche, mais oh tu connais Noah, tu sais quand elle a atteint la limite qu'elle prétend si bien être inexistante. Alors quand elle craque pour de bon, quand elle éclate en sanglots qui la secouent si fort qu'elle semble en perdre le souffle, [[n'hésite pas.]] 
+
+
+:: Excuse-toi. {"position":"2600,2575","size":"100,100"}
+- Pardon, Noah, c'était... Je n'aurais pas dû dire ça. 
+
+Elle lève la tête, te regarde à nouveau (est-ce que ses yeux brillent à cause des néons ou à cause de larmes ?) 
+
+((text-style:"blur")[une fois de plus], l'impression d'être un monste.)
+
+- Tu as raison. Je voulais t'aider, et je veux toujours, c'est juste que...
+
+Tu hésites. Regardes autour de toi.
+
+[["Je ne sais plus quoi faire, je suppose."]]
+
+
+
+
+:: Fais demi-tour. {"position":"3400,1050","size":"100,100"}
+Non, tant pis, c'est stupide. Elle est sûrement déjà retournée à la voiture ; elle t'attend déjà sûrement. Qu'est-ce que tu fais là de toute façon ? À te perdre au milieu de la forêt alors que...
+
+Et puis tu t'arrêtes. Parce que derrière toi, si loin, si proche, tu entends Noah qui t'appelle.
+
+[[Cours vers elle.]]
+
+
+:: Fais le tour encore une fois. {"position":"3625,2725","size":"100,100"}
+C'est encore plus rapide cette fois-ci, à grands pas presque apeurés, le regard fixé loin du mur, la main contre celui-ci.
+
+[[Rien.]]
+
+[[Tu te trompes. C'est encore là.]]
+
+
+:: Fais le tour. {"position":"3775,2650","size":"100,100"}
+C'est vite fait, vingt pas à peine. Pas de fenêtre sur aucun des murs. Lorsque tu étais sur le côté opposé à la voiture (ou ce que tu percevais comme tel), le vronbissement a semblé s'intensifier, et maintenant que tu es de retour à ton point de départ, le bruit de l'autoroute a complètement disparu.
+
+
+
+L'autoroute a complètement disparu.
+
+[[Fais le tour encore une fois.]]
+
+[[Tu te trompes. C'est encore là.]]
+
+
+:: Fuis le feu. {"position":"3100,3125","size":"100,100"}
+Trop tard. Tu as une sorte de glapissement alors que le briquet, projeté par ton geste brusque, rebondit contre le banc puis le gravier.
+
+- Merde. Merde, je suis désolée, Em', bredouille Noah, et elle a déjà attrapé ta main avant que tu puisses protester et lui dire que c'était plus de peur que de mal (parce que c'est vrai, c'est à peine si tu sens encore une brûlure là où la flamme t'a mordue si rapidement), l'inspecte à la recherche d'une marque.
+
+[["C'est rien, c'est pas grave."]]
+
+[[Ne bouge pas.]]
+
+
+:: Garde les yeux fixés sur la lum- sur elle. [varfin] {"position":"2525,3300","size":"100,100"}
+- Qu'est-ce qu'il y a, Emma ? 
+
+Sa voix vient de très loin. Sa voix vient de la lumière blanche. Tu essaies de n'avoir l'air de rien. Tu essaies de te laisser illuminer aussi.
+
+Parce que tu ne sais plus quoi faire, tu supposes. Parce que Noah t'a embrassée et que tu sens encore l'impression de ses lèvres un peu abîmées et que tu as encore l'odeur de nicotine dans le nez et que tu devrais heureuse, tu devrais avoir envie de rester là pour toujours, mais
+
+<style> img {
+max-width:100%;
+max-height:100%;
+}
+
+</style>
+<img
+src= https://static.wixstatic.com/media/559f19_195160cbcf0b4d07af488de6300830c6~mv2.png/v1/fill/w_313,h_419,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/559f19_195160cbcf0b4d07af488de6300830c6~mv2.png>
+</div>
+
+quelque chose ne va pas
+
+et tu as soudain la nausée. Et la (text-colour: #c0c195)[cigarette] est de nouveau dans ta main et tu ne sais pas pourquoi et
+
+[[concentre-toi]]
+
+(set: $finbb to $finbb + 1)
+
+
+:: Il est trop tard. {"position":"2225,3250","size":"100,100"}
+Tu l'as déjà compris, ça. Mais tu as peut-être fini par oublier ?
+
+Enfin, (text-style:"blur")[encore une fois], ça n'aurait rien changé. Maintenant, avec la lumière, tu ne peux plus voir grand-chose, ce qui veut dire que (text-style:"blur")[c'est foutu pour cette fois-ci]. 
+
+Peut-être qu'il faut que tu apprennes autre chose, alors. Aller, réessaie. Aller, affronte-la du regard, ton amie qui déborde et explose de lumière, n'as-tu pas compris que c'est ainsi qu'elle va te faire disparaître, si tu ne fais rien ? Frappe-la, mords-la, brûle-la, mais fais quelque chose, fais quelque chose, Emma !
+
+[[Tu fermes juste les yeux.]]
+
+(set: $f5 to 1)
+
+
+:: Il fait nuit ; avance lentement. {"position":"4325,2825","size":"100,100"}
+L'air se déroule en ruban de vapeur derrière toi. Tes pas crissent bruyamment sur le gravier.
+
+Tout est silencieux, obscur, et Noah n'est visible nulle part. Tu sens l'inquiétude monter alors que tu avances, parcours la place constellée de tables de pique-nique, scrute la ligne des arbres qui marque la fin de l'aire de repos. 
+
+(if: $message < 1)[Elle ne devrait pas avoir eu le temps de partir bien loin, si ?
+
+[[Pars à sa recherche.]]
+]
+
+(if: $message > 0)[Tu n'aurais pas dû traîner autant. Tu n'aurais pas dû prendre tout ce temps pour... Tu n'aurais pas dû. Mais c'est fait. C'est trop tard.
+
+[[Pars à sa recherche.]]
+]
+
+
+:: Inspire. Observe-la partir. [objr déblocerreur] {"position":"3875,3375","size":"100,100"}
+jusqu'à ce qu'elle ait complètement disparu dans l'obscurité, et puis tu baisses les yeux, rapidement. Quelque chose a attiré ton attention.
+Entre tes doigts pâlis par le froid, tu tiens une (text-colour: #c0c195)[cigarette].
+
+Tu fronces les sourcils. Comment est-elle arrivée là ? Ce n'est pas toi qui fumes. Ce n'est pas toi qui gardes toujours paquet, briquet dans la poche intérieure de ta veste (près du cœur). 
+
+Est-ce que Noah te l'a passée avant de sortir, le temps qu'elle fasse... quoi exactement ? Mais la (text-colour: #c0c195)[cigarette] est déjà à moitié entamée. Elle ne fumait pas pendant le trajet, non ?
+Ou peut-être que tu as juste oublié. Tu as sommeil. Tu as tellement sommeil, et ta mémoire fait des choses étranges depuis, depuis la chose d'avant. Tu as sûrement oublié.
+
+Pourtant, il y a quelque chose qui te dérange, dans le cylindre de papier et de tabac entre tes doigts. Tu as l'idée absurde qu'il va se rallumer spontanément, qu'il se réchauffe plus tu y penses, va peut-être se remettre à brûler bientôt. 
+
+Et puis l'impression désagréable que ce n'est pas censé être là.
+
+(bien sûr, rien n'est comme c'est censé l'être, à présent, et ne le sera probablement jamais plus. mais c'est différent, pour ça. comme une anomalie. une erreur, et pas la tienne, cette fois-ci. mais qui alors ?)
+
+Soupir. 
+
+[[Sors toi aussi.]]
+
+(if:$erreur > 2)[
+[[Reste assise un moment.]]
+]
+
+
+:: Je veux Noah. [varfin] {"position":"2150,2250","size":"100,100"}
+(enchant: ?page, (background: white))[D'accord. Faisons de notre mieux toutes les deux.
+
+<style> img {
+max-width:100%;
+max-height:100%;
+}
+
+</style>
+<img
+src=https://static.wixstatic.com/media/559f19_68daecb4d28f4af0ac6eb26f46617f4a~mv2.png/v1/fill/w_257,h_266,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/559f19_68daecb4d28f4af0ac6eb26f46617f4a~mv2.png>
+</div>
+
+On se retrouve après.
+
+[[(après l'erreur.)]]
+
+(set: $finbb to $finbb + 1)
+]
+
+
+:: Je veux juste dormir. [varfin] {"position":"2150,2125","size":"100,100"}
+(enchant: ?page, (background: white))[D'accord. Faisons de notre mieux toutes les deux
+
+<style> img {
+max-width:100%;
+max-height:100%;
+}
+
+</style>
+<img
+src=https://static.wixstatic.com/media/559f19_9e1f0b43d831496d81c99c39363a5383~mv2.png/v1/fill/w_257,h_266,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/559f19_9e1f0b43d831496d81c99c39363a5383~mv2.png>
+</div>
+
+On se retrouve après.
+
+[[(après l'erreur.)]]
+
+(set: $finobs to $finobs + 1)
+]
+
+
+:: Je veux rentrer à la maison. [varfin] {"position":"2150,2000","size":"100,100"}
+(enchant: ?page, (background: white))[D'accord. Faisons de notre mieux toutes les deux.
+
+<style> img {
+max-width:100%;
+max-height:100%;
+}
+
+</style>
+<img
+src=https://static.wixstatic.com/media/559f19_62e8d158899a4ecdaac620f9fc6bcf63~mv2.png/v1/fill/w_208,h_220,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/559f19_62e8d158899a4ecdaac620f9fc6bcf63~mv2.png>
+</div>
+
+On se retrouve après.
+
+[[(après l'erreur.)]]
+
+(set: $finav to $finav + 1)
+]
+
+
+:: Je veux savoir où je me suis trompée. [varfin] {"position":"2150,1875","size":"100,100"}
+(enchant: ?page, (background: white))[D'accord. Faisons de notre mieux toutes les deux.
+
+<style> img {
+max-width:100%;
+max-height:100%;
+}
+
+</style>
+<img
+src=https://static.wixstatic.com/media/559f19_33c7a8f91e784eb5ae7a6b4def4a08c0~mv2.png/v1/fill/w_225,h_240,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/559f19_33c7a8f91e784eb5ae7a6b4def4a08c0~mv2.png>
+</div>
+
+On se retrouve après.
+
+[[(après l'erreur.)]]
+
+(set: $fintrue to $fintrue + 1)
+]
+
+
+:: Jette le briquet contre la vitre. [obja] {"position":"3975,4450","size":"100,100"}
+Avec un cri de frustration, tu balances le stupide rectangle de plastique dur contre la stupide vitre de cette stupide voiture où tu es coincée depuis des heures. Ce stupide briquet devrait être le moindre de tes soucis, mais plus rien ne va depuis - depuis pas si longtemps, mais si tu y réfléchis juste un peu tu sais que plus rien n'ira jamais bien. Pour le reste de ta vie, probablement.
+
+Alors tu n'y penses pas. N'y pense pas. Récupère le stupide briquet qui ne fonctionne pas, garde-le pour la forme dans ta main, juste pour avoir quelque chose à quoi te raccrocher, mais n'y pense pas, ne pense à rien. 
+
+Un regard vers la fenêtre. Noah est loin, et tu ne la vois plus, ni ne reconnais la lumière caractéristique de la (text-colour: #c0c195)[cigarette]. Est-ce qu'elle t'a abandonnée ? S'est enfuie à travers les arbres qui entourent la petite aire d'autoroute, dans la forêt, dans la nature sauvage où elle vivra de racines et de lapins ? Ce serait presque une bonne solution. 
+
+Mais tu sais que tu ne vas pas sortir d'ici.
+
+[[Attends qu'elle revienne.]]
+
+(set: $briquet to 1)
+
+
+
+:: Jette-toi dans ses bras. {"position":"3150,1050","size":"100,100"}
+Elle se raidit un instant, mais ne recule pas, et te serre bientôt contre elle, elle aussi.
+
+Tu ne pleures pas, mais elle fait tout de même les gestes usuels, carresse ton dos, murmure des choses aussi rassurantes que possibles à ton oreille. Tu la laisses faire. Le (text-colour: #ab7875)[briquet] est éteint, mais tu n'as plus peur de la nuit.
+
+Quand vous vous détachez, tu sais qu'elle a ce sourire un peu aplati sur son visage. C'est ce que Noah te dit alors qui te surprend, par contre.
+
+- Où est-ce que tu étais, Em' ?
+
+Tu n'es pas sûre de quoi répondre.
+
+[["De quoi tu parles ? Je te cherche depuis des heures."]]
+
+
+:: Jette-toi sur elle. [obja varfin] {"position":"3375,4250","size":"100,100"}
+Tu ne réfléchis même pas. Tant pis si c'est Noah, tant pis pour tout ce qu'il y a eu avant, tout ce que tu lui avais promis - tu ne verras pas son visage effacé par la lumière des phares, de toute façon, et tout se comprendra par tes mains uniquement. Tout ce qui compte, c'est être plus rapide, plus rapide que son doigt sur la gâchette, plus rapide qu'une balle - 
+
+Un premier coup de feu. Qui te manque, c'est pour le ciel, ou le gravier, pas ta peau qui s'écrase contre Noah et la coince contre le sol et cherche, cherche désespérément quelle main s'accroche encore à l'arme, essaie de réassurer sa prise sur le manche - 
+
+<style> img {
+max-width:100%;
+max-height:100%;
+}
+
+</style>
+<img
+src=https://static.wixstatic.com/media/559f19_c5a7089d8b6143c48cf82f7525fd4023~mv2.png/v1/fill/w_555,h_331,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/559f19_c5a7089d8b6143c48cf82f7525fd4023~mv2.png>
+</div>
+
+Un deuxième. Qui t'attrape, à l'épaule - petite explosion de feu et de douleur. Tu cries. 
+
+[[Abandonne.]]
+
+[[Bats-toi encore.]]
+
+(set: $gun to 1)
+
+(set: $finobs to $finobs + 1)
+
+
+:: Lorsque tu t'endors, tu rêves à une vie où tu parles enfin la même langue que tout le monde. [finFIN] {"position":"2075,4350","size":"100,100"}
+(et c'est la fin. pour cette fois-ci.)
+
+<style> img {
+max-width:100%;
+max-height:100%;
+}
+
+</style>
+<img
+src=https://static.wixstatic.com/media/559f19_60776f81b3b9448187ac860645ccd7dc~mv2.png>
+</div>
+
+
+:: Lève les mains. Retourne-toi lentement. [wip] {"position":"3525,4250","size":"100,100"}
+Tu répètes doucement son nom alors que tu te retournes, encore et encore, comme à un animal apeuré. Peut-être que c'est ce qu'elle est, 
+
+
+:: Lève-toi. {"position":"3475,3700","size":"100,100"}
+Tu fais quelque pas hésitants vers la voiture, avant que quelque chose attire ton attention dans le coin de ton champ de vision. Tu te retournes. Ce n'est presque rien, à peine une ombre, peut-être même juste le clignotement des néons, mais tu es sûre, tu es sûre d'avoir vu une silhouette s'enfoncer dans l'horizon sombre de la forêt qui borde l'aire. 
+
+- Noah ?
+
+Pas de réponse.
+
+Alors que tu continues à scruter l'obscurité, le bruit d'une portière qui claque retentit derrière toi. Tu te retournes d'un bond (non, c'est le coffre, tu es sûre que c'est le coffre, après la première surprise, la première panique); rien n'a bougé. Noah est toujours invisible (mais le coffre est de l'autre côté, alors qui sait).
+
+[[Retourne à la voiture.]]
+
+[[Va jusqu'au fond, la ligne des arbres.]]
+
+
+:: Mais le monde entier disparaît. [objr] {"position":"2675,1525","size":"100,100"}
+(enchant: ?page, (background: white))[
+
+[[Tu fermes les yeux.]]
+
+]
+
+
+:: N'y pense même pas. {"position":"3150,1975","size":"100,100"}
+Ne pense même pas à quoi ?
+
+[[Au bois derrière ton dos ?]]
+
+[[À l'essence dans le bidon ?]]
+
+[[Au feu entre tes mains ?]]
+
+
+
+:: Ne bouge pas. {"position":"3050,3250","size":"100,100"}
+- Je ne vois rien, marmonne-t-elle après quelques instants (la lumière du néon n'atteint toujours que son visage). Et puis elle lève la tête, remarque que tu t'es mise à sourire. Détourne de nouveau les yeux, mi-gênée, mi-amusée. 
+
+- C'est ça, moque-toi de moi parce que je m'inquiète. 
+
+Elle relâche sa prise sur ta main, mais tiens encore le bout des doigts, juste contre le banc.
+
+- Après que tu aies essayé de me brûler vive ? Je crois que je peux me le permettre.
+
+Elle rit. Elle rit et tu te rends compte que tu avais cru que tu ne l'entendrais plus jamais rire. que tu- mais que tu ne t'y étais pas encore habituée. Et c'est un vrai soulagement qui te prend maintenant, mais seulement pour quelques instants, parce que la lumière blanche est revenue, découpe de nouveau ses angles et ses arêtes sur son visage. 
+
+Tu te sens bizarre, repenses au (text-colour: #ab7875)[briquet].
+
+[["Je me demande où il est tombé, est-ce que tu veux que-"]]
+
+
+:: Ne la quitte pas des yeux. {"position":"3125,3575","size":"100,200"}
+Noah s'arrête un peu avant quatre heures du matin.
+
+Tu ne t'étais pas rendue compte que tu somnolais mais le silence qui remplace brutalement le ronronnement du moteur t'arrache du lent enfoncement dans ton siège, et tes yeux papillonnent quelques secondes. Par la fenêtre constellée de crasse, la lumière des néons. Tu t'étires et tu vois : une aire d'autoroute, le clignotement d'un insigne publicitaire coloré, deux rangées de tables et de bancs pourrissants que tu scrutes avec inquiétude, à la recherche d'une silhouette, avant que la honte ne te prenne (bien sûr qu'il n'y a personne, tu as vu l'heure, c'était stupide de même se poser la question). 
+	(if: $erreur < 5) [
+[[Sursaute lorsqu'elle fait claquer la portière derrière elle.]] ]
+	(else:)[
+Tu sursautes lorsqu'elle fait claquer la portière derrière elle.
+
+[["Noah !"]]
+
+[[Inspire. Observe-la partir.]]
+]
+
+
+:: Ne panique pas, Emma. {"position":"4100,2175","size":"100,100"}
+Un pas en arrière.
+
+Ne panique pas. 
+
+Un autre, un troisième, un peu plus rapide, où est le mur derrière toi, tu n'aurais pas dû déjà atteindre le mur ? Le cabanon est si petit. Où est le mur ?
+
+Cours à reculons. Trébuche. Pas de mur. Tu tombes en arrière, et tu lâches le (text-colour: #ab7875)[briquet], le dos, les mains frappant contre les planches - des échardes s'enfoncent dans tes paumes -, et tu perds le (text-colour: #ab7875)[briquet], le (text-colour: #ab7875)[briquet] tombe, le (text-colour: #ab7875)[briquet] est tombé. S'est éteint avant d'avoir atteint le bois.
+
+Immédiatement, tu te redresse, cherche à quatre pattes, avec les mains, avec les genoux. Encore des échardes. Est-ce que c'est ton sang qui rend le sol poisseux ? Cherche.
+
+[[Cherche mieux que ça.]]
+
+
+:: Ne recule pas. {"position":"2675,3300","size":"100,100"}
+Tu fermes les yeux, oublies la lumière dure et froide et blanche et comme des coups de couteau sur le visage de Noah.
+
+Et puis quand vous vous détachez un peu, juste un peu, ce n'est plus là. Ou bien il n'y a plus que ça. Tellement de lumière blanche qu'on ne distingue plus aucune ombre, plus aucune vraie forme ou expression sur son visage, même - sauf peut-être son sourire. Lèvres serrées, étirées, sans les dents - tu n'es pas sûre de l'avoir jamais vu sourir comme ça.
+
+Tu hésites. Tu hésites juste un peu.
+
+[[Détourne le regard.]]
+
+[[Garde les yeux fixés sur la lum- sur elle.]]
+
+
+:: Ouvre doucement la porte. [objr] {"position":"3950,2500","size":"100,100"}
+- Noah ? 
+
+Pas de réponse. Tout est sombre. Tu entres.
+
+La porte reste ouverte derrière toi, cette fois-ci. Le vent souffle doucement dans tes oreilles. 
+
+Tu t'asseois au milieu de la pièce, sors (text-colour: #9d9db0)[l'arme], la dépose devant toi.
+
+[[Encore une fois, attends.]]
+
+
+:: Ouvre la boîte à gants devant toi. {"position":"4000,3925","size":"100,100"}
+Quelques objets tombent sur tes genoux - tu reconnais vaguement lunettes de soleil, paquet de mouchoirs, et tout un tas d'indéfinissables -, les autres restent dans l'ombre. Tu étends une main et tu essaies, à tâtons, de trouver quelque chose d'utile. 
+
+Tu finis par ressortir un briquet et ton portable. Tu contemples ce dernier quelques instants, comme désorientée. C'est vrai que vous les aviez déposés là toutes les deux (ils pourront encore être utiles, mais il faudra s'en débarrasser le plus vite possible, avait dit Noah. En attendant, ils restent éteints. Tu lui avais demandé si elle était sûre que ça suffirait, "pour la géolocalisation et tout" - elle avait haussé les épaules. "Tu peux le jeter maintenant si ça t'inquiète".) 
+
+[[Allume-le.]]
+
+[[Repose-le.]]
+
+
+:: Ouvre la porte. [wip] {"position":"3825,1725","size":"100,100"}
+Mais quoi qu'il y ait de l'autre côté, tu ne le verras pas.
+
+[[Tu fermes juste les yeux.]]
+
+
+:: Ouvre le coffre. {"position":"3400,4000","size":"100,100"}
+C'est plus pour t'occuper qu'autre chose ; tu ne penses pas trouver de Noah recroquevillée sur la carpette encrassée, ou quoi que ce soit du style. Ce qui y est, par contre, te surprend presque plus. 
+
+Dans un coin, couché sur le côté, tu reconnais le bidon d'essence que vous aviez utilisé pour - oh, tu sais bien.
+
+Tu fronces les sourcils. Il doit être vide ou presque, maintenant, alors tu ne comprends pas ce qu'il fait là. Surtout, Noah t'avait assuré qu'elle l'avait laissé derrière vous. 
+
+//Dans la cabane. Avec le flingue.//
+
+Mais si elle a en réalité emporté le bidon...
+
+(la conclusion se fait d'elle-même, non ?)
+
+La conclusion se fait d'elle-même, parce que tu entends la sécurité cliquer juste derrière ton crâne.
+
+[[Cours.]]
+
+[[Jette-toi sur elle.]]
+
+
+:: Parce que tu sais. {"position":"3425,2150","size":"100,100"}
+Après des vies passées à attendre dans l'obscurité, tu lèves (text-colour: #9d9db0)[l'arme] à ta tempe.
+
+[[Tu fermes les yeux.]]
+
+
+:: Pars à sa recherche. {"position":"4375,2450","size":"100,100"}
+Tu as vite fait le tour de la place de gravier. 
+
+Derrière toi, les phares sont restés allumés, et découpent la nuit entre la route et l'aire. Tu arrives à distinguer, un peu sur la gauche, entre les ombres qui s'interrompent, une sorte de construction en (if:$briquet < 1)[béton](else:)[planches], un cabanon peut-être, ou un poste de surveillance de... quelque chose.
+
+[[Va jusqu'au fond, la ligne des arbres.]]
+
+[[Dirige-toi vers le cabanon.]]
+
+
+:: Pourquoi ? Avance. {"position":"3775,2275","size":"100,100"}
+Tu gardes une main appuyée contre le mur à ta droite alors que tu fais quelques pas prudents. Le béton est froid sous tes doigts. Un peu trop lisse, tu trouves. Et peut-être presque gluant.
+
+[[De quoi tu parles ? Bien sûr que non.]]
+
+
+:: Pourquoi tu hésites encore ? Allume. [objr] {"position":"4025,2300","size":"100,100"}
+La flamme orangée jaillit du premier coup, mais ne sert à rien contre l'obscurité épaisse, presque palpable autour de toi. Tu distingues un peu tes doigts serrés autour du plastique, une flaque de lumière à tes pieds qui vient lécher le bout de tes chaussures ; c'est tout. 
+
+Tu fais quelques pas de plus, les planches du sol grinçant sous tes pieds. Le (text-colour: #ab7875)[briquet] reste impuissant, les murs invisibles, comme si la nuit les avaient éloignés de toi et ne te donnait à voir que toi-même, tes chaussures, trois doigts.
+
+Et puis la porte claque derrière toi.
+
+[[Ne panique pas, Emma.]]
+
+
+:: Prend à droite. {"position":"4200,1350","size":"100,100"}
+Le chemin monte un peu, puis s'aplanit. Tu as l'impression, en avançant, que tu continues à longer la limite de l'aire d'autoroute, parce que le bruit ne diminue pas plus. Tu ne sais pas si c'est une bonne ou une mauvaise chose.
+
+Après quelques pas, le vent souffle la flamme.
+
+[[Rallume le briquet.]]
+
+
+:: Prend à gauche. {"position":"4075,1375","size":"100,100"}
+Le chemin continue à descendre, mais la pente est moins raide. 
+
+Après quelques pas, le vent souffle la flamme.
+
+[[Rallume le briquet.]]
+
+
+:: Prépare ton arme. [objr] {"position":"2900,1100","size":"100,100"}
+Le cliquetis de la sécurité résonne comme si tu avais déjà tiré. 
+
+Tu peux entendre Noah reculer. Quand elle prend la parole, tu as l'impression d'avoir déjà entendu ces mots.
+
+- Qu'est-ce que tu fais. 
+
+Puis (pendant que tu pointes lentement l'arme dans sa direction), "Où est-ce que tu as trouvé ça", "Qu'est-ce que tu //fais//", tu l'entends encore reculer, alors tu avances d'un pas ou deux. Elle ne court pas encore. Est-ce qu'elle n'a pas tout à fait compris ?
+
+Et puis le silence. De nouveau.
+
+[[Allume le briquet de l'autre main.]]
+
+
+:: Quatre pas en arrière. {"position":"3575,2075","size":"100,100"}
+À nouveau, le mur. Le cabanon n'était pas aussi petit de l'extérieur, si ?
+
+[[Trois pas en arrière.]]
+
+
+:: Rallume le briquet. {"position":"4050,1225","size":"100,100"}
+Une nouvelle bifurcation devant toi. Tu hésites.
+
+[[À gauche.]]
+
+[[Tout droit.]]
+
+
+:: Rallume-le. {"position":"3775,1200","size":"100,100"}
+Nouvelle bifurcation.
+
+[[Continue tout droit.]]
+
+[[Tourne à droite.]]
+
+
+:: Rallume. {"position":"3525,1125","size":"100,100"}
+Et puis l'inévitable se produit : le chemin s'arrête.
+
+Tu crois que ce sont des buissons, devant toi. Ou bien des arbustes épais ? Un conifère aux branches basses, mais en réalité immense ? Tu n'en sais rien. Tu ne peux plus avancer, c'est tout.
+
+Mais tu n'as toujours pas trouvé Noah.
+
+[[Continue.]]
+
+[[Fais demi-tour.]]
+
+
+:: Rapproche-toi. {"position":"3175,3050","size":"100,100"}
+Sans te lever, tu te décales sur le banc dans sa direction, et puis places les mains en coupe autour de la (text-colour: #c0c195)[cigarette] et du (text-colour: #ab7875)[briquet] comme elle te l'indique d'un signe de tête. Tu n'es pas sûre de ton utilité ; il n'y a pas de vent, tu crois, mais Noah a l'air convaincue que ça changera quelque chose.
+
+Et elle a raison, parce qu'une petite flamme apparaît entre tes mains. Et elle sourit un peu, plus l'air soulagée que vraiment heureuse, mais tu te contentes de ça, pour l'instant. Parce que tu n'es pas sûre de l'avoir vue sourire depuis que vous êtes parties, plusieurs heures maintenant, et maintenant que c'est allumé la lumière blanche s'est un peu adoucie, alors. 
+
+Puis quelque chose de rapide, stupide, alors qu'elle rejoint le bout de la (text-colour: #c0c195)[cigarette] à la flamme - une main qui tremble, un sursaut, juste le hasard, juste ça - et le (text-colour: #ab7875)[briquet] encore allumé lui échappe et tombe dans ta main encore ouverte. 
+
+[[Fuis le feu.]]
+
+
+:: Rattrape-la en courant. [déblocerreur] {"position":"4550,3775","size":"100,100"}
+Elle se retourne quand tu l'appelles, «Attends !», la cigarette pas encore allumée dans la main, le briquet dans l'autre. Et puis, juste avant de l'avoir enfin atteinte, tu trébuches, tombes presque – et elle rit. Elle rit et tu te rends compte que tu avais cru que tu ne l'entendrais plus jamais rire, que tu avais déjà fait ce deuil. 
+
+— Tout va bien, Em' ? sort-elle entre deux hoquets. Tu réponds quelque chose de drôle et d'intelligent – spirituel, disait ta mère. Et elle rit encore.
+
+[[Vous vous installez à une des tables.]]
+
+
+:: Recommencer. {"position":"2650,3650","size":"100,100"}
+Nuit. Trois heures après l'erreur : vous avez assez roulé pour que tes mains arrêtent de trembler, la terreur et l'adrénaline comme semées sur la route. Ce qui veut dire qu'il y a toujours cette trace de goudron qui te relie à la chose, dans la ville, et quand tu fermes les yeux tu peux sentir le souvenir se rapprocher pas à pas ; mais pour l'instant, ce n'est plus là. Vous avez encore du temps et tu te sens terriblement légère. 
+
+Toi, c'est Emma. Juste ça. Tout le reste a été perdu, il n'y a plus que toi, dans la voiture de ton amie, toi et cette angoisse diffuse. La terrible légereté. Et puis quelques volontés. Quelques dernières choses à faire. Quelques promesses à toi-même. Par exemple :
+
+Tu dois sortir d'ici. 
+
+(if: $f2 > 0)[Tu dois aider Noah.
+
+](if: $f3 > 0)[Tu dois sauver ta peau.
+
+](if: $f4 > 0)[Tu dois juste attendre un peu plus longtemps.
+
+](if: $f5 > 0)[Tu dois- tu dois faire quelque chose.
+
+](if: $f6 > 0)[Tu dois fuir plus vite.
+
+](if: $f7 > 0)[Tu dois lui faire confiance.
+
+](if: $f8 > 0)[Tu dois comprendre pourquoi elle a fait tout ça.
+
+](if: $f9 > 0)[Tu dois //vraiment// sortir d'ici.
+
+](if: $f10 > 0)[TU DOIS SORTIR D'ICI.]
+(pour t'aider, une dernière certitude, et c'est tout ce qui compte, alors écoute bien, retiens-la, c'est la seule chose encore importante, c'est le seul moyen de gagner :
+
+(if: $gun < 1) [(text-colour:red) [Il ne te reste plus que Noah. 
+
+[[Ne la quitte pas des yeux.]] )]
+]
+(else:)[ Il ne te reste plus que tes propres mains, tes propres yeux, toi-même.
+
+Et ton (text-colour: #9d9db0)[arme]. Ou (text-colour: #9d9db0)[l'arme] de Noah. Celle que tu as prise dans son dos sans qu'elle le sache, avant que vous partiez. 
+
+[[Survis, Emma.]] ]
+
+
+:: Recule. {"position":"2575,3125","size":"100,100"}
+Tu doutes. Doutes de tout ton être.
+
+[[Détourne le regard.]] 
+
+
+:: Refais le tour. Encore une fois. En silence. {"position":"3200,2200","size":"100,100"}
+Tu marches avec précautions, essayant de faire le moins de bruit possible sur le gravier. Le (text-colour: #ab7875)[briquet] éclaire le monde en maigres filaments oranges, et les ombres n'ont l'air que plus profondes ainsi. Mais tu n'oses plus l'éteindre. 
+
+Protège-le, alors que tu avances, tiens-le près de ton cœur, sous ta main. 
+
+Tu reviens au bidon et tu n'as rien trouvé. Alors que tu t'accroupis lentement à côté de l'objet, tu sens l'odeur entêtante, un peu sucrée, un peu vertigineuse qui s'en dégage. 
+
+Lorsque tu appuies ton dos contre le mur pour assurer ton équilibre, tu sens les planches de bois qui s'affaissent juste un peu sous ton poids. Qui grincent juste un peu. Le seul bruit autour de toi. 
+
+[[Attends.]]
+
+
+:: Regarde-la partir. {"position":"3350,3850","size":"100,100"}
+Tu l'observes disparaître dans la lumière des phares. 
+
+
+:: Rejoins-la en silence. {"position":"4000,2750","size":"100,100"}
+Tu ralentis, effectue tes prochains pas plus prudemment. Bien sûr que c'est elle, que c'est sa grande silhouette aux membres qui ont parfois l'air un peu trop longs, ses cheveux partagés entre les pointes et les racines par la décoloration qui commence à s'effacer. La veste trop grande qu'elle a enfilée en catastrophe juste avant de sauter dans la voiture toujours sur ses épaules (un court instant, tu te demandes, oh mais pourquoi, pourquoi celle-là, puis tu t'arrêtes, ne pas y penser, ne plus jamais y penser). Bien sûr que c'est elle. Qui d'autre ? Qui d'autre, à cette heure-ci, à cet endroit-là ?
+
+Mais le temps que tu arrives à la ligne des arbres, elle a disparu, comme fondue dans les ombres.
+
+[[Pars à sa recherche.]]
+
+
+:: Rejoins-la à la table de pique-nique où elle s'est arrêtée. {"position":"3500,2925","size":"100,100"}
+(if: $gun < 1)[Tu t'asseois sur le banc pourrissant, à côté d'elle, toujours sans un mot. À quelques mètres derrière toi, il y a un cabanon qui accueille probablement une cabine de toilettes, seul édifice de toute la place, qui ne mérite peut-être même plus d'être nommée aire d'autoroute. Un seul néon clignote sur une de ses faces, et éclaire Noah d'une lumière blanche, glaciale.
+
+Ses mains vides s'agitent nerveusement sur le bord de la table, et elle évite ton regard. La surface du bois est abîmée, marquée par le temps et, devant toi, une petite brûlure circulaire. Entre tes doigts, sous la table, la (text-colour: #c0c195)[cigarette] pèse un poids étrange.
+
+[[Tends-lui la cigarette.]]
+
+[[Essaie de faire la conversation.]]
+]
+
+(else:)[Tu t'asseois sur le banc pourrissant sans un mot. Noah s'est déjà installée, est là depuis des années peut-être, et te regarde arriver avec un air affreux. Pas de la peur, pas de la colère, simplement la manifestation d'un processus terrible qui se déroule encore à l'intérieur d'elle-même.
+
+[["Ce ne sera pas si grave que ça, non ?"]]
+
+]
+
+(set: $pn to 1)
+
+
+:: Rentre chez toi. [varfin] {"position":"3650,1500","size":"100,100"}
+Quelle idée bizarre !
+
+<style> img {
+max-width:100%;
+max-height:100%;
+}
+
+</style>
+<img
+src=https://static.wixstatic.com/media/559f19_4f94ac2c42be4b90b7baaa536652e261~mv2.png/v1/fill/w_458,h_355,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/av2.png>
+</div>
+
+[[Retourne dans la forêt.]]
+
+(set: $finav to $finav + 1)
+
+
+:: Repose-le. {"position":"4125,4000","size":"100,100"}
+Non, ça ne vaut pas la peine de l'allumer juste pour utiliser la lampe intégrée. Il faudra se contenter du briquet, alors.
+
+Tu soupires, t'enfonces un peu plus dans le siège.
+
+Et qu'est-ce qu'elle fait, Noah ?
+
+[[Sors toi aussi.]]
+
+[[Vérifie que le briquet fonctionne.]]
+
+(set:$nbriquet to 1)
+
+
+:: Reste allongée. {"position":"3675,1775","size":"100,100"}
+À quoi bon ? Tu sais que tu ne sortiras pas d'ici. Tu sais que plus rien n'entreras.
+
+Alors tu restes là où tu es. Lorsque le même bruit retentit, deux //toc// courts, tu ne bouges pas. Lorsqu'ils se font plus insistants, plus fréquents, plus nombreux, lorsque tu as l'impression que la porte est juste à côté de toi et qu'on essaie de l'enfoncer, tu croises les mains sur ton ventre, comme si tu allais dormir.
+
+Peut-être que tu vas le faire. Peut-être que tu l'as déjà fait. De toute façon, tu n'es pas sûre de pouvoir faire la différence entre la nuit qui t'entoure et celle du sommeil. Ou de la mort ? Tu es ici depuis si longtemps. Tu es si fatiguée. Même si tu le voulais, tu ne pourrais pas bouger. 
+
+Non, tu ne feras plus rien. Même lorsque la voix de Noah retentit, tremblante et suppliante, juste à côté de ton oreille.
+
+"Ouvre-moi, Em'."
+
+[[Tu fermes juste les yeux.]]
+
+
+:: Reste assise un moment. [déblocerreur] {"position":"3875,3800","size":"100,100"}
+Tu sais que tu devrais la suivre, que c'est stupide de la laisser s'éloigner, mais tu es si fatiguée. Tes jambes sont si lourdes. Rien que quelques minutes, ça ne peut pas faire de mal, si ?
+
+Et puis tu penses à la nuit, dehors. Peut-être que tu devrais prendre quelque chose pour vous éclairer un peu.
+
+[[Ouvre la boîte à gants devant toi.]]
+
+
+:: Reste debout. {"position":"3400,1675","size":"100,100"}
+Lorsque le niveau du liquide atteint tes chevilles, tu ne bouges pas.
+
+Lorsque le niveau du liquide atteint tes genoux, tu ne bouges pas.
+
+Lorsque le niveau du liquide atteint ton ventre, tu ne bouges pas. Tu te retiens de vomir, à cause de l'odeur et des vapeurs qui te donnent le vertige, mais tu tiens bon, tu ne tombes pas. Pas encore.
+
+Lorsque le niveau du liquide atteint ta poitrine, tu ne bouges pas.
+
+Lorsque le niveau du liquide atteint ta gorge, tu te dresses sur la pointe des pieds, appuies tes mains contre le mur, mais ça ne sert à rien, elles glissent, il n'y a rien auquel se raccrocher, le plafond est juste au-dessus de toi de toute façon tu irais où il n'y a plus de porte plus rien plus rien que
+
+Lorsque le niveau du liquide atteint tes lèvres, que tu ne peux plus nier à la brûlure contre ta peau que c'est bien de l'essence dans laquelle tu vas te noyer, tu peux seulement penser "heureusement que Noah n'est pas là, avec sa (text-colour: #c0c195)[cigarette], avec son briquet."
+
+Tu serres la première entre tes doigts. Tu ne cries pas.
+
+[[Tu fermes juste les yeux.]]
+
+
+:: Reste immobile, donc. {"position":"3550,1775","size":"100,100"}
+Tu restes ainsi un long, long moment. 
+
+Les murs restent poisseux et gluants et suintants autour de toi, mais tu commences à te faire à la sensation. Tu as un peu froid. Tu as un peu la nausée quand l'odeur sucrée et entêtante commence à monter, mais tu ne te mets à t'inquiéter que lorsque les bruits commencent.
+
+Comme un lent, très lent ruissellement assourdi. 
+
+Et tu finis par comprendre que les murs dégoûlinent, dans ce cabanon dont tu ne sortiras pas.
+
+[[Reste debout.]]
+
+[[Assieds-toi.]]
+
+(set: $f10 to 1)
+
+
+:: Reste silencieuse. {"position":"2775,2450","size":"100,100"}
+Noah te regarde encore.
+
+Tu craques
+
+[["Je vais retourner le chercher."]]
+
+
+:: Retiens-toi encore une fois. {"position":"2300,2800","size":"100,100"}
+Tu crois vraiment en être capable ?
+
+[[Toujours la même erreur, Emma.]]
+
+
+:: Retiens-toi retiens-toi retiens-toi {"position":"5025,4375","size":"100,100"}
+Et pourtant,
+
+[[tu commets une autre erreur]]
+
+
+:: Retiens-toi. {"position":"4950,4225","size":"100,100"}
+Elle te regarde toujours sans rien dire, toujours en souriant, toujours cette nouvelle lueur du bout de mégot dans ses yeux. 
+
+[[Retiens-toi retiens-toi retiens-toi]]
+
+
+:: Retourne au cabanon. {"position":"3500,2450","size":"100,100"}
+Tu t'asseois par terre. Sur le gravier, contre le mur. Tu respires normalement. 
+
+[[Fais le tour.]]
+
+[[Rien.]]
+
+[[Fais le tour encore une fois.]]
+
+[[Rien.]]
+
+[[Et les tables ? La ligne des arbres ?]]
+
+[[Rien.]]
+
+[[Tu te trompes. C'est encore là.]]
+
+[[Rien.]]
+
+[[Rien de rien.]]
+
+(set: $cabanon to 1)
+
+
+:: Retourne dans la forêt. {"position":"3475,1450","size":"100,100"}
+C'est tout ce qu'il reste à faire, n'est-ce pas ? Retrouver Noah. Retrouver Noah avant que le jour se lève, retrouver Noah et le jour ne se lèvera jamais et vous pourrez encore rouler et fuir et partir loin, loin de tout ça le long d'une autoroute éternelle et dans une nuit éternelle et-
+
+Et tout d'un coup tu l'entends.
+
+"Emma ?"
+
+C'est elle. Ça vient de loin, ça vient de tout près, elle est encore dans l'obscurité, pas loin - et elle te cherche aussi. Noah te cherche aussi.
+
+[[Enjambe ce grillage une deuxième fois.]]
+
+
+:: Retourne à la voiture. {"position":"3525,3875","size":"100,100"}
+Tu cours jusqu'au véhicule.
+
+(elle ne partirait pas sans toi, si ?)
+
+Tu t'arrêtes aux fenêtres, regarde attentivement chaque place, essaie désespérément d'apercevoir quelque chose dans le vide.
+
+(elle ne partirait pas sans toi.)
+
+Et puis tu fais le tour, arrive au coffre. Il est fermé. Toujours pas de Noah, juste toi et la voiture et le néon qui clignote au loin, te donne mal à la tête. 
+
+(et ce que tu traînes avec toi. et les choses dans tes poches qui ne devraient pas y être.)
+
+[[Ouvre le coffre.]]
+
+
+:: Retourne-toi. [wip] {"position":"3225,1225","size":"100,100"}
+Elle a l'air furieuse. Elle a l'air déçue. Elle a l'air épuisée. Elle n'a l'air de rien, simplement, tout d'un coup, d'une certaine manière, la lumière de ton (text-colour: #ab7875)[briquet] semble ridicule, les arbres plats et faux, à côté de Noah. Noah et le quelque chose qu'elle a dans son regard, dans sa posture, dans son nom.
+
+Quelque chose d'irréel. Quelque chose de lumineux. Quelque chose de pire que ça.
+
+Quelque chose que tu ne préfères pas voir.
+
+[[Tu fermes juste les yeux.]]
+
+
+:: Retrouve Noah. {"position":"3075,1475","size":"100,100"}
+Elle est assise au pied d'un arbre just à côté du petit sentier d'où tu arrives. Genoux remontés contre la poitrine, visage enfoncé dans ses bras croisés.
+
+L'inquiétude se coince dans ta gorge un court instant, mais Noah lève immédiatement la tête en t'entendant arriver, puis te fait un signe de la main, sans se lever.
+
+Tu t'approches en te retenant de courir. Souris. Même si elle ne le voit probablement pas, ou peut-être grâce à ça, souris.
+
+[["Je t'ai cherchée."]]
+
+[["Rentrons."]]
+
+
+
+
+:: Rien de rien. {"position":"3350,2550","size":"100,100"}
+Retour vers le cabanon. Ne pas trop s'éloigner. Toucher le (if: $briquet < 1)[froid du béton](else:)[rugueux des planches] du bout des doigts. 
+
+Courir dans l'autre direction.
+
+[[Et les tables ? La ligne des arbres ?]]
+
+[[Retourne au cabanon.]]
+
+(if: $cabanon > 0)[ [[Arrête.]] ]
+
+
+:: Rien. {"position":"3400,2650","size":"100,100"}
+Juste le gravier et le cabanon.
+
+Tu avances. Quelques pas hésitants, marche, pas trop s'éloigner du cabanon qui est à présent le seul repère. La voiture est censée être de ce côté, non ? Et le reste là-bas ? 
+
+[[Rien de rien.]]
+
+[[Retourne au cabanon.]]
+
+
+:: Réessaie. {"position":"4200,4300","size":"100,100"}
+(clic.) Rien. (set:$essai to $essai + 1)
+
+(if: $essai < 10)[ [[Réessaie.]] ]
+
+(else:)[ [[Jette le briquet contre la vitre.]] ]
+
+
+:: Répète : "Rentrons." {"position":"2825,1575","size":"100,100"}
+Un peu plus doucement, cette fois-ci. Et quand elle hoche à moitié la tête, tu fais quelque chose que tu n'as pas fait depuis longtemps, depuis que vous étiez enfants peut-être : tu tends une main vers la sienne, attrape le bout de ses doigts. 
+
+Quand elle suit ton geste et s'accroche à ta main, tu n'es pas spécialement heureuse. Paisible, peut-être. L'impression aussi diffuse que la lumière grise du jour que tout est comme il est censé l'être.
+
+(if: $gun < 1)[ Et quand elle lâche ta main pour te prendre dans ses bras, et que tu ne comprends pourquoi qu'en entendant le cliquetis de la sécurité de l'arme derrière toi, et que d'un bras elle te serre, fort, alors que l'autre main vive comme un serpent vient presser le métal contre ta tempe, tu n'es pas spécialement effrayée. Ou triste. Ou en colère.
+
+Quand Noah appuie sur la gâchette (la deuxième fois en quelques heures), tu n'entends même pas la détonation. 
+
+[[Tu fermes juste les yeux.]]
+(set: $f7 to 1)]
+
+(if: $gun > 0)[ Et quand tu lâches sa main pour la prendre dans tes bras, et qu'elle ne réagit pas même lorsqu'elle entende le cliquetis de la sécurité de (text-colour: #9d9db0)[l'arme] derrière elle, et que d'un bras tu la serres, fort, alors que l'autre main vive comme un serpent vient presser le métal contre sa tempe, tu ne te sens pas spécialement coupable. Ou triomphante. Ou en sécurité.
+
+Quand tu appuies sur la gâchette, elle ne crie même pas.
+
+[[Mais le monde entier disparaît.]]
+]
+
+
+:: Sors toi aussi. {"position":"3950,3075","size":"100,100"}
+Tu restes quelques instants debout, dans l'air froid et sombre. La (text-colour: #c0c195)[cigarette] dans ta main semble étrangement lourde.
+
+Tu traverses le terrain de l'aire d'autoroute en croisant les bras pour te tenir chaud. (if:$nbriquet > 0)[Après quelques pas, tu te rends compte que tu as oublié le briquet dans la voiture. Tu marmonnes un juron, mais tu ne fais pas demi-tour. Tant pis. Vous ne devriez pas trop traîner ici, de toute façon.] (if:$briquet > 0)[Après quelques pas, tu enfonces tes mains dans les poches de ta veste.
+
+Et puis tu t'arrêtes un court instant. Tes doigts frigorifiés se sont refermés sur quelque chose de familier ; petit rectangle, plastique dur, et quand tu le sors tu peux reconnaître un peu de rouge dans la lueur des phares. 
+
+Le (text-colour: #ab7875)[briquet]. 
+
+Tu penses à la (text-colour: #c0c195)[cigarette] dans ta main. Tu penses à Noah qui allume ses clopes, Noah qui fait cliquer le mécanisme du (text-colour: #ab7875)[briquet], Noah qui expire la fumée loin de toi. Tu penses à beaucoup d'autres choses, aussi, mais tu finis vite par renoncer à te poser la question "Comment c'est arrivé là." Ça aussi. Ce "ça" de plus.
+
+Parce que quelque chose en toi te dis que tu préférerais ne pas savoir. C'est là, et c'est tout. (text-colour: #c0c195)[Cigarette] et (text-colour: #ab7875)[briquet]. Tu as des choses à faire.]
+
+[[Cours pour retrouver Noah plus vite.]]
+
+[[Il fait nuit ; avance lentement.]]
+
+
+:: Soupir. Sors toi aussi. {"position":"4350,3575","size":"100,200"}
+L'air se déroule en ruban de vapeur derrière toi, tes pas crissent bruyamment sur le gravier.
+
+Il fait nuit ; tu hésites à t'enfoncer trop vite dans l'obscurité, mais tu as peur d'avoir déjà perdu Noah de vue.
+
+[[Avance lentement.]]
+
+(if: $erreur > 0)[
+[[Rattrape-la en courant.]]
+]
+
+
+:: Sursaute lorsqu'elle fait claquer la portière derrière elle. {"position":"3750,3575","size":"100,200"}
+— Noah ? Noah, tu es sûre que...
+
+Les mots restent bloqués un instant dans ta gorge. La honte grandit. Le temps que tu penses à trouver quelque chose à dire, elle s'est déjà éloignée à grands pas, forme poussérieuse qui rétrécit derrière les vitres.
+
+(if:$erreur < 2)[
+[[Soupir. Sors toi aussi.]] 
+]
+(else:) [
+[[Inspire. Observe-la partir.]] ]
+
+
+:: Survis, Emma. [objr] {"position":"2875,3550","size":"100,100"}
+Noah s'arrête un peu avant quatre heures du matin.
+
+Tu ne t'étais pas rendue compte que tu somnolais mais le silence qui remplace brutalement le ronronnement du moteur t'arrache du lent enfoncement dans ton siège, et tes yeux papillonnent quelques secondes. Par la fenêtre constellée de crasse, la lumière des néons. Tu t'étires et tu vois : une aire d'autoroute, le clignotement d'un insigne publicitaire coloré, deux rangées de tables et de bancs pourrissants que tu scrutes avec inquiétude, à la recherche d'une silhouette, avant que la honte ne te prenne (bien sûr qu'il n'y a personne, tu as vu l'heure, c'était stupide de même se poser la question). 
+
+[[Attends qu'elle sorte.]]
+
+
+:: Survis. {"position":"3125,3800","size":"100,100"}
+Noah s'arrête un peu avant quatre heures du matin.
+
+Tu ne t'étais pas rendue compte que tu somnolais mais le silence qui remplace brutalement le ronronnement du moteur t'arrache du lent enfoncement dans ton siège, et tes yeux papillonnent quelques secondes. Par la fenêtre constellée de crasse, la lumière des néons. Tu t'étires et tu vois : une aire d'autoroute, le clignotement d'un insigne publicitaire coloré, deux rangées de tables et de bancs pourrissants que tu scrutes avec inquiétude, à la recherche d'une silhouette, avant que la honte ne te prenne (bien sûr qu'il n'y a personne, tu as vu l'heure, c'était stupide de même se poser la question). 
+	(if: $erreur < 5) [
+[[Sursaute lorsqu'elle fait claquer la portière derrière elle.]] ]
+	(else:)[
+Tu sursautes lorsqu'elle fait claquer la portière derrière elle.
+
+[["Noah !"]]
+
+[[Inspire. Observe-la partir.]]
+]
+
+
+:: Tends-lui la cigarette. {"position":"3300,2800","size":"100,100"}
+Noah l'accpte, puis hausse un sourcil, dit d'une voix basse "Mais je n'ai pas mon briquet." Rien de plus. 
+
+(if: $briquet < 1)[Tu te sens stupide. (if: $nbriquet <1)[Si tu as la (text-colour: #c0c195)[cigarette] avec toi parce qu'elle l'a oubliée, probablement que le briquet était aussi là-bas. Tu aurais dû chercher. Tu aurais dû ignorer l'impression que la (text-colour: #c0c195)[cigarette] avait simplement... commencé à exister dans ta main. 
+
+Tu aurais dû réfléchir, Emma.]
+
+[["Je suis désolée."]]
+
+[["Je vais retourner le chercher."]]]
+
+(if: $briquet > 0)[Ta main tremble un peu lorsque tu fouilles la poche où tu l'as rangé, puis retrouve le plastique dur, froid, le mécanisme du fer au bout. 
+
+[[Donne-lui le briquet.]]
+
+[[Allume le briquet pour elle.]]
+]
+
+
+:: Toi aussi, reste debout sur le pas de sa maison le plus longtemps possible. [finFIN] {"position":"1225,3650","size":"100,100"}
+Parce que c'est comme ça avec Noah, avant. Elle te réchauffe de l'intérieur. Elle te donne l'impression qu'enfin, tu fais les choses correctement. Et s'il y a encore tellement de choses que tu t'interdis, si tu dois parfois détourner les yeux de son rayonnement, tu te dis de plus en plus que tu es heureuse. À ta place.
+
+Tu ne sais pas encore que cette chaleur te donnera un jour l'impression de brûler vivante. Tu ne sais pas que Noah, Noah dont chaque geste ne fait que justifier à quel point tu l'adores sera un jour cruelle, sera un jour injuste, sera un jour amère et si déterminée à l'auto-destruction qu'elle t'emportera avec elle. Les années feront ça, d'autres choses aussi, mais ignore-le tant que tu le peux. Ignore la suite. Ignore les soirées dont tu ramèneras ton amie incohérente et furieuse, ignore les moments où tu te perdras dans ta volonté de l'aider à tout prix au point qu'elle te dira un jour que tu la rends malade, ignore l'aggravation jusqu'à ce qu'elle aille se réfugier dans les bras d'un garçon qui la traitera si mal qu'elle ne verra plus qu'une seule issue au problème nommé David.
+
+Pense seulement à ce que tu te dis, une de ces fois où tu la ramènes chez elle. Une résolution, imprimée dans ton esprit comme l'instruction à une machine dont c'est la seule raison d'être, une promesse qui ne se brisera que dans le sang, un ordre, enfin : 
+
+[[Tu ne la quitteras jamais, jamais des yeux.]]
+
+
+:: Toujours la même erreur, Emma. [varfin] {"position":"2475,2975","size":"100,100"}
+Noah réagit un peu trop lentement, et (text-style:"blur")[cette fois-ci], tu as le temps d'effleurer ses lèvres juste avant qu'elle ne te repousse. Violemment, des deux mains contre ta cage thoracique, tu tombes presque du banc, te rattrape à la table de justesse.
+
+- Qu'est-ce que tu fais, Emma ? 
+
+Et enfin, enfin c'est indéniable, elle sonne en colère. Et elle est debout d'un seul coup, les pieds qui crissent sur le gravier, et elle te fixe depuis - tu as l'impression que c'est si haut - et la lumière est sur son visage. La lumière blanche et terrible est sur son visage, et elle te brûlera les rétines avec, tu le sais.
+
+<style> img {
+max-width:100%;
+max-height:100%;
+}
+
+</style>
+<img
+src=https://static.wixstatic.com/media/559f19_362dc144950d4386878ca51cb6e5b22c~mv2.png/v1/fill/w_397,h_366,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/obs1.png>
+</div>
+
+Tu doutes. Doutes de tout ton être.
+
+[[Détourne le regard.]]
+
+(set: $finobs to $finobs +1)
+
+
+:: Tourne à droite. {"position":"3650,1100","size":"100,100"}
+Tu ne sais plus depuis combien de temps tu marches. 
+
+Le vent s'est mis à souffler plus fort, couvrant le bruit de l'autoroute, de tes propres pas même. La flamme s'éteint de plus en plus souvent.
+
+[[Rallume.]]
+
+
+:: Tout droit. {"position":"3925,1125","size":"100,100"}
+Le bruit de l'autoroute t'accompagne encore. Tu commences à craindre de trop t'enfoncer dans la forêt que tu devines plus sombre, plus hostile devant toi. 
+
+Et si Noah y était ?
+
+(et si Noah n'y était pas ?)
+
+Le vent éteint ton (text-colour: #ab7875)[briquet] une deuxième fois.
+
+[[Rallume-le.]]
+
+
+:: Trois pas en arrière. {"position":"3550,2000","size":"100,100"}
+À nouveau, le mur. Tu as l'impression que tu as plus de mal à détacher ton bras de la surface poisseuse.
+
+[[Deux pas en arrière.]]
+
+
+:: Tu continues d'attendre. {"position":"3650,2400","size":"100,100"}
+Et le vent continue à souffler par la porte. 
+
+[[Attends, attends, attends.]]
+
+
+:: Tu fermes juste les yeux. [fin] {"position":"2275,1700","size":"100,100"}
+(enchant: ?page, (background: (gradient:180, 0,#1e2433, 0.5,#ffffff, 1,#ffffff)))[Ça prend plus de temps que ce que tu pensais.
+
+
+
+Partir, je veux dire.
+
+
+
+Est-ce que c'est assez de temps pour regretter ?
+
+
+
+Assez pour te dire que tu aurais dû faire les choses différemment ?
+
+
+
+Assez pour te dire que tu aurais dû mieux te battre ? Te battre tout court ? Parce que c'est de ça dont il s'agit. Ne proteste pas, (text-style:"blur")[je] l'ai bien vu, Emma, tu n'as fait aucun effort. Tu t'es juste laissée emporter.
+
+
+
+Et tant que tu reviens ici, tant que tu te retrouves face à (text-style:"blur")[moi] de cette manière, (text-style:"blur")[je] saurai qu'(text-style:"blur")[encore une fois], tu n'as rien fait correctement. Et (text-style:"blur")[je] te dirai qu'il te reste encore tellement à apprendre.
+
+
+
+Il te reste encore tellement à apprendre.
+
+
+
+
+
+
+
+Alors, est-ce que c'est assez de temps, maintenant ? Assez pour te dire que non, en fait, en fait au fond du fond, tu ne veux pas mourir ? Ne veux-tu pas vivre, Emma ?
+
+
+
+Parce que (text-style:"blur")[je] suis là pour ça.
+
+
+
+
+
+
+
+
+
+Aller. Voyons ce qu'il y a après.
+
+[[(après l'erreur.)]]
+
+(set: $erreur to $erreur +1)
+]
+
+
+:: Tu fermes les yeux. [fin] {"position":"2575,1700","size":"100,100"}
+(enchant: ?page, (background: (gradient:180, 0,#1e2433, 1,#ffffff)))[Ça prend plus de temps que ce que tu pensais.
+
+Bien plus.
+
+Tu rouvres les yeux. Toujours rien. Toujours le monde disparu. C'est juste toi, juste toi, toi et toi toute seule. 
+
+[[(referme-les.)]]
+]
+
+
+:: Tu ne la quitteras jamais, jamais des yeux. [finFIN] {"position":"1400,3650","size":"100,100"}
+(et c'est la fin. pour cette fois-ci.)
+
+<style> img {
+max-width:100%;
+max-height:100%;
+}
+
+</style>
+<img
+src=https://static.wixstatic.com/media/559f19_60776f81b3b9448187ac860645ccd7dc~mv2.png>
+</div>
+
+
+:: Tu sais très bien que tu ne pourras jamais lui dire. [finFIN] {"position":"2075,4225","size":"100,100"}
+Elle soupire, secoue la tête.
+
+— Bien sûr. Bien sûr. Pourquoi je m'attendais à autre chose.
+
+Elle marmonne encore quand elle redémarre ; tu as aussi abandonné l'effort de la déchiffrer. Tu as l'impression qu'une injure se détache de temps à autres, mais tu fais de ton mieux pour l'ignorer.
+
+
+
+
+Et puis vous repartez. Et puis c'est fini. 
+
+Alors que vous dépassez l'aire d'autoroute, qui disparaît dans une traînée de néons colorés derrière vous, tu as l'impression d'avoir manqué quelque chose de peu. Tu es soulagée. Tu es déçue. Tu sais seulement que tu as sommeil. 
+
+Heureusement que Noah s'est faite de silence. Peut-être pour toujours. 
+
+[[Lorsque tu t'endors, tu rêves à une vie où tu parles enfin la même langue que tout le monde.]]
+
+
+:: Tu te trompes. C'est encore là. {"position":"3650,2575","size":"100,100"}
+Il n'y a rien, Enma. Juste le gravier et le cabanon.
+
+[[Rien.]]
+
+[[Et les tables ? La ligne des arbres ?]]
+
+
+:: Un pas en arrière. {"position":"3550,1875","size":"100,100"}
+À nouveau, le mur. 
+
+Cette fois-ci, tu ne recules pas. Pour aller où, de toute façon ? Il y a un mur contre ton dos. Il y a deux murs contre tes épaules. Si tu étends un peu le bras, pas complètement tendu, il y a un mur contre ta main.
+
+Au moins, ça n'a pas l'air de bouger tant que tu restes aussi immobile.
+
+[[Reste immobile, donc.]]
+
+
+:: Utilise le (text-colour: #ab7875)\[briquet\]. {"position":"4375,1750","size":"100,100"}
+
+
+
+:: Utilise le briquet. [objr] {"position":"4625,1725","size":"100,100"}
+Et d'un coup Noah est face à toi.
+
+Tu sursautes, lâches presque le (text-colour: #ab7875)[briquet] en reculant d'un pas brusque. Tu ne l'as pas entendue arriver, ne réussis pas, dans les quelques secondes où la panique a encore le contrôle de tes pensées, à comprendre d'où elle est sortie. La forêt ? Derrière toi ? Portée par le vent ? 
+
+Et pourtant elle est là. Avec sa grande veste, son visage creusé, ses cheveux décolorés dont les racines sombres commencent à apparaître. L'air particulièrement misérable, éclairée comme elle est par la petite flamme orange du (text-colour: #ab7875)[briquet]. 
+
+[["Bon Dieu, Noah, tu m'as fait peur."]]
+
+[[Éteins-le.]]
+
+
+:: Va jusqu'au fond, la ligne des arbres. {"position":"4275,1975","size":"100,100"}
+C'est une sorte de brume feuillue, à peine illuminée par les phares, à cette distance - tu distingues principalement ton ombre qui découpe le sol devant toi, avance, avance, se fond enfin dans l'obscurité dense. 
+
+Tu t'arrêtes juste devant la barrière qui sépare l'aire de la forêt. Un grillage distordu qui t'arrive à peine à la hanche. Tu passes une main distraite entre les carreaux de fer. Pas loin sur ta droite, tu penses que le grillage est déchiré, ou assez écrasé pour que tu puisses probablement passer par-dessus.
+
+[[Enjambe le grillage.]]
+
+(set: $foret to 1)
+
+
+:: Va ouvrir la porte, Emma. [varfin] {"position":"3850,1900","size":"100,100"}
+Tu finis par te lever.
+
+Tu marches vers ce que tu supposes être la direction du bruit, ajuste un peu tes pas lorsqu'on frappe une deuxième fois, avec plus d'impatience. 
+
+Et puis tu trébuches sur le (text-colour: #ab7875)[briquet].
+
+Tu le ramasses sans un mot, rallumes la flamme. Face à toi, la porte s'éclaire d'orange.
+
+<style> img {
+max-width:100%;
+max-height:100%;
+}
+
+</style>
+<img
+src=https://static.wixstatic.com/media/559f19_a390b9cba13141049de8626cdf68267d~mv2.png/v1/fill/w_482,h_500,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/559f19_a390b9cba13141049de8626cdf68267d~mv2.png>
+</div>
+
+Derrière, la voix de Noah retentit. Furieuse.
+
+"Ouvre-moi, Emma."
+
+[[Ouvre la porte.]]
+
+(set: $finav to $finav+1)
+
+
+:: Va ouvrir la porte. {"position":"3800,2050","size":"100,100"}
+Quelle porte ? Tu ne sais pas où elle est. Tu ne sais pas si elle existe encore. Il n'y a que toi et l'intérieur du cabanon, pour toujours.
+
+[[Va ouvrir la porte, Emma.]]
+
+(set: $f9 to 1)
+
+
+:: Va voir ce que c'est. [objr] {"position":"3225,2325","size":"100,100"}
+Juste de l'autre côté de la porte, posé comme s'il avait toujours été là, il y a un bidon d'essence. 
+
+Tu tapotes le contenant du bout du pied, sens le poids qui résiste contre ton geste. Bien rempli. Peut-être complètement. Tu regardes autour de toi, cette fois-ci avec plus de panique consciente, l'idée que quelqu'un l'ait posé là, quelqu'un que tu n'aurais ni vu, ni entendu. 
+
+[[Refais le tour. Encore une fois. En silence.]]
+
+
+:: Vas-y. {"position":"3550,3525","size":"100,100"}
+Tu obéis et va t'asseoir à la table, sur un des bancs inconfortables qui semble presque plier sous ton poids. À quelques mètres derrière toi, il y a un cabanon qui accueille probablement une cabine de toilettes, seul édifice de toute la place, qui ne mérite peut-être même plus d'être nommée aire d'autoroute. Un seul néon clignote sur une de ses faces et t'éclaire d'une lumière blanche et froide, désagréable.
+
+Tu mets les mains dans tes poches en frissonnant. Sursautes d'un coup lorsque tu y trouves une (text-colour: #c0c195)[cigarette](if: $briquet > 0)[ et un (text-colour: #ab7875)[briquet]]. Tu fronces les sourcils. Comment est-ce arrivé là ? Ce n'est pas toi qui fumes. Ce n'est pas toi qui gardes toujours paquet, (text-colour: #ab7875)[briquet] dans la poche intérieure de ta veste (près du cœur). Est-ce que c'est ça que Noah cherche ? Mais la (text-colour: #c0c195)[cigarette] est déjà à moitié entamée. Elle ne fumait pas pendant le trajet, non ?
+Ou peut-être que tu as juste oublié. Tu as sommeil. Tu as tellement sommeil, et ta mémoire fait des choses étranges depuis, depuis la chose d'avant. Tu as sûrement oublié.
+
+Tu t'étires vers la voiture, essaie d'apercevoir une ombre, une silhouette, n'importe quoi qui troublerait un peu la lumière des phares. Mais rien. 
+
+[[Attends qu'elle te rejoigne à la table de pique-nique.]]
+
+[[Lève-toi.]]
+
+
+:: Vers la forêt ? {"position":"3325,3375","size":"100,100"}
+Tu connais le chemin.
+
+(text-colour: #9d9db0)[L'arme] pèse si lourd dans ta main. Tu l'enfonces dans la plus large poche de ta veste (non, la veste de Noah, encore une fois, la grande qu'elle t'a passée après deux heures de route parce que tu frissonnais sans rien dire), où elle disparaît presque complètement.
+
+[[Enjambe le grillage.]] 
+
+
+:: Vers le cabanon ? {"position":"3425,3400","size":"100,100"}
+Tu connais le chemin.
+
+(text-colour: #9d9db0)[L'arme] pèse si lourd dans ta main. Tu l'enfonces dans la plus large poche de ta veste (non, la veste de Noah, encore une fois, la grande qu'elle t'a passée après deux heures de route parce que tu frissonnais sans rien dire), où elle disparaît presque complètement.
+
+[[Dirige-toi vers le cabanon.]]
+
+
+:: Vers les tables ? {"position":"3225,3400","size":"100,100"}
+Tu connais le chemin. 
+
+(text-colour: #9d9db0)[L'arme] pèse si lourd dans ta main. Tu l'enfonces dans la plus large poche de ta veste (non, la veste de Noah, encore une fois, la grande qu'elle t'a passée après deux heures de route parce que tu frissonnais sans rien dire), où elle disparaît presque complètement.
+
+[[Rejoins-la à la table de pique-nique où elle s'est arrêtée.]]
+
+
+:: Vous vous installez à une des tables. {"position":"4525,3900","size":"100,100"}
+C'est la plus éloignée du bâtiment aux néons criards, même si en ce moment, l'idée d'un fast-food d'autoroute t'es étonnamment appétissante. Noah a fini par allumer sa cigarette («Pour faire de la lumière») et détourne la tête quand elle exhale la fumée. 
+
+— Oh mon dieu, j'avais tellement besoin de me dégourdir les jambes, dit-elle. Elle fait traîner les mots, s'étire.
+
+Tu hoches la tête. Le silence n'est pas désagréable, pour une fois, mais toi tu as envie de parler, tu as envie de rester ici et faire traîner des mots avec Noah pendant des heures, jusqu'à ce que le soleil se lève (au moins). Après une hésitation d'un moment, tu reprends la parole, à voix basse :
+
+[["Qu'est-ce qu'on va faire maintenant ?"]]
+
+[["Je n'ai pas envie de retourner à la voiture."]]
+
+
+:: Vérifie que le briquet fonctionne. {"position":"4175,4125","size":"100,100"}
+C'est plus pour passer le temps que par véritable inquiétude, mais tu fais jouer le mécanisme quelques fois. Rien.
+
+(set:$nbriquet to 0) [[Réessaie.]]
+
+
+:: concentre-toi {"position":"2425,3325","size":"100,100"}
+- Je te l'ai passée, Emma. Pour avoir les mains libres. Tu ne te souviens pas ?
+
+Elle sourit si fort.
+
+Tu devrais te dire que tu veux rester là pour toujours.
+
+- Oui, Emma. Pourquoi tu ne veux pas ? 
+
+Elle sonne si triste.
+
+[[CONCENTRE-TOI]]
+
+
+:: et rien, attrape-la par le bras avant qu'elle se lève, marmonne quelque chose que tu as toi-même du mal à comprendre. [finFIN] {"position":"2075,3800","size":"100,100"}
+Quelque chose comme «Noah», «Reste» peut-être. 
+
+Elle répond doucement, tu fais de ton mieux pour attraper ses mots.
+
+— Juste cinq minutes, Em'. Cinq minutes et je reviens.
+
+Tu secoues la tête. 
+
+— C'est pas une bonne idée, il pourrait... Des gens...
+
+— Tu vois bien qu'il n'y a personne.
+
+Elle s'est faite impatiente, a déjà sorti le paquet de cigarettes dans sa main. 
+
+— Vraiment ?
+
+— Quoi, vraiment ?
+
+— Tu vas vraiment... prendre ta pause clope maintenant ?
+
+Tu crois la voir plisser des yeux. Elle demande, lentement, en posant les mots avec soin :
+
+— Qu'est-ce que tu racontes ? 
+
+Tu regrettes déjà. 
+
+— Rien. Rien, oublie, Noah, je voulais juste...
+
+— Parce que si tu as un problème, autant le dire tout de suite.
+
+— Il n'y a pas de –
+
+— Vraiment ? se moque-t-elle. Elle dégage presque avec violence son bras que tu tenais toujours, se tortille sur son siège pour mieux te faire face. «Tu m'as aidée à cacher un corps et maintenant tu me fais la morale pour des cigarettes ? Non, moi je pense que tu as un sérieux problème, Emma.»
+
+— Ce ne sont pas juste les... 
+
+— Bien sûr que c'est pas juste ça. C'est jamais juste ça avec toi, parce que t'as pas le courage de dire clairement ce que tu penses et que le moindre truc est noyé par un million de phrases pas finies. Et j'en ai marre, j'en ai marre de devoir décoder ça ou essayer de lire dans tes pensées, et si juste une fois tu pouvais me faire le plaisir de me répondre ça me ferait au moins une réussite dans cette journée de merde. Alors, par pitié, parle-moi, Em' : c'est quoi ton putain de problème ?
+
+Silence. 
+
+[["Ne me laisse pas."]]
+
+[["Je voudrais juste..."]]
+
+[["Ça ne sert plus à rien, tu sais. On ne peut plus rien faire."]]
+
+[["Tu ne veux pas qu'on arrête ? Qu'on reste ici jusqu'à ce qu'ils nous retrouvent."]]
+
+[["Noah."]]
+
+[["Tu sais que je ferais n'importe quoi pour toi. Vraiment n'importe quoi."]]
+
+[["J'aurais vraiment voulu..."]]
+
+[["J'ai peur, Noah."]]
+
+
+:: finir [finFIN] {"position":"1750,3650","size":"100,100"}
+(if: $finobs > 1)[ Nuit. Trois heures après l'erreur : vous avez assez roulé pour que tes mains arrêtent de trembler, la terreur et l'adrénaline comme semées sur la route. Ce qui veut dire qu'il y a toujours cette trace de goudron qui te relie à la chose, dans la ville, et quand tu fermes les yeux tu peux sentir le souvenir se rapprocher pas à pas ; mais pour l'instant, ce n'est plus là. Vous avez encore du temps et tu te sens terriblement légère. 
+
+Noah s'arrête un peu avant quatre heures du matin. La disparition brusque du ronronnement du moteur t'arrache à ton début de somnolence, mais tu arrives à te réveiller assez pour la voir enfiler sa veste, ouvrir la porte, et – [[et rien, attrape-la par le bras avant qu'elle se lève, marmonne quelque chose que tu as toi-même du mal à comprendre.]]
+]
+
+(else:)[
+
+	(if: $fintrue > 1)[ Il y a un monde où tu as tout fait correctement. 
+
+Où seule l'une d'entre vous finit en prison. Peine atténuée parce que les circonstances, parce que la coopération immédiate, ce genre de choses. Pas assez pour l'acquitter mais assez pour réduire à une poignée d'années le temps qui semble une éternité tant qu'on est encore dedans, mais dont on peut se remettre une fois dehors. 
+
+Tu vas lui rendre visite le plus fréquemment possible. Elle ne te parle pas au début ; ce n'est pas grave. Tu comprends. Parfois tu restes assise en silence pendant toute l'heure qui vous est donnée, parfois tu racontes chaque détail de ta semaine comme si tu cherchais à la faire vivre en-dehors. Après trois mois, tu lui arraches un ricanement en rapportant la dernière histoire de cœur désastreuse de ton frère. Après cinq, elle te pose une question.
+
+Elle te demande comment va son chien.
+
+[[Et tu souris.]]
+]
+
+	(else:)[
+
+		(if: $finbb > 1)[
+        Nuit. Trois heures après l'erreur. Tes mains tremblent toujours, et tu n'arrives pas à imaginer un monde où tu n'auras plus peur. Noah est affreusement calme, à côté de toi.
+
+— Je suis désolée.
+
+— Je sais.
+
+Tu as oublié qui a dit quoi. Mais quelle importance, vous l'avez pensé toutes les deux. 
+
+À l'approche d'une aire d'autoroute, elle te demande si tu veux t'arrêter un moment, te dégourdir les jambes. Tu secoues la tête. «Sauf si toi tu...» Elle dit non aussi. Vous passez à côté sans ralentir.
+
+Quelques minutes plus tard, c'est toi qui brises le silence.
+
+[["Noah, est-ce que... Est-ce que je peux te dire quelque chose ?"]]
+]
+
+		(else:)[
+
+			(if: $finav > 1)[ Jour. Trois ans avant l'erreur.
+
+Tu attends Noah à la sortie de son entraînement de volley-ball. Ça dure depuis maintenant plusieurs mois, mais chaque semaine encore, son visage s'éclaire quand elle te voit comme si c'était la toute première fois que tu lui faisais cette surprise. Et c'est pour ça que tu continues. Pour le sourire immense, aveuglant qui font sauter ses taches de rousseur comme autant d'étoiles filantes. Pour son pas bondissant sur les trottoirs conduisant à sa maison. La manière dont elle plisse les yeux en te disant à demain, on se revoit au lycée, et dont elle semble s'attarder juste un peu plus longtemps que nécessaire dans l'encadrement de la porte quand elle la referme.
+
+[[Toi aussi, reste debout sur le pas de sa maison le plus longtemps possible.]]
+]
+
+				(else:)[ Oh, tu ne t'es pas encore décidée ?
+                
+                Refais un tour, alors. Tu vas finir par trouver.
+                
+                [[Recommencer.]]
+                
+                (set: $gun to 0)
+                
+                (set: $briquet to 0)
+                ]
+            ]
+        ]
+    ]
+
+
+:: n'hésite pas. {"position":"2425,2750","size":"100,100"}
+Tu la prends dans tes bras avec ce geste que tu as déjà répété assez de fois pour qu'ils prennent leur place immédiatement. Et Noah pleure et pleure et pleure, et tu n'as rien à dire, rien à faire d'autre que la tenir, fort, et attendre avec elle. 
+
+Et puis lorsqu'elle se calme un peu, qu'elle reprend une ou deux inspirations plus longues, enfin ininterrompues, tu te détends avec elle, la laisse s'écarter quand elle le fait. Noah soupire. S'essuie les yeux. Puis te regarde avec le demi-sourir habituel, un peu contrit, une main toujours accrochée à ton bras. 
+
+La lumière blanche n'éclaire plus son visage. 
+
+- On va s'en sortir, hein ?
+
+[[Essaie encore une fois.]]
+
+[[Retiens-toi encore une fois.]]
+
+
+:: tu commets une autre erreur [fin obja] {"position":"4900,4500","size":"100,100"}
+(enchant: ?page, (background: (gradient:180, 0,#1e2433, 0.8,#1e2433, 1,#ffffff)))[(pas la première de cette nuit. Ça t'amuse, on dirait, est-ce que tu les collectionnes ?)
+
+Noah se recule plus brutalement que ce à quoi tu t'attendais et toi, penchée en avant, dois te rattraper à la table pour ne pas tomber. La cigarette que tu as cueillie de ses lèvres chauffe déjà le bout de tes doigts mais tu le remarques à peine parce que l'effleurement, le contact manqué de la peau de Noah brûle chaque parcelle de ton corps. Tu ne lèves pas les yeux. Si tu voyais comment elle te regarde en ce moment précis, tu mourrais probablement sur le coup, tu le sais. 
+
+Elle reste là quelques secondes, paralysée (de quoi, de peur ? Tu essaies de l'embrasser une fois et maintenant elle a peur de toi ? Tu es déchirée entre "c'est ridicule" et "elle a raison"), puis tu entends ses pas qui s'éloignent, la portière qui claque. 
+
+La cigarette te mord pour de vrai. Tu lâches le mégot avec un juron, te lève. Un coup de pied dans les graviers pour éteindre la braise. Tu n'as même plus la force de ressentir autre chose que de la vague irritation.
+
+Alors que tu retournes à pas traînants vers la voiture, tu espères qu'elle reparte sans toi, qu'elle te laisse crever de froid dans ce coin perdu, mais non. Le silence qui règne est clairement celui d'une attente. Et tu comprends que tu es véritablement coincée avec elle, dans cette fuite, pour un long moment encore, parce qu'il y a quelque chose qui te rattache à elle et ce n'est pas exactement de la loyauté mais ça te ramènera inévitablement au siège de sa voiture même après une nuit comme ça, même après une nuit de sang et de secret et de ruine, le genre de destruction dont on ne revient pas. 
+
+Lorsque tu refermes la portière sur toi, tu te demandes si tu auras le courage de l'animal pris au piège qui se ronge une patte pour s'échapper, un jour, (text-style:"blur")[une prochaine fois], après... après tout.
+
+[[(après l'erreur.)]]
+
+(set: $erreur to $erreur + 1)
+
+(set: $cigarette to 1)
+
+(set: $f2 to 1)]
+
+
+:: À gauche. {"position":"3900,1250","size":"100,100"}
+Tu continues à t'enfoncer dans la forêt. Les arbres se font plus grands, plus proches, l'obscurité plus difficile à percer. Tu n'es pas sûre que le (text-colour: #ab7875)[briquet] suffise à éclairer ton chemin encore très longtemps.
+
+Tu trébuches sur une racine, manque de lâcher le (text-colour: #ab7875)[briquet] mais le rattrape à la dernière minute. Il s'est éteint dans la manœuvre, et tu es laissée un court instant dans l'obscurité totale.
+
+[[Rallume-le.]]
+
+
+:: À l'essence dans le bidon ? {"position":"3125,1825","size":"100,100"}
+(il va falloir le faire discrètement, alors.)
+
+(le plus silencieusement possible. le plus lentement possible.)
+
+[[(encore une fois, on entendra à peine le son du liquide que tu répands au sol.)]]
+
+
+:: ÉTEINS LE BRIQUET. {"position":"2725,950","size":"100,100"}
+Tu ne l'éteins pas seulement : tu le lances droit sur Noah, qui n'a pas (pas encore) le réflexe de tirer et qui te laisse, dans la seconde de confusion et d'obscurité soudaine, le temps de te mettre à courir. Chemin sur quelques mètres, tu l'entends encore jurer derrière toi, puis ce que tu supposes être une éclaircie dans les fourrés sur le c'oté, dans la direction que tu supposes être celle de l'autoroute. 
+
+Tu ne l'entends pas courir derrière toi. Malgré les racines, malgré les buissons, tu essaies d'accélérer.
+
+Et puis le premier coup te cueilles à l'épaule.
+
+Tu tombes. C'était plus bruyant que dans tes souvenirs, et ça fait plus mal que dans ton imagination, et alors que tu mi-rampes mi-galopes dans les branches basses tu te demandes, encore une fois, si c'était comme ça pour David aussi. S'il avait aussi eu la terreur comme une épine dans la poitrine alors qu'il essayait d'échapper à l'inévitable.  Indépendamment de ce que tu penses du type, tu ne peux pas t'empêcher d'avoir un peu pitié pour lui 
+
+(parce que personne n'aura pitié de toi). 
+
+[[Calme-toi avant que Noah te retrouve.]]
+
+
+:: Écris : "Elle est en route vers la frontière." {"position":"3900,4150","size":"100,100"}
+"Elle est en route vers la frontière. Elle veut traverser pour rejoindre l'Italie, mais si vous vous dépêchez, vous arriverez encore à la rattraper."
+
+Un regard par la fenêtre. Noah fait les cent pas entre deux tables, la (text-colour: #c0c195)[cigarette] rougeoyante à la bouche.
+
+[[Écris : "Ne t'inquiète pas pour moi."]]
+
+[[Écris : "Je reviens bientôt."]]
+
+[[Écris : "Je suis désolée."]]
+
+
+
+
+:: Écris : "Je reviens bientôt." {"position":"4025,4275","size":"100,100"}
+(if: $message < 3) [Tu effaces.
+
+[[Écris : "Je suis désolée."]] 
+
+[[Écris : "Ne t'inquiète pas pour moi."]] 
+]
+
+(if: $message > 2) [
+Tu considères la dernière phrase quelques instants, avant de l'effacer à son tour. 
+
+[[Envoie le message.]]
+
+]
+
+(set: $message to $message + 1) 
+
+
+
+:: Écris : "Je suis désolée." {"position":"3775,4275","size":"100,100"}
+(if: $message < 3) [Tu effaces.
+
+[[Écris : "Ne t'inquiète pas pour moi."]]
+
+[[Écris : "Je reviens bientôt."]]
+]
+
+(if: $message > 2) [
+Tu considères la dernière phrase quelques instants, avant de l'effacer à son tour.
+
+[[Envoie le message.]]
+
+]
+
+(set: $message to $message + 1)
+
+
+
+:: Écris : "Ne t'inquiète pas pour moi." {"position":"3900,4275","size":"100,100"}
+(if: $message < 3) [Tu effaces.
+
+[[Écris : "Je reviens bientôt."]]
+
+[[Écris : "Je suis désolée."]]
+]
+
+(if: $message > 2) [
+Tu considères la dernière phrase quelques instants, avant de l'effacer à son tour. 
+
+[[Envoie le message.]]
+
+]
+
+(set: $message to $message + 1)
+
+
+
+:: Écris : "On est en route vers la frontière." {"position":"3775,4125","size":"100,100"}
+Tu effaces.
+
+[[Écris : "Elle est en route vers la frontière."]]
+
+
+:: Éteins-le. {"position":"4750,1825","size":"100,100"}
+Tu fais disparaître la flamme en silence, sans un mot. 
+
+
+:: StoryStylesheet [stylesheet]
+tw-story {
+  background-color: #131721;
+}
+
+tw-passage {
+  color: #a0a0a0;
+}
+
+tw-link {
+  color: grey;
+}
+
+tw-link.visited {
+  color: red;
+}
+
+body {
+  text-align: center ;
+  font-size: 125%;
+}
+
+tw-story[tags~="pagedetitre"]
+{
+ background-image:url("https://static.wixstatic.com/media/559f19_9ee96bac68a24f74aa8a1ef5076815ff~mv2.png");
+ background-size:cover;
+}
+
+tw-story[tags~="finFIN"]
+{
+  background-color: #ffffff;
+}
+
+tw-passage[tags~="finFIN"]
+{
+  color: #131721;
+}
