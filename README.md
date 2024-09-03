@@ -4,7 +4,7 @@ Après l'erreur est une fiction interactive textuelle, structurée sur la base d
 
 ![apreslerreur_sc](https://github.com/user-attachments/assets/b71d5d65-6324-4ba7-bc38-dde95e8e09cf)
 
-**Procédure d'installation :** Télécharger le fichier html et l'ouvrir dans le navigateur.
+**Procédure d'installation :** Télécharger le fichier index.html et l'ouvrir dans le navigateur.
 
 *Travail (écriture et illustrations) réalisé par Anaïs Gasser. Après l'erreur a été intégralement réalisé avec l'outil de création de fiction interactive Twine (licence publique générale GNU).*
 
